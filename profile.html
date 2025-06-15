@@ -1,333 +1,356 @@
 <!DOCTYPE html>
-<!--[if IE 7]>
-<html class="ie ie7" lang="ja">
-<![endif]-->
-<!--[if IE 8]>
-<html class="ie ie8" lang="ja">
-<![endif]-->
-<!--[if !(IE 7) & !(IE 8)]><!-->
 <html lang="ja">
-<!--<![endif]-->
 <head>
-<base href="https://inokoj.github.io" />
-
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width" />
-<title>About me | Koji Inoue</title>
-
-
-<!--[if lt IE 9]>
-<script src="https://inokoj.github.io/wp-content/themes/twentytwelve/js/html5.js" type="text/javascript"></script>
-<![endif]-->
-
-
-
-<link rel='stylesheet' id='twentytwelve-fonts-css'  href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700&#038;subset=latin,latin-ext' type='text/css' media='all' />
-<link rel='stylesheet' id='twentytwelve-style-css'  href='https://inokoj.github.io/wp-content/themes/twentytwelve/style.css?ver=4.1.1' type='text/css' media='all' />
-<!--[if lt IE 9]>
-<link rel='stylesheet' id='twentytwelve-ie-css'  href='https://inokoj.github.io/wp-content/themes/twentytwelve/css/ie.css?ver=20121010' type='text/css' media='all' />
-<![endif]-->
-<script type='text/javascript' src='https://inokoj.github.io/wp-includes/js/jquery/jquery.js?ver=1.11.1'></script>
-<script type='text/javascript' src='https://inokoj.github.io/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
-
- 
-
-<link rel='canonical' href='https://inokoj.github.io/profile.html' />
-<link rel='shortlink' href='https://inokoj.github.io/?p=17' />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me | Koji Inoue</title>
+    <!-- Tailwind CSS aCDN を読み込み -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts (Inter) を読み込み -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* カスタムスタイル */
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Inter', 'Noto Sans JP', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        .section-card {
+            background-color: white;
+            border-radius: 1.5rem; /* 24px */
+            padding: 2.5rem; /* 40px */
+            margin-bottom: 3rem; /* 48px */
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        @media (max-width: 768px) {
+            .section-card {
+                padding: 1.5rem; /* 24px */
+            }
+        }
+        .section-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+        }
+        .section-title {
+            /* h1タグに変更 */
+            font-size: 2.25rem; /* 36px */
+            font-weight: 800;
+            margin-bottom: 2rem; /* 32px */
+            padding-bottom: 1rem; /* 16px */
+            border-bottom: 2px solid;
+            border-image: linear-gradient(to right, #3b82f6, #9333ea) 1;
+        }
+        .subsection-title {
+             /* h2タグに変更 */
+            font-size: 1.875rem; /* 30px */
+            font-weight: 700;
+            margin-top: 2.5rem; /* 40px */
+            margin-bottom: 1.5rem; /* 24px */
+            padding-bottom: 0.5rem; /* 8px */
+            border-bottom: 1px solid #e2e8f0; /* slate-200 */
+        }
+    </style>
 </head>
+<body class="bg-slate-50 text-slate-700">
 
-<body class="page page-id-17 page-template-default full-width custom-font-enabled single-author">
-<div id="page" class="hfeed site">
-	<header id="masthead" class="site-header" role="banner">
-		<hgroup>
-			<h1 class="site-title"><a href="https://inokoj.github.io/" title="Koji Inoue" rel="home">Koji Inoue</a></h1>
-			<h2 class="site-description">Speech and Audio Processing Laboratory &#8211; Kyoto University</h2>
-		</hgroup>
+    <div class="container mx-auto max-w-4xl px-4 py-8 md:py-16">
 
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle">メニュー</button>
-			<a class="assistive-text" href="#content" title="コンテンツへ移動">コンテンツへ移動</a>
-			<div class="menu-main-menu-container"><ul id="menu-main-menu" class="nav-menu"><li id="menu-item-15" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15"><a href="https://inokoj.github.io/">Top</a></li>
-<li id="menu-item-18" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-17 current_page_item menu-item-18"><a href="https://inokoj.github.io/profile.html">About me</a></li>
-<li id="menu-item-12" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12"><a href="https://inokoj.github.io/publications.html">Publications</a></li>
-</ul></div>		</nav><!-- #site-navigation -->
+        <header class="text-center mb-16">
+            <h1 class="text-5xl font-extrabold text-slate-900">Koji Inoue (KI)</h1>
+            <p class="text-2xl text-slate-500 mt-2">井上 昂治</p>
+            <p class="text-lg text-slate-600 mt-4">Kyoto University / The University of Osaka, Japan</p>
+        </header>
 
-			</header><!-- #masthead -->
+        <nav class="flex justify-center items-center gap-4 md:gap-8 mb-16 bg-white/70 backdrop-blur-lg p-4 rounded-full shadow-md sticky top-4 z-50">
+            <a href="https://inokoj.github.io/" class="bg-blue-600 text-white px-5 py-2 rounded-full font-bold hover:bg-blue-700 transition-all duration-300 shadow-sm">Top</a>
+            <a href="https://inokoj.github.io/profile.html" class="bg-purple-600 text-white px-5 py-2 rounded-full font-bold hover:bg-purple-700 transition-all duration-300 shadow-sm">About me</a>
+            <a href="https://inokoj.github.io/publications.html" class="bg-blue-600 text-white px-5 py-2 rounded-full font-bold hover:bg-blue-700 transition-all duration-300 shadow-sm">Publications</a>
+        </nav>
 
-	<div id="main" class="wrapper">
-	<div id="primary" class="site-content">
-		<div id="content" role="main">
+        <main>
+            <section id="profile-details" class="section-card">
+                <h1 class="section-title">About Me</h1>
 
-							
-	<article id="post-17" class="post-17 page type-page status-publish hentry">
-		<header class="entry-header">
-												<h1 class="entry-title">About me</h1>
-		</header>
-
-		<div class="entry-content">
-			<p><a href="https://inokoj.github.io/profile.html#education">Educations</a> / <a href="https://inokoj.github.io/profile.html#researcharea">Research areas</a> / <a href="https://inokoj.github.io/profile.html#award">Awards</a> / <a href="https://inokoj.github.io/profile.html#society">Societies</a> / <a href="https://inokoj.github.io/profile.html#internship">Internship experiences</a></p>
-<p><span style="font-size: 10pt;"><a href="https://kdb.iimc.kyoto-u.ac.jp/profile_private/en.825b87e0533c1014.html" target="_blank">Activity Datasets on Education and Research, Kyoto University</a></span></p>
-<hr />
-<p><strong><a id="education"></a>学歴 (Educations)</strong></p>
-<ul style="list-style-type: disc;">
-<li><span style="color: #000000;"><strong>Kyoto University</strong></span><br />
-<span style="color: #000000;"> Ph. D. course</span><br />
-<span style="color: #000000;"> Dept. of Intelligence Science and Technology</span><br />
-<span style="color: #000000;"> Graduate School of Informatics</span><br />
-<span style="color: #000000;"> (京都大学 大学院情報学研究科 知能情報学専攻 博士後期課程)</span><br />
-<span style="color: #000000;"> Kyoto, Japan</span><br />
-<span style="color: #000000;"> April 2015 - March 2018</span>
-Ph.D. thesis : Engagement Recognition based on Multimodal Behaviors for Human-Robot Dialogue<br />
-(博士論文 : ロボットとの対話におけるマルチモーダルなるまいに基づくエンゲージメント認識)<br />
-[<a href="https://repository.kulib.kyoto-u.ac.jp/dspace/bitstream/2433/235112/2/djohk00678.pdf" target="_blank">PDF</a>]</li>
-</ul>
-<ul style="list-style-type: disc;">
-<li><strong>Kyoto University</strong><br />
-Master course<br />
-Dept. of Intelligence Science and Technology<br />
-Graduate School of Informatics<br />
-(京都大学 大学院情報学研究科 知能情報学専攻 修士課程)<br />
-Kyoto, Japan<br />
-April 2013 - March 2015<br />
-Master thesis : Speaker diarization and backchannel detection by combining acoustic and eye-gaze information in poster conversations<br />
-(修士論文 : ポスター会話における音響・視線情報を統合した話者区間及び相槌の検出)</li>
-</ul>
-<ul style="list-style-type: disc;">
-<li><strong>Kurume National College of Technology</strong><br />
-Mechanical and Electrical Systems Engineering Advanced Course<br />
-Advanced Engineering School<br />
-(久留米工業高等専門学校 専攻科 機械・電気システム工学専攻)<br />
-Fukuoka, Japan<br />
-April 2011 &#8211; March 2013</li>
-</ul>
-<ul style="list-style-type: disc;">
-<li><strong>Kurume National College of Technology</strong><br />
-Dept. of Control and Information Systems Engineering<br />
-(久留米工業高等専門学校 制御情報工学科)<br />
-Fukuoka, Japan<br />
-April 2006 &#8211; March 2011</li>
-</ul>
-<p>* Ph.D. degree (Informatics) from Kyoto University (September 2018)</span></p>
-<p>* Master&#8217;s degree (Informatics)  from Kyoto University (March 2015)</span></p>
-<p>* Bachelor&#8217;s degree (Engineering)  from National Institution for Academic Degrees and University Evaluation (March 2013)</p>
-<p>* Research Fellow (DC1) of The Japan Society of the Promotion of Science (JSPS) 日本学術振興会 特別研究員 (DC1) (April 2015 - March 2018)</p>
-<hr />
-<p><strong><a id="researcharea"></a>研究分野 (Research Fields)</strong></p>
-<ul style="list-style-type: disc;">
-<li>Spoken dialogue system</li>
-<li>Multimodal signal processing</li>
-<li>Human-robot interaction</li>
-<li>Speech signal processing</li>
-</ul>
-<hr />
-<p><strong><a id="webnews"></a>記事掲載 (Media Article)</strong></p>
-<ul style="list-style-type: disc;">
-<li><a href="https://plus.lapresse.ca/screens/aa3dcbdf-42b2-46b0-926f-a4f32e18a539__7C___0.html" target="_blank">La Presse au Japon Les robots au chevet des aînés - Erica, une humanoïde pour créer des liens</a> (2024/11/20)</li>
-<li><a href="https://www.yomiuri.co.jp/local/kyoto/feature/CO021791/20221126-OYTAT50044/?fbclid=IwAR0fFg4sygdrriFksBJEq5Ztw_WkkZsL8yGDeAghkQAgE1LSmS4l-K3VCF4" target="_blank">読売新聞 きょう・人・十色 ＡＩエリカを笑わせる</a> (2022/11/27)</li>
-<li><a href="https://www.kyoto-np.co.jp/articles/-/902408?fbclid=IwAR30NtJ10BGOgGEaYXSyVtP37pEzmyCp00exzMUALQhnlbt1JTjiblKzqbA" target="blank">京都新聞 愛想笑いできる「美人ロボ」はなぜ生まれたか　京都大学のＡＩ研究者が込めた思い</a> (2022/10/24)</li>
-<li><a href="https://www.kosen-all.or.jp/messages/cat/2010.html" target="_blank">全国高等専門学校連合会ホームページ「高専卒業生からのメッセージ」</a> (2021/3/4)</li>
-<li><a href="https://www.milive-plus.net/gakumon191005/" target="blank">河合塾 みらいぶプラス - 会話相手の興味や意欲を自動推定！空気が読める会話ロボットエリカ誕生!!</a> (2019/10/5)</li>
-<li><a href="https://style.nikkei.com/article/DGXMZO44519170Y9A500C1000000?channel=DF131120184472" target="blank">NIKKEI STYLE U22 ロボットエリカと話したい 自然な会話へ試行錯誤 AIの未来を若手研究者が語る</a> (2019/5/22)</li>
-</ul>
-<hr />
-<p><strong><a id="award"></a>受賞 (Awards)</strong></p>
-<ul style="list-style-type: disc;">
-<li>人工知能学会 2023年度 研究会優秀賞 (June 2024) [<a href="http://sap.ist.i.kyoto-u.ac.jp/members/inoue/award/jsai_2024.pdf" target="blank">賞状</a>]</li>
-<li>NETEXPLO Innovation 2022 Award Winner (April 18th 2023) [<a href="https://netexplo.com/" target="_blank">Interview</a>] [<a href="https://netexplo.com/n100/" target="blank">Link</a>]</li>
-<li>Frontiers in Robotics and AI - 2022 outstanding article (March 2023) [<a href="http://sap.ist.i.kyoto-u.ac.jp/members/inoue/award/20230314_journal-article_certificate.png" target="blank">Certificate</a>] [<a href="https://www.frontiersin.org/books/Frontiers_in_robotics_and_AI_editors_picks_2022/8826" target="blank">Link</a>]</li>
-<li>International Workshop on Spoken Dialogue Systems Technology (IWSDS) 2023, Best Paper Award (Feb. 2023) [<a href="http://sap.ist.i.kyoto-u.ac.jp/members/inoue/award/IWSDS2023_BestPaperAward_Certificate.pdf" target="blank">Certificate</a>] [<a href="https://sites.google.com/view/iwsds2023/program/awards?authuser=0" target="blank">Link</a>]</li>
-<li>第4回 日本オープンイノベーション大賞 文部科学大臣賞 (Feb. 2022)</li>
-<li>International Conference on Multimodal Interaction (ICMI) 2021, Outstanding Reviewer Award (Oct. 2021) [<a href="http://sap.ist.i.kyoto-u.ac.jp/members/inoue/award/icmi_2021.pdf" target="blank">賞状</a>] [<a href="https://icmi.acm.org/2021/index.php?id=award" target="blank">Link</a>]</li>
-<li>人工知能学会 2019年度 研究会優秀賞 (June 2020) [<a href="http://sap.ist.i.kyoto-u.ac.jp/members/inoue/award/jsai_2020.pdf" target="blank">賞状</a>]</li>
-<li>日本音響学会 粟屋潔学術奨励賞 (May 2020) [<a href="http://sap.ist.i.kyoto-u.ac.jp/members/inoue/award/asj_awaya_2020.pdf" target="blank">賞状</a>]</li>
-<li>人工知能学会 2018年度 研究会優秀賞 (June 2019)</li>
-<li>人工知能学会 2017年度 研究会優秀賞 (June 2018)</li>
-<li>人工知能学会 音声・言語理解と対話処理研究会(SIG-SLUD) 第8回対話システムシンポジウム 若手奨励賞 (Oct. 2017)</li>
-<li>日本音響学会 学生優秀発表賞 (Sep. 2016)</li>
-<li>日本学生支援機構 第一種奨学金 (修士課程) 特に優れた業績による全額返還免除 (June 2015)</li>
-<li>情報処理学会 第77回全国大会 学生奨励賞 (March 2015)</li>
-<li>日本音響学会 関西支部 第17回 若手研究者交流研究発表会 優秀奨励賞 (Dec. 2014)</li>
-<li>久留米工業高等専門学校 専攻科 機械・電気システム工学専攻 修了生総代 (March 2013)</li>
-<li>ACM-ICPC (ACM 国際大学対抗プログラミングコンテスト) アジア地区予選 出場 (Dec. 2010)</li>
-<li>全国高等専門学校第19回プログラミングコンテスト 自由部門 特別賞 (Oct. 2008)</li>
-<li>電子情報通信学会 情報・システムソサイエティ スーパーコンピューティング奨励賞 (Aug. 2008)</li>
-<li>情報処理学会 若手奨励賞 (Aug. 2008)</li>
-</ul>
-<hr />
-<p><strong><a id="award"></a>職歴 (Job Experiences)</strong></p>
-<ul style="list-style-type: disc;">
-<li>京都大学 大学院情報学研究科 助教 (工学部情報学科 兼担, April. 2019 - 現在)</li>
-<li>大阪大学 大学院基礎工学研究科 特任助教 (April. 2025 - 現在)</li>
-<li>スウェーデン王立工科大学 (KTH) 客員研究員 (May 2023 - Oct. 2023)</li>
-<li>京都大学 大学院情報学研究科 特定助教 (Oct. 2018 - March 2019)</li>
-<li>京都大学 大学院情報学研究科 教務補佐員 (April 2018 - Sep. 2018)</li>
-<li>久留米工業高等専門学校 非常勤講師 (Dec. 2018)</li>
-<li>京都大学 大学院情報学研究科 情報学展望２ ティーチングアシスタント (April 2017 - Sep. 2017)</li>
-<li>京都大学 物理学実験 ティーチングアシスタント (April 2016 - Sep. 2016)</li>
-<li>京都大学 大学院情報学研究科 知能情報学専攻 メディアアーカイブ分野 オフィスアシスタント (April 2013 - March 2015)</li>
-</ul>
-<hr />
-<p><strong><a id="award"></a>教育歴 (Teaching Experiences)</strong></p>
-<ul style="list-style-type: disc;">
-<li>京都大学 工学部情報学科 計算機科学実験及演習４ (2023年度後期)</li>
-<li>京都大学 工学部情報学科 計算機科学実験及演習２ (2023年度後期)</li>
-<li>京都大学 工学部情報学科 計算機科学実験及演習４ (2022年度後期)</li>
-<li>京都大学 工学部情報学科 計算機科学実験及演習２ (2022年度後期)</li>
-<li>京都大学 工学部情報学科 計算機科学実験及演習４ (2021年度後期)</li>
-<li>京都大学 工学部情報学科 計算機科学実験及演習２ (2021年度後期)</li>
-<li>京都大学 工学部情報学科 計算機科学実験及演習４ (2020年度後期)</li>
-<li>京都大学 国際高等教育院 ILASセミナー「音とAI」 (2020年度前期)</li>
-<li>京都大学 大学院情報学研究科 分野別演習 音声メディア分野 (2020年度前期)</li>
-<li>京都大学 工学部情報学科 計算機科学実験及演習４ (2019年度後期)</li>
-<li>京都大学 大学院情報学研究科 分野別演習 音声メディア分野 (2019年度前期)</li>
-<li>京都大学 工学部情報学科 計算機科学実験及演習３ソフトウェア (2019年度前期)</li>
-<li>京都大学 工学部情報学科 計算機科学実験及演習４ (2018年度後期)</li>
-<li>久留米工業高等専門学校 技術哲学 (Dec. 2018)</li>
-<li>久留米工業高等専門学校 専攻科サマーレクチャー (Sep. 2018)</li>
-</ul>
-<hr />
-<p><b><a id="society"></a>学会活動 (Society activities)</b></p>
-<p>各種委員</p>
-<ul style="list-style-type: disc;">
-<li>日本音響学会関西支部 評議員（April 2025 - ）</li>
-<li>言語処理学会 編集委員（September 2024 - ）</li>
-<li>人工知能学会 学会誌・論文誌 編集委員（June 2020 - May 2024）</li>
-<li>日本音響学会関西支部 会計幹事（April 2021 - March 2023）</li>
-<li>IEEE Kansai Section Young Professionals（January 2022 - , 2023はSecretary and Treasurer）</li>
-
-<li>人工知能学会 言語・音声理解と対話処理研究会（SIG-SLUD）幹事（April 2023 - March 2027）</li>
-<li>人工知能学会 言語・音声理解と対話処理研究会（SIG-SLUD）専門委員（April 2020 - March 2024）</li>
-<li>電子情報通信学会 ヴァーバル・ノンヴァーバル・コミュニケーション研究会（VNV）運営委員 (May 2020 - )</li>
-
-<li>情報処理学会全国大会 IPSJ-ONE 実行委員 (2020, 2021, 2022, 2022は幹事)</li>
-<li>対話システムシンポジウム 実行委員 (2019, 2020, 2021, 2022)</li>
-
-<li>人工知能学会 論文賞 選定委員（2021, 2022, 2023, 2024）</li>
-<li>言語処理学会 年次大会 大会賞審査員 (NLP 2021, 2022, 2023, 2024)</li>
-
-<li>INTERSPEECH 2020 Session Co-Chairs (Spoken language Understanding II)</li>
-<li>SIGDIAL 2020 Video Presentation Co-Chairs</li>
-<li>SIGDIAL 2024 Local Arrangement Chair</li>
-<li>YRRSDS 2024 Organizer</li>
-
-<li>ムーンショット型研究開発事業 新たな目標検討に向けた目標検討チーム:人類の分断を克服し調和を実現するための科学技術に関する サブリーダー  [<a href="https://www.jst.go.jp/pr/info/info1481/index.html" target="_blank">JSTプレスリリース</a>] [<a href="https://www.kyoto-u.ac.jp/ja/news/2021-02-04" target="_blank">京都大学HP</a>] [<a href="https://www.jst.go.jp/moonshot/program/millennia/pdf/report_11_sakuma.pdf" target="_blank">調査研究報告書</a>] (Jan. 2021 - June 2021)</li>
-</ul>
-<p>所属学会</p>
-<ul style="list-style-type: disc;">
-<li><a href="http://www.ieee.org/index.html" target="_blank">IEEE</a></li>
-<li><a href="https://www.acm.org/" target="_blank">ACM</a></li>
-<li><a href="http://www.ieice.org/eng/index.html" target="_blank">IEICE</a> (<a href="http://www.ieice.org/jpn/index.html" target="_blank">電子情報通信学会</a>)</li>
-<li><a href="http://www.asj.gr.jp/eng/index.html" target="_blank">ASJ</a> (<a href="http://www.asj.gr.jp/" target="_blank">日本音響学会</a>)</li>
-<li><a href="http://www.ipsj.or.jp/english/index.html" target="_blank">IPSJ</a> (<a href="https://www.ipsj.or.jp/" target="_blank">情報処理学会</a>)</li>
-<li><a href="http://www.ai-gakkai.or.jp/en" target="_blank">JSAI</a> (<a href="http://www.ai-gakkai.or.jp/" target="_blank">人工知能学会</a>)</li>
-<li><a href="https://www.anlp.jp/en/index.html" target="_blank">ANLP</a> (<a href="https://www.anlp.jp/" target="_blank">言語処理学会</a>)</li>
-</ul>
-<hr />
-<p><strong><a id="fund"></a>競争的資金 (Research Grants)</strong></p>
-<p>研究代表者</p>
-<ul style="list-style-type: disc;">
-<li>沈黙を理解・生成する会話AIによる対話感の解明 (科学技術振興機構 BOOST 次世代AI人材育成プログラム, 2025年度-2029年度)</li>
-<li>対話における心情理解のためのメタ対話基盤モデル (科研費 学術変革領域研究（B）, 2025-2027年度)</li>
-<li>MaAI：マルチモーダル対話基盤モデルによる非言語翻訳 (科学技術振興機構 さきがけ 社会課題を解決する人間中心インタラクション, 2024年度-2027年度)</li>
-<li>対話の意味理解に基づく笑いの生成・説明 (科研費 若手研究, 2023-2025年度) </li>
-<li>マルチモーダルなふるまいに基づく音声対話の人間目標型評価 (科学技術振興機構 ACT-X 数理・情報のフロンティア, 2021年度-2023年度)</li>
-<li>対話理解および発話生成と連動するターンテイキングシステム (科研費 若手研究, 2020-2022年度) </li>
-<li>マルチモーダル処理による心的状態推定に基づいた音声対話システム (科研費 特別研究員奨励費, 2015-2017年度) [<a href="https://kaken.nii.ac.jp/ja/grant/KAKENHI-PROJECT-15J07337/" target=blank>Link</a>]</li>
-</ul>
-<p>研究分担者</p>
-<ul style="list-style-type: disc;">
-<li>心情認知学：ダイナミックなこころの機微を理解し寄り添う社会の創成 (科研費 学術変革領域研究（B）, 2025-2027年度)</li>
-<li>複数人会話に参与するロボットのための音声認識・対話システム (科研費 基盤研究（A）, 2025-2028年度) </li>
-<li>医療AI導入に向けた社会的言語尺度の開発及び倫理的・法的・社会的課題への対応 (トヨタ財団 2024年度  先端技術と共創する新たな人間社会, 2025年度)</li>
-<li>音声会話に伴う身振りを対象としたマルチモーダル記号論の構築 (科研費 学術変革領域研究（B）, 2024年度)</li>
-<li>人類の分断を克服し調和を実現するための科学技術に関する調和研究 (科学技術振興機構 ムーンショット型研究開発事業 新たな目標検討のためのビジョン策定, 2021年度)
-<li>End-to-Endモデルに基づく汎用的な音声理解・対話 (科研費 基盤研究（A）, 2020-2023年度) </li>
-<li>人間との対話継続及び関係構築のための対話知能システム (科研費 新学術領域研究 (研究領域提案型),  2019-2023年度) </li>
-</ul>
-<hr />
-<p><strong><a id="review"></a>Reviewer Experiences</strong></p>
-<p>学会誌 (Academic journals)</p>
-<ul style="list-style-type: disc;">
-<li>人工知能学会論文誌 (2019, 2020, 2021, 2022, 2023)</li>
-<li>電子情報通信学会論文誌 A 基礎・境界ソサイエティ (2019, 2020, 2022)</li>
-<li>電子情報通信学会論文誌 D 情報・システム (2021, 2022, 2023)</li>
-<li>言語処理学会論文誌 (2020, 2023)</li>
-<li>日本感性工学会論文誌 (2021)</li>
-<li>情報と知能 (日本知能情報ファジィ学会) (2023)</li>
-<li>ヒューマンインタフェース学会論文誌 (2023)</li>
-<li>ACM Transactions on Asian and Low-Resource Language Information Processing (ACM-TALLIP) (2018)</li>
-<li>Journal of Robotics and Mechatronics (2019)</li>
-<li>International Journal of Social Robotics (2019, 2021, 2022)</li>
-<li>Artificial Life and Robotics (2020, 2022)</li>
-<li>Advanced Biomedical Engineering (2020)</li>
-<li>Applied Acoustics (2021)</li>
-<li>IEEE Access (2021)</li>
-<li>IEICE Transactions on Information and Systems (2021, 2023, 2024)</li>
-<li>IEEE Transactions on Affective Computing (2022)</li>
-<li>Frontiers in Robotics and AI (2022)</li>
-<li>Frontiers in Communication (2023)</li>
-<li>Advanced Robotics (2023)</li>
-<li>Computer Speech and Language (2025)</li>
-</ul>
-<p>国際会議 (International conferences)</p>
-<ul style="list-style-type: disc;">
-<li>ACL Rolling Review (Oct., Dec. 2024; )</li>
-<li>International Conference on Human-Robot Interaction (HRI) (2020, 2022, 2023, 2024, 2025)</li>
-<li>APSIPA ASC (2019, 2020, 2021)</li>
-<li>Annual meeting of the Special Interest Group on Discourse and Dialogue (SIGDIAL) (2019, 2020, 2021, 2022, 2023, 2024, 2025)</li>
-<li>International Conference on Human-Agent Interaction (HAI) (2019, 2023)</li>
-<li>International Conference on Multimodal Interaction (ICMI) (2019, 2020, 2021, 2022, 2023, 2024, 2025)</li>
-<li>International Conference on Multimodal Interaction (ICMI) Late Breaking Result track (2023)</li>
-<li>International Symposium on System Integration (SII) (2021)</li>
-<li>International Conference on Acoustics, Speech, and Signal Processing (ICASSP) (2021, 2022, 2023, 2024)</li>
-<li>Asia-Pacific Chapter of the Association for Computational Linguistics and International Joint Conference on Natural Language Processing (AACL-IJCNLP) (2021, 2022)</li>
-<li>International Conference on Computational Linguistics (COLING) (2025)</li>
-<li>Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING) (2024)</li>
-<li>INTERSPEECH (2021, 2022, 2023, 2024, 2025)</li>
-<li>Empirical Methods in Natural Language Processing (EMNLP) (2021, 2023, 2024, 2025)</li>
-<li>Anual Meeting of the Association for Computational Linguistics (ACL) (2023, 2024)</li>
-<li>North American Chapter of the Association for Computational Linguistics (NAACL) (2025)</li>
-<li>European Chapter of the Association for Computational Linguistics (EACL) (2022)</li>
-<li>International Workshop on Spoken Dialogue Systems Technology (IWSDS) (2022, 2023, 2024, 2025)</li>
-<li>International Conference on Computer Animation & Social Agents (CASA) (2025)</li>
-<li>International Conference on Robot and Human Interactive Communication (RO-MAN) (2024, 2025)</li>
-<!-- <li>ACL Student Research Workshop (2025)</li> -->
-</ul>
-<hr />
-<p><strong><a id="review"></a>ゲスト講義・イベント登壇 (Guest Lecture, Event)</strong></p>
-<ul style="list-style-type: disc;">
-<li>久留米工業高等専門学校 専攻科設立30周年記念講演会 (3rd Nov. 2023)</li>
-<li>滋賀県立大学 人間文化セミナー 「人間関係の科学B：コミュニケーションを考える」 (25th Jan. 2022)</li>
-<li>日本工学アカデミー 九州支部 高等専門学校出張講演会（久留米工業高等専門学校）「ICT・AI技術の現状と将来の展望」 (19th Jan. 2022)</li>
-<li>アジア太平洋研究所 AOYA会議 2021 (11-12th Nov. 2021)</li>
-<li>大阪産業局 京阪神スタートアップアカデミア・コアリション キックオフカンファレンス [<a href="https://www.innovation-osaka.jp/ja/events/event-9619/" target="_blank">link</a>] (29th Sep. 2021)</li>
-</ul>
-<hr />
-<p><b><a id="internship"></a>インターンシップ経験 (Internship Experiences)</b></p>
-<ul style="list-style-type: disc;">
-<li><a href="http://www.jp.honda-ri.com/english/">Honda Research Institute Japan Co., Ltd. (HRI-JP)</a> (Aug. 2013 - Sep. 2013)<br />
-<a href="http://www.jp.honda-ri.com/">株式会社 ホンダ・リサーチ・インスティチュート・ジャパン</a></li>
-<li>Hybrid Recognition Technologies Inc. (Oct. 2012 - Dec. 2012)<br />
-<a href="http://h-r-t.jp/">株式会社 ハイブリッド・リコグニション・テクノロジーズ</a></li>
-<li>teamLab Inc. (Aug. 2009)<br />
-<a href="http://www.team-lab.com/">チームラボ 株式会社</a></li>
-</ul>
-<p>&nbsp;</p>
-					</div><!-- .entry-content -->
-	</article><!-- #post -->
-				
-		</div><!-- #content -->
-	</div><!-- #primary -->
+                <div class="flex flex-wrap gap-x-4 gap-y-2 mb-8 text-blue-600">
+                    <a href="#education" class="hover:underline">Educations</a> /
+                    <a href="#researcharea" class="hover:underline">Research areas</a> /
+                    <a href="#award" class="hover:underline">Awards</a> /
+                    <a href="#society" class="hover:underline">Societies</a> /
+                    <a href="#internship" class="hover:underline">Internship experiences</a>
+                </div>
+                <p class="mb-6 text-blue-600"><a href="https://kdb.iimc.kyoto-u.ac.jp/profile_private/en.825b87e0533c1014.html" target="_blank" class="text-blue-600 hover:underline">Activity Datasets on Education and Research, Kyoto University</a></p>
 
 
-		</div><!-- #main .wrapper -->
-	<footer id="colophon" role="contentinfo">
-		<div class="site-info">
-						<a href="http://ja.wordpress.org/" title="セマンティックなパブリッシングツール">Proudly powered by WordPress</a>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
+                <div>
+                    <h2 id="education" class="subsection-title">学歴 (Educations)</h2>
+                    <ul class="space-y-6 list-disc list-outside pl-6 text-slate-800">
+                        <li><strong>Kyoto University</strong><br>
+                            Ph. D. course, Dept. of Intelligence Science and Technology, Graduate School of Informatics<br>
+                            (京都大学 大学院情報学研究科 知能情報学専攻 博士後期課程)<br>
+                            Kyoto, Japan (April 2015 - March 2018)<br>
+                            <em>Ph.D. thesis:</em> Engagement Recognition based on Multimodal Behaviors for Human-Robot Dialogue<br>
+                            (博士論文 : ロボットとの対話におけるマルチモーダルなるまいに基づくエンゲージメント認識)
+                            [<a href="https://repository.kulib.kyoto-u.ac.jp/dspace/bitstream/2433/235112/2/djohk00678.pdf" target="_blank" class="text-blue-600 hover:underline">PDF</a>]
+                        </li>
+                        <li><strong>Kyoto University</strong><br>
+                            Master course, Dept. of Intelligence Science and Technology, Graduate School of Informatics<br>
+                            (京都大学 大学院情報学研究科 知能情報学専攻 修士課程)<br>
+                            Kyoto, Japan (April 2013 - March 2015)<br>
+                            <em>Master thesis:</em> Speaker diarization and backchannel detection by combining acoustic and eye-gaze information in poster conversations<br>
+                            (修士論文 : ポスター会話における音響・視線情報を統合した話者区間及び相槌の検出)
+                        </li>
+                        <li><strong>Kurume National College of Technology</strong><br>
+                            Mechanical and Electrical Systems Engineering Advanced Course, Advanced Engineering School<br>
+                            (久留米工業高等専門学校 専攻科 機械・電気システム工学専攻)<br>
+                            Fukuoka, Japan (April 2011 – March 2013)
+                        </li>
+                        <li><strong>Kurume National College of Technology</strong><br>
+                            Dept. of Control and Information Systems Engineering<br>
+                            (久留米工業高等専門学校 制御情報工学科)<br>
+                            Fukuoka, Japan (April 2006 – March 2011)
+                        </li>
+                    </ul>
+                     <ul class="mt-6 space-y-2 list-disc list-outside pl-6 text-slate-800">
+                        <li>Ph.D. degree (Informatics) from Kyoto University (September 2018)</li>
+                        <li>Master’s degree (Informatics) from Kyoto University (March 2015)</li>
+                        <li>Bachelor’s degree (Engineering) from National Institution for Academic Degrees and University Evaluation (March 2013)</li>
+                        <li>Research Fellow (DC1) of The Japan Society of the Promotion of Science (JSPS) 日本学術振興会 特別研究員 (DC1) (April 2015 - March 2018)</li>
+                    </ul>
+                </div>
 
-<script type='text/javascript' src='https://inokoj.github.io/wp-content/themes/twentytwelve/js/navigation.js?ver=20140711'></script>
+                <div>
+                    <h2 id="researcharea" class="subsection-title">研究分野 (Research Fields)</h2>
+                    <ul class="space-y-2 list-disc list-outside pl-6 text-slate-800">
+                        <li>Spoken dialogue system</li>
+                        <li>Multimodal signal processing</li>
+                        <li>Human-robot interaction</li>
+                        <li>Speech signal processing</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h2 id="webnews" class="subsection-title">記事掲載 (Media Article)</h2>
+                    <ul class="space-y-2 list-disc list-outside pl-6 text-slate-800">
+                        <li><a href="https://plus.lapresse.ca/screens/aa3dcbdf-42b2-46b0-926f-a4f32e18a539__7C___0.html" target="_blank" class="text-blue-600 hover:underline">La Presse au Japon Les robots au chevet des aînés - Erica, une humanoïde pour créer des liens</a> (2024/11/20)</li>
+                        <li><a href="https://www.yomiuri.co.jp/local/kyoto/feature/CO021791/20221126-OYTAT50044/?fbclid=IwAR0fFg4sygdrriFksBJEq5Ztw_WkkZsL8yGDeAghkQAgE1LSmS4l-K3VCF4" target="_blank" class="text-blue-600 hover:underline">読売新聞 きょう・人・十色 ＡＩエリカを笑わせる</a> (2022/11/27)</li>
+                        <li><a href="https://www.kyoto-np.co.jp/articles/-/902408?fbclid=IwAR30NtJ10BGOgGEaYXSyVtP37pEzmyCp00exzMUALQhnlbt1JTjiblKzqbA" target="_blank" class="text-blue-600 hover:underline">京都新聞 愛想笑いできる「美人ロボ」はなぜ生まれたか　京都大学のＡＩ研究者が込めた思い</a> (2022/10/24)</li>
+                        <li><a href="https://www.kosen-all.or.jp/messages/cat/2010.html" target="_blank" class="text-blue-600 hover:underline">全国高等専門学校連合会ホームページ「高専卒業生からのメッセージ」</a> (2021/3/4)</li>
+                        <li><a href="https://www.milive-plus.net/gakumon191005/" target="_blank" class="text-blue-600 hover:underline">河合塾 みらいぶプラス - 会話相手の興味や意欲を自動推定！空気が読める会話ロボットエリカ誕生!!</a> (2019/10/5)</li>
+                        <li><a href="https://style.nikkei.com/article/DGXMZO44519170Y9A500C1000000?channel=DF131120184472" target="_blank" class="text-blue-600 hover:underline">NIKKEI STYLE U22 ロボットエリカと話したい 自然な会話へ試行錯誤 AIの未来を若手研究者が語る</a> (2019/5/22)</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2 id="award" class="subsection-title">受賞 (Awards)</h2>
+                    <ul class="space-y-2 list-disc list-outside pl-6 text-slate-800">
+                        <li>人工知能学会 2023年度 研究会優秀賞 (June 2024) [<a href="http://sap.ist.i.kyoto-u.ac.jp/members/inoue/award/jsai_2024.pdf" target="_blank" class="text-blue-600 hover:underline">賞状</a>]</li>
+                        <li>NETEXPLO Innovation 2022 Award Winner (April 18th 2023) [<a href="https://netexplo.com/" target="_blank" class="text-blue-600 hover:underline">Interview</a>] [<a href="https://netexplo.com/n100/" target="_blank" class="text-blue-600 hover:underline">Link</a>]</li>
+                        <li>Frontiers in Robotics and AI - 2022 outstanding article (March 2023) [<a href="http://sap.ist.i.kyoto-u.ac.jp/members/inoue/award/20230314_journal-article_certificate.png" target="_blank" class="text-blue-600 hover:underline">Certificate</a>] [<a href="https://www.frontiersin.org/books/Frontiers_in_robotics_and_AI_editors_picks_2022/8826" target="_blank" class="text-blue-600 hover:underline">Link</a>]</li>
+                        <li>International Workshop on Spoken Dialogue Systems Technology (IWSDS) 2023, Best Paper Award (Feb. 2023) [<a href="http://sap.ist.i.kyoto-u.ac.jp/members/inoue/award/IWSDS2023_BestPaperAward_Certificate.pdf" target="_blank" class="text-blue-600 hover:underline">Certificate</a>] [<a href="https://sites.google.com/view/iwsds2023/program/awards?authuser=0" target="_blank" class="text-blue-600 hover:underline">Link</a>]</li>
+                        <li>第4回 日本オープンイノベーション大賞 文部科学大臣賞 (Feb. 2022)</li>
+                        <li>International Conference on Multimodal Interaction (ICMI) 2021, Outstanding Reviewer Award (Oct. 2021) [<a href="http://sap.ist.i.kyoto-u.ac.jp/members/inoue/award/icmi_2021.pdf" target="_blank" class="text-blue-600 hover:underline">賞状</a>] [<a href="https://icmi.acm.org/2021/index.php?id=award" target="_blank" class="text-blue-600 hover:underline">Link</a>]</li>
+                        <li>人工知能学会 2019年度 研究会優秀賞 (June 2020) [<a href="http://sap.ist.i.kyoto-u.ac.jp/members/inoue/award/jsai_2020.pdf" target="_blank" class="text-blue-600 hover:underline">賞状</a>]</li>
+                        <li>日本音響学会 粟屋潔学術奨励賞 (May 2020) [<a href="http://sap.ist.i.kyoto-u.ac.jp/members/inoue/award/asj_awaya_2020.pdf" target="_blank" class="text-blue-600 hover:underline">賞状</a>]</li>
+                        <li>人工知能学会 2018年度 研究会優秀賞 (June 2019)</li>
+                        <li>人工知能学会 2017年度 研究会優秀賞 (June 2018)</li>
+                        <li>人工知能学会 音声・言語理解と対話処理研究会(SIG-SLUD) 第8回対話システムシンポジウム 若手奨励賞 (Oct. 2017)</li>
+                        <li>日本音響学会 学生優秀発表賞 (Sep. 2016)</li>
+                        <li>日本学生支援機構 第一種奨学金 (修士課程) 特に優れた業績による全額返還免除 (June 2015)</li>
+                        <li>情報処理学会 第77回全国大会 学生奨励賞 (March 2015)</li>
+                        <li>日本音響学会 関西支部 第17回 若手研究者交流研究発表会 優秀奨励賞 (Dec. 2014)</li>
+                        <li>久留米工業高等専門学校 専攻科 機械・電気システム工学専攻 修了生総代 (March 2013)</li>
+                        <li>ACM-ICPC (ACM 国際大学対抗プログラミングコンテスト) アジア地区予選 出場 (Dec. 2010)</li>
+                        <li>全国高等専門学校第19回プログラミングコンテスト 自由部門 特別賞 (Oct. 2008)</li>
+                        <li>電子情報通信学会 情報・システムソサイエティ スーパーコンピューティング奨励賞 (Aug. 2008)</li>
+                        <li>情報処理学会 若手奨励賞 (Aug. 2008)</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h2 class="subsection-title">職歴 (Job Experiences)</h2>
+                     <ul class="space-y-2 list-disc list-outside pl-6 text-slate-800">
+                        <li>京都大学 大学院情報学研究科 助教 (工学部情報学科 兼担, April. 2019 - 現在)</li>
+                        <li>大阪大学 大学院基礎工学研究科 特任助教 (April. 2025 - 現在)</li>
+                        <li>スウェーデン王立工科大学 (KTH) 客員研究員 (May 2023 - Oct. 2023)</li>
+                        <li>京都大学 大学院情報学研究科 特定助教 (Oct. 2018 - March 2019)</li>
+                        <li>京都大学 大学院情報学研究科 教務補佐員 (April 2018 - Sep. 2018)</li>
+                        <li>久留米工業高等専門学校 非常勤講師 (Dec. 2018)</li>
+                        <li>京都大学 大学院情報学研究科 情報学展望２ ティーチングアシスタント (April 2017 - Sep. 2017)</li>
+                        <li>京都大学 物理学実験 ティーチングアシスタント (April 2016 - Sep. 2016)</li>
+                        <li>京都大学 大学院情報学研究科 知能情報学専攻 メディアアーカイブ分野 オフィスアシスタント (April 2013 - March 2015)</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2 class="subsection-title">教育歴 (Teaching Experiences)</h2>
+                    <ul class="space-y-2 list-disc list-outside pl-6 text-slate-800">
+                        <li>京都大学 工学部情報学科 計算機科学実験及演習４ (2023年度後期)</li>
+                        <li>京都大学 工学部情報学科 計算機科学実験及演習２ (2023年度後期)</li>
+                        <li>京都大学 工学部情報学科 計算機科学実験及演習４ (2022年度後期)</li>
+                        <li>京都大学 工学部情報学科 計算機科学実験及演習２ (2022年度後期)</li>
+                        <li>京都大学 工学部情報学科 計算機科学実験及演習４ (2021年度後期)</li>
+                        <li>京都大学 工学部情報学科 計算機科学実験及演習２ (2021年度後期)</li>
+                        <li>京都大学 工学部情報学科 計算機科学実験及演習４ (2020年度後期)</li>
+                        <li>京都大学 国際高等教育院 ILASセミナー「音とAI」 (2020年度前期)</li>
+                        <li>京都大学 大学院情報学研究科 分野別演習 音声メディア分野 (2020年度前期)</li>
+                        <li>京都大学 工学部情報学科 計算機科学実験及演習４ (2019年度後期)</li>
+                        <li>京都大学 大学院情報学研究科 分野別演習 音声メディア分野 (2019年度前期)</li>
+                        <li>京都大学 工学部情報学科 計算機科学実験及演習３ソフトウェア (2019年度前期)</li>
+                        <li>京都大学 工学部情報学科 計算機科学実験及演習４ (2018年度後期)</li>
+                        <li>久留米工業高等専門学校 技術哲学 (Dec. 2018)</li>
+                        <li>久留米工業高等専門学校 専攻科サマーレクチャー (Sep. 2018)</li>
+                    </ul>
+                </div>
+                
+                 <div>
+                    <h2 id="society" class="subsection-title">学会活動 (Society activities)</h2>
+                    <p class="font-bold text-lg mt-4 mb-2">各種委員</p>
+                    <ul class="space-y-2 list-disc list-outside pl-6 text-slate-800">
+                        <li>日本音響学会関西支部 評議員（April 2025 - ）</li>
+                        <li>言語処理学会 編集委員（September 2024 - ）</li>
+                        <li>人工知能学会 学会誌・論文誌 編集委員（June 2020 - May 2024）</li>
+                        <li>日本音響学会関西支部 会計幹事（April 2021 - March 2023）</li>
+                        <li>IEEE Kansai Section Young Professionals（January 2022 - , 2023はSecretary and Treasurer）</li>
+                        <li>人工知能学会 言語・音声理解と対話処理研究会（SIG-SLUD）幹事（April 2023 - March 2027）</li>
+                        <li>人工知能学会 言語・音声理解と対話処理研究会（SIG-SLUD）専門委員（April 2020 - March 2024）</li>
+                        <li>電子情報通信学会 ヴァーバル・ノンヴァーバル・コミュニケーション研究会（VNV）運営委員 (May 2020 - )</li>
+                        <li>情報処理学会全国大会 IPSJ-ONE 実行委員 (2020, 2021, 2022, 2022は幹事)</li>
+                        <li>対話システムシンポジウム 実行委員 (2019, 2020, 2021, 2022)</li>
+                        <li>人工知能学会 論文賞 選定委員（2021, 2022, 2023, 2024）</li>
+                        <li>言語処理学会 年次大会 大会賞審査員 (NLP 2021, 2022, 2023, 2024)</li>
+                        <li>INTERSPEECH 2020 Session Co-Chairs (Spoken language Understanding II)</li>
+                        <li>SIGDIAL 2020 Video Presentation Co-Chairs</li>
+                        <li>SIGDIAL 2024 Local Arrangement Chair</li>
+                        <li>YRRSDS 2024 Organizer</li>
+                        <li>ムーンショット型研究開発事業 新たな目標検討に向けた目標検討チーム:人類の分断を克服し調和を実現するための科学技術に関する サブリーダー [<a href="https://www.jst.go.jp/pr/info/info1481/index.html" target="_blank" class="text-blue-600 hover:underline">JSTプレスリリース</a>] [<a href="https://www.kyoto-u.ac.jp/ja/news/2021-02-04" target="_blank" class="text-blue-600 hover:underline">京都大学HP</a>] [<a href="https://www.jst.go.jp/moonshot/program/millennia/pdf/report_11_sakuma.pdf" target="_blank" class="text-blue-600 hover:underline">調査研究報告書</a>] (Jan. 2021 - June 2021)</li>
+                    </ul>
+                    <p class="font-bold text-lg mt-4 mb-2">所属学会</p>
+                    <ul class="space-y-2 list-disc list-outside pl-6 text-slate-800">
+                        <li><a href="http://www.ieee.org/index.html" target="_blank" class="text-blue-600 hover:underline">IEEE</a></li>
+                        <li><a href="https://www.acm.org/" target="_blank" class="text-blue-600 hover:underline">ACM</a></li>
+                        <li><a href="http://www.ieice.org/eng/index.html" target="_blank" class="text-blue-600 hover:underline">IEICE</a> (<a href="http://www.ieice.org/jpn/index.html" target="_blank" class="text-blue-600 hover:underline">電子情報通信学会</a>)</li>
+                        <li><a href="http://www.asj.gr.jp/eng/index.html" target="_blank" class="text-blue-600 hover:underline">ASJ</a> (<a href="http://www.asj.gr.jp/" target="_blank" class="text-blue-600 hover:underline">日本音響学会</a>)</li>
+                        <li><a href="http://www.ipsj.or.jp/english/index.html" target="_blank" class="text-blue-600 hover:underline">IPSJ</a> (<a href="https://www.ipsj.or.jp/" target="_blank" class="text-blue-600 hover:underline">情報処理学会</a>)</li>
+                        <li><a href="http://www.ai-gakkai.or.jp/en" target="_blank" class="text-blue-600 hover:underline">JSAI</a> (<a href="http://www.ai-gakkai.or.jp/" target="_blank" class="text-blue-600 hover:underline">人工知能学会</a>)</li>
+                        <li><a href="https://www.anlp.jp/en/index.html" target="_blank" class="text-blue-600 hover:underline">ANLP</a> (<a href="https://www.anlp.jp/" target="_blank" class="text-blue-600 hover:underline">言語処理学会</a>)</li>
+                    </ul>
+                </div>
+                
+                 <div>
+                    <h2 class="subsection-title">競争的資金 (Research Grants)</h2>
+                    <p class="font-bold text-lg mt-4 mb-2">研究代表者</p>
+                     <ul class="space-y-2 list-disc list-outside pl-6 text-slate-800">
+                        <li>沈黙を理解・生成する会話AIによる対話感の解明 (科学技術振興機構 BOOST 次世代AI人材育成プログラム, 2025年度-2029年度)</li>
+                        <li>対話における心情理解のためのメタ対話基盤モデル (科研費 学術変革領域研究（B）, 2025-2027年度)</li>
+                        <li>MaAI：マルチモーダル対話基盤モデルによる非言語翻訳 (科学技術振興機構 さきがけ 社会課題を解決する人間中心インタラクション, 2024年度-2027年度)</li>
+                        <li>対話の意味理解に基づく笑いの生成・説明 (科研費 若手研究, 2023-2025年度) </li>
+                        <li>マルチモーダルなふるまいに基づく音声対話の人間目標型評価 (科学技術振興機構 ACT-X 数理・情報のフロンティア, 2021年度-2023年度)</li>
+                        <li>対話理解および発話生成と連動するターンテイキングシステム (科研費 若手研究, 2020-2022年度) </li>
+                        <li>マルチモーダル処理による心的状態推定に基づいた音声対話システム (科研費 特別研究員奨励費, 2015-2017年度) [<a href="https://kaken.nii.ac.jp/ja/grant/KAKENHI-PROJECT-15J07337/" target="_blank" class="text-blue-600 hover:underline">Link</a>]</li>
+                    </ul>
+                    <p class="font-bold text-lg mt-4 mb-2">研究分担者</p>
+                    <ul class="space-y-2 list-disc list-outside pl-6 text-slate-800">
+                        <li>心情認知学：ダイナミックなこころの機微を理解し寄り添う社会の創成 (科研費 学術変革領域研究（B）, 2025-2027年度)</li>
+                        <li>複数人会話に参与するロボットのための音声認識・対話システム (科研費 基盤研究（A）, 2025-2028年度) </li>
+                        <li>医療AI導入に向けた社会的言語尺度の開発及び倫理的・法的・社会的課題への対応 (トヨタ財団 2024年度 先端技術と共創する新たな人間社会, 2025年度)</li>
+                        <li>音声会話に伴う身振りを対象としたマルチモーダル記号論の構築 (科研費 学術変革領域研究（B）, 2024年度)</li>
+                        <li>人類の分断を克服し調和を実現するための科学技術に関する調和研究 (科学技術振興機構 ムーンショット型研究開発事業 新たな目標検討のためのビジョン策定, 2021年度)</li>
+                        <li>End-to-Endモデルに基づく汎用的な音声理解・対話 (科研費 基盤研究（A）, 2020-2023年度) </li>
+                        <li>人間との対話継続及び関係構築のための対話知能システム (科研費 新学術領域研究 (研究領域提案型),  2019-2023年度) </li>
+                    </ul>
+                </div>
+                
+                <div>
+                     <h2 class="subsection-title">Reviewer Experiences</h2>
+                     <p class="font-bold text-lg mt-4 mb-2">学会誌 (Academic journals)</p>
+                     <ul class="space-y-2 list-disc list-outside pl-6 text-slate-800">
+                        <li>人工知能学会論文誌 (2019, 2020, 2021, 2022, 2023)</li>
+                        <li>電子情報通信学会論文誌 A 基礎・境界ソサイエティ (2019, 2020, 2022)</li>
+                        <li>電子情報通信学会論文誌 D 情報・システム (2021, 2022, 2023)</li>
+                        <li>言語処理学会論文誌 (2020, 2023)</li>
+                        <li>日本感性工学会論文誌 (2021)</li>
+                        <li>情報と知能 (日本知能情報ファジィ学会) (2023)</li>
+                        <li>ヒューマンインタフェース学会論文誌 (2023)</li>
+                        <li>ACM Transactions on Asian and Low-Resource Language Information Processing (ACM-TALLIP) (2018)</li>
+                        <li>Journal of Robotics and Mechatronics (2019)</li>
+                        <li>International Journal of Social Robotics (2019, 2021, 2022)</li>
+                        <li>Artificial Life and Robotics (2020, 2022)</li>
+                        <li>Advanced Biomedical Engineering (2020)</li>
+                        <li>Applied Acoustics (2021)</li>
+                        <li>IEEE Access (2021)</li>
+                        <li>IEICE Transactions on Information and Systems (2021, 2023, 2024)</li>
+                        <li>IEEE Transactions on Affective Computing (2022)</li>
+                        <li>Frontiers in Robotics and AI (2022)</li>
+                        <li>Frontiers in Communication (2023)</li>
+                        <li>Advanced Robotics (2023)</li>
+                        <li>Computer Speech and Language (2025)</li>
+                    </ul>
+                    <p class="font-bold text-lg mt-4 mb-2">国際会議 (International conferences)</p>
+                     <ul class="space-y-2 list-disc list-outside pl-6 text-slate-800">
+                        <li>ACL Rolling Review (Oct., Dec. 2024; )</li>
+                        <li>International Conference on Human-Robot Interaction (HRI) (2020, 2022, 2023, 2024, 2025)</li>
+                        <li>APSIPA ASC (2019, 2020, 2021)</li>
+                        <li>Annual meeting of the Special Interest Group on Discourse and Dialogue (SIGDIAL) (2019, 2020, 2021, 2022, 2023, 2024, 2025)</li>
+                        <li>International Conference on Human-Agent Interaction (HAI) (2019, 2023)</li>
+                        <li>International Conference on Multimodal Interaction (ICMI) (2019, 2020, 2021, 2022, 2023, 2024, 2025)</li>
+                        <li>International Conference on Multimodal Interaction (ICMI) Late Breaking Result track (2023)</li>
+                        <li>International Symposium on System Integration (SII) (2021)</li>
+                        <li>International Conference on Acoustics, Speech, and Signal Processing (ICASSP) (2021, 2022, 2023, 2024)</li>
+                        <li>Asia-Pacific Chapter of the Association for Computational Linguistics and International Joint Conference on Natural Language Processing (AACL-IJCNLP) (2021, 2022)</li>
+                        <li>International Conference on Computational Linguistics (COLING) (2025)</li>
+                        <li>Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING) (2024)</li>
+                        <li>INTERSPEECH (2021, 2022, 2023, 2024, 2025)</li>
+                        <li>Empirical Methods in Natural Language Processing (EMNLP) (2021, 2023, 2024, 2025)</li>
+                        <li>Anual Meeting of the Association for Computational Linguistics (ACL) (2023, 2024)</li>
+                        <li>North American Chapter of the Association for Computational Linguistics (NAACL) (2025)</li>
+                        <li>European Chapter of the Association for Computational Linguistics (EACL) (2022)</li>
+                        <li>International Workshop on Spoken Dialogue Systems Technology (IWSDS) (2022, 2023, 2024, 2025)</li>
+                        <li>International Conference on Computer Animation & Social Agents (CASA) (2025)</li>
+                        <li>International Conference on Robot and Human Interactive Communication (RO-MAN) (2024, 2025)</li>
+                    </ul>
+                </div>
+                
+                <div>
+                     <h2 class="subsection-title">ゲスト講義・イベント登壇 (Guest Lecture, Event)</h2>
+                     <ul class="space-y-2 list-disc list-outside pl-6 text-slate-800">
+                     	<li>大阪・関西万博 大阪ヘルスケアパビリオン 「ユーダイモニア」公開記念イベント -最先端のテクノロジーが切り開く未来社会- (17th April 2025)
+                        <li>久留米工業高等専門学校 専攻科設立30周年記念講演会 (3rd Nov. 2023)</li>
+                        <li>滋賀県立大学 人間文化セミナー 「人間関係の科学B：コミュニケーションを考える」 (25th Jan. 2022)</li>
+                        <li>日本工学アカデミー 九州支部 高等専門学校出張講演会（久留米工業高等専門学校）「ICT・AI技術の現状と将来の展望」 (19th Jan. 2022)</li>
+                        <li>アジア太平洋研究所 AOYA会議 2021 (11-12th Nov. 2021)</li>
+                        <li>大阪産業局 京阪神スタートアップアカデミア・コアリション キックオフカンファレンス [<a href="https://www.innovation-osaka.jp/ja/events/event-9619/" target="_blank" class="text-blue-600 hover:underline">link</a>] (29th Sep. 2021)</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h2 id="internship" class="subsection-title">インターンシップ経験 (Internship Experiences)</h2>
+                    <ul class="space-y-4 list-disc list-outside pl-6 text-slate-800">
+                        <li><a href="http://www.jp.honda-ri.com/english/" class="text-blue-600 hover:underline">Honda Research Institute Japan Co., Ltd. (HRI-JP)</a> (Aug. 2013 - Sep. 2013)<br>
+                            <a href="http://www.jp.honda-ri.com/" class="text-blue-600 hover:underline">株式会社 ホンダ・リサーチ・インスティチュート・ジャパン</a>
+                        </li>
+                        <li>Hybrid Recognition Technologies Inc. (Oct. 2012 - Dec. 2012)<br>
+                            <a href="http://h-r-t.jp/" class="text-blue-600 hover:underline">株式会社 ハイブリッド・リコグニション・テクノロジーズ</a>
+                        </li>
+                        <li>teamLab Inc. (Aug. 2009)<br>
+                            <a href="http://www.team-lab.com/" class="text-blue-600 hover:underline">チームラボ 株式会社</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </section>
+        </main>
+
+        <footer class="text-center mt-16 py-8 border-t border-slate-200">
+            <p class="text-slate-500">© 2025 Koji Inoue. All rights reserved. </p>
+        </footer>
+
+    </div>
+
 </body>
 </html>

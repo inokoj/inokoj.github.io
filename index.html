@@ -1,310 +1,233 @@
 <!DOCTYPE html>
-<!--[if IE 7]>
-<html class="ie ie7" lang="ja">
-<![endif]-->
-<!--[if IE 8]>
-<html class="ie ie8" lang="ja">
-<![endif]-->
-<!--[if !(IE 7) & !(IE 8)]><!-->
 <html lang="ja">
-<!--<![endif]-->
 <head>
-<base href="https://inokoj.github.io" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koji Inoue (井上 昂治) - Portfolio</title>
+    <!-- Tailwind CSS aCDN を読み込み -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts (Inter) を読み込み -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* カスタムスタイル */
+        html {
+            /* スムーズなスクロールを有効化 */
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Inter', 'Noto Sans JP', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        .section-card {
+            /* カードに適用する共通スタイル */
+            background-color: white;
+            border-radius: 1.5rem; /* 24px */
+            padding: 2.5rem; /* 40px */
+            margin-bottom: 3rem; /* 48px */
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        @media (max-width: 768px) {
+            .section-card {
+                padding: 1.5rem; /* 24px */
+            }
+        }
+        .section-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+        }
+        .section-title {
+            /* セクションタイトルに適用するスタイル */
+            font-size: 2.25rem; /* 36px */
+            font-weight: 800;
+            margin-bottom: 2rem; /* 32px */
+            padding-bottom: 1rem; /* 16px */
+            border-bottom: 2px solid;
+            border-image: linear-gradient(to right, #3b82f6, #9333ea) 1;
+        }
+        .video-container {
+            /* 動画コンテナのスタイル */
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 アスペクト比 */
+            height: 0;
+            overflow: hidden;
+            border-radius: 1rem; /* 16px */
+            background: #000;
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+        }
+        .video-container iframe,
+        .video-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        /* モーダルのスタイル */
+        .modal {
+            transition: opacity 0.25s ease;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-700">
 
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width" />
-<title>Koji Inoue</title>
+    <div class="container mx-auto max-w-4xl px-4 py-8 md:py-16">
 
+        <header class="text-center mb-16">
+            <h1 class="text-5xl font-extrabold text-slate-900">Koji Inoue (KI)</h1>
+            <h2 class="text-xl text-slate-500 mt-2">井上 昂治</h2>
+            <p class="text-lg text-slate-600 mt-4">Kyoto University / The University of Osaka, Japan</p>
+        </header>
 
-<!--[if lt IE 9]>
-<script src="https://inokoj.github.io/wp-content/themes/twentytwelve/js/html5.js" type="text/javascript"></script>
-<![endif]-->
+        <nav class="flex justify-center items-center gap-4 md:gap-8 mb-16 bg-white/70 backdrop-blur-lg p-4 rounded-full shadow-md sticky top-4 z-50">
+            <a href="https://inokoj.github.io/" class="bg-purple-600 text-white px-5 py-2 rounded-full font-bold hover:bg-purple-700 transition-all duration-300 shadow-sm">Top</a>
+            <a href="https://inokoj.github.io/profile.html" class="bg-blue-600 text-white px-5 py-2 rounded-full font-bold hover:bg-blue-700 transition-all duration-300 shadow-sm">About me</a>
+            <a href="https://inokoj.github.io/publications.html" class="bg-blue-600 text-white px-5 py-2 rounded-full font-bold hover:bg-blue-700 transition-all duration-300 shadow-sm">Publications</a>
+        </nav>
 
+        <main>
+            <!-- About Me Section -->
+            <section id="about" class="section-card">
+                <!-- メインのプロフィール画像をここに追加 -->
+                <img src="https://inokoj.github.io/photo_inoue.jpg" alt="Koji Inoue" class="w-full rounded-2xl mb-8 shadow-lg">
 
+                <div class="space-y-4 text-lg text-slate-800">
+                    <p>My research centers on developing a system for conversing with humans, specifically in the realm of conversational AI. The advent of large language models (LLMs) has significantly influenced their integration into smartphone applications and conversational robots. My primary focus is on creating "human-like natural conversation," aiming to design conversational robots capable of engaging in flexible and profound interactions akin to human communication. While the main modality used in my research is audio-based, my approach incorporates multimodal data. I am leveraging technologies such as large-scale foundation models and continuous prediction models. Additionally, I draw insights from conversation analysis, linguistics, and cognitive science. Through this research, my ultimate objective is to reveal the mechanisms underlying human-to-human communication.</p>
+                </div>
+                <div class="mt-8 flex flex-wrap gap-4 items-center">
+                     <a href="https://inokoj.github.io/CV_KojiInoue.pdf" target="_blank" class="inline-block bg-gradient-to-r from-purple-500 to-blue-500 text-white px-8 py-3 rounded-lg font-bold text-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
+                        View My CV
+                    </a>
+                    <a href="#" id="contactBtn" class="inline-block bg-gradient-to-r from-slate-600 to-slate-800 text-white px-8 py-3 rounded-lg font-bold text-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
+                        Contact Me
+                    </a>
+                </div>
+                 <div class="mt-12">
+                    <h3 class="text-2xl font-bold mb-4 text-slate-900">Interview Articles (In Japanese)</h3>
+                    <ul class="list-disc list-inside space-y-2 text-lg">
+                        <li><a href="https://style.nikkei.com/article/DGXMZO44519170Y9A500C1000000?channel=DF131120184472" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">NIKKEI STYLE U22 ロボットエリカと話したい 自然な会話へ試行錯誤</a></li>
+                        <li><a href="https://www.yomiuri.co.jp/local/kyoto/feature/CO021791/20221126-OYTAT50044/?fbclid=IwAR0fFg4sygdrriFksBJEq5Ztw_WkkZsL8yGDeAghkQAgE1LSmS4l-K3VCF4" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">読売新聞 きょう・人・十色 ＡＩエリカを笑わせる</a></li>
+                    </ul><br/>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/7e31wBC6qMM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </section>
 
-<link rel='stylesheet' id='twentytwelve-fonts-css'  href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700&#038;subset=latin,latin-ext' type='text/css' media='all' />
-<link rel='stylesheet' id='twentytwelve-style-css'  href='https://inokoj.github.io/wp-content/themes/twentytwelve/style.css?ver=4.1.1' type='text/css' media='all' />
-<!--[if lt IE 9]>
-<link rel='stylesheet' id='twentytwelve-ie-css'  href='https://inokoj.github.io/wp-content/themes/twentytwelve/css/ie.css?ver=20121010' type='text/css' media='all' />
-<![endif]-->
-<script type='text/javascript' src='https://inokoj.github.io/wp-includes/js/jquery/jquery.js?ver=1.11.1'></script>
-<script type='text/javascript' src='https://inokoj.github.io/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+            <!-- Book Section -->
+            <section id="book" class="section-card">
+                <h2 class="section-title">Book</h2>
+                <div class="flex flex-col md:flex-row gap-8 items-start">
+                    <img src="https://inokoj.github.io/sds_cover.jpg" alt="Book Cover" class="w-full md:w-1/3 max-w-[200px] rounded-lg shadow-lg border-4 border-white">
+                    <div class="flex-1">
+                        <h3 class="text-2xl font-bold text-slate-900">音声対話システム-基礎から実装まで-</h3>
+                        <p class="mt-2 text-slate-600">(井上昂治・河原達也 共著, 2022年10月15日 発売, オーム社刊)</p>
+                        <ul class="mt-4 space-y-2 list-disc list-inside">
+                            <li><a href="https://www.ohmsha.co.jp/book/9784274229541/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">出版社 書籍紹介ページ</a></li>
+                            <li><a href="https://github.com/inokoj/sds_textbook_sample" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">サポートページ（サンプルコードなど）</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
 
- 
+            <!-- Research Section -->
+            <section id="research" class="section-card">
+                <h2 class="section-title">Research Highlights</h2>
+                <div class="space-y-12">
+                    
+                    <!-- Research Item 1 -->
+                    <div>
+                        <h3 class="text-2xl font-bold mb-2 text-slate-900">Yeah, Well, Haha: Generating Non-linguistic Behaviors</h3>
+                        <p class="text-slate-600 mb-4">Keynote, SIGDIAL 2024 (September 18th, 2024)</p>
+                        <div class="video-container">
+                            <iframe src="https://www.youtube.com/embed/2WYko6ZKWZg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>
 
-<link rel='canonical' href='https://inokoj.github.io/' />
-<link rel='shortlink' href='https://inokoj.github.io/' />
-<!-- Dojo Digital Hide Title -->
-<script type="text/javascript">
-	jQuery(document).ready(function($){
+                    <!-- Research Item 2 -->
+                    <div>
+                        <h3 class="text-2xl font-bold mb-2 text-slate-900">Real-time and Continuous Turn-Taking</h3>
+                        <a href="https://github.com/inokoj/VAP-Realtime" target="_blank" class="text-blue-600 hover:underline mb-4 inline-block">GitHub Repository</a>
+                        <div class="video-container">
+                            <iframe src="https://www.youtube.com/embed/-uwB6yl2WtI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    
+                    <!-- Research Item 3 -->
+                    <div>
+                        <h3 class="text-2xl font-bold mb-2 text-slate-900">Laughing Robots</h3>
+                         <a href="http://sap.ist.i.kyoto-u.ac.jp/members/inoue/slg/" target="_blank" class="text-blue-600 hover:underline mb-4 inline-block">Project Page</a>
+                        <div class="video-container">
+                             <iframe src="https://www.youtube.com/embed/6tMiWog4l00" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+        </main>
 
-		if( $('.entry-title').length != 0 ) {
-			$('.entry-title span.dojodigital_toggle_title').parents('.entry-title:first').hide();
-		} else {
-			$('h1 span.dojodigital_toggle_title').parents('h1:first').hide();
-			$('h2 span.dojodigital_toggle_title').parents('h2:first').hide();
-		}
+        <footer class="text-center mt-16 py-8 border-t border-slate-200">
+            <p class="text-slate-500">&copy; 2025 Koji Inoue. All rights reserved. </p>
+        </footer>
 
-	});
-</script>
-<noscript><style type="text/css"> .entry-title { display:none !important; }</style></noscript>
-<!-- END Dojo Digital Hide Title -->
+    </div>
 
-			</head>
+    <!-- Contact Modal -->
+    <div id="emailModal" class="modal fixed inset-0 bg-black bg-opacity-60 flex justify-center items-center z-50 hidden opacity-0 pointer-events-none">
+        <div class="bg-white p-8 rounded-2xl shadow-xl text-center relative max-w-sm w-full mx-4 transform transition-transform duration-300 scale-95">
+            <button id="closeModalBtn" class="absolute top-3 right-5 text-4xl font-light text-slate-500 hover:text-slate-800 transition-colors">&times;</button>
+            <h3 class="text-2xl font-bold mb-6 text-slate-800">Contact Information</h3>
+            <img src="https://inokoj.github.io/email.png" alt="Contact Email Address" class="mx-auto rounded-md">
+            <p class="mt-6 text-slate-600">Please use the email address shown above for any inquiries.</p>
+        </div>
+    </div>
 
-<body class="home page page-id-14 page-template-default full-width custom-font-enabled single-author">
-<div id="page" class="hfeed site">
-	<header id="masthead" class="site-header" role="banner">
-		<hgroup>
-			<h1 class="site-title"><a href="https://inokoj.github.io/" title="Koji Inoue" rel="home">Koji Inoue (KI)</a></h1>
-			<h2 class="site-description">Kyoto University / The University of Osaka, Japan</h2>
-		</hgroup>
+    <script>
+        // モーダル操作用のJavaScript
+        const contactBtn = document.getElementById('contactBtn');
+        const emailModal = document.getElementById('emailModal');
+        const modalContent = emailModal.querySelector('div');
+        const closeModalBtn = document.getElementById('closeModalBtn');
 
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle">Menu</button>
-			<a class="assistive-text" href="#content" title="Contents">Contents</a>
-			<div class="menu-main-menu-container"><ul id="menu-main-menu" class="nav-menu"><li id="menu-item-15" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-14 current_page_item menu-item-15"><a href="https://inokoj.github.io/"><span class="dojodigital_toggle_title">Top</span></a></li>
-<li id="menu-item-18" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18"><a href="https://inokoj.github.io/profile.html">About me</a></li>
-<li id="menu-item-12" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12"><a href="https://inokoj.github.io/publications.html">Publications</a></li>
-</ul></div>		</nav><!-- #site-navigation -->
+        // モーダルを開く関数
+        const openModal = (e) => {
+            e.preventDefault();
+            emailModal.classList.remove('hidden');
+            setTimeout(() => {
+                emailModal.classList.remove('opacity-0', 'pointer-events-none');
+                modalContent.classList.remove('scale-95');
+            }, 20); // 少し遅延させてトランジションを発動
+        };
 
-			</header><!-- #masthead -->
+        // モーダルを閉じる関数
+        const closeModal = () => {
+            modalContent.classList.add('scale-95');
+            emailModal.classList.add('opacity-0', 'pointer-events-none');
+            setTimeout(() => {
+                emailModal.classList.add('hidden');
+            }, 300); // transitionのdurationと合わせる
+        };
 
-<div id="main" class="wrapper">
-<div id="primary" class="site-content">
-<div id="content" role="main">
-<div class="entry-content">
+        // イベントリスナーの設定
+        contactBtn.addEventListener('click', openModal);
+        closeModalBtn.addEventListener('click', closeModal);
 
-<p><img src="https://inokoj.github.io/photo_inoue.jpg" width="600"></p>
+        // モーダルの背景クリックで閉じる
+        emailModal.addEventListener('click', (e) => {
+            if (e.target === emailModal) {
+                closeModal();
+            }
+        });
 
-<p><span style="font-size: 14pt;">Koji Inoue (井上 昂治, KI)</span></p>
-<p><span style="font-size: 10pt;">Assistant Professor</span><br />
-</span><span style="line-height: 1.5;">Graduate School of Informatics, Kyoto University, Japan</span></span></p>
-
-<p><span style="font-size: 10pt;">Specially Appointed Assistant Professor</span><br />
-</span><span style="line-height: 1.5;">Graduate School of Engineering Science, The University of Osaka, Japan</span></span></p>
-
-<p><img src="https://inokoj.github.io/email.png" width=170></p>
-<!-- <p>人と会話をするシステム（会話AI）が私の研究トピックです。最近では大規模言語モデル（LLM）の技術が、スマートフォンアプリや会話ロボットに応用されています。その中で、私は「人間らしい自然な会話」を指向し、人間のように、しなやかで深い会話を行う会話ロボットの研究を進めています。扱う情報は、音声をベースとしていますが、マルチモーダルな情報も扱っています。大規模基盤モデルや連続的な予測モデルなどの技術も積極的に取り入れています。また、会話分析、言語学、認知科学などの分野の知見も参考にしています。これら一連の研究を通じて、人間どうしのコミュニケーションの仕組みを理解することが私の研究の目標です。</p> -->
-<p>My research centers on developing a system for conversing with humans, specifically in the realm of conversational AI. The advent of large language models (LLMs) has significantly influenced their integration into smartphone applications and conversational robots. My primary focus is on creating "human-like natural conversation," aiming to design conversational robots capable of engaging in flexible and profound interactions akin to human communication. While the main modality used in my research is audio-based, my approach incorporates multimodal data. I am leveraging technologies such as large-scale foundation models and continuous prediction models. Additionally, I draw insights from conversation analysis, linguistics, and cognitive science. Through this research, my ultimate objective is to reveal the mechanisms underlying human-to-human communication.</p>
-
-<p>My CV is available <a href="CV_KojiInoue.pdf" target="_blank">here</a>.</p>
-
-Interview articles (In Japanese)
-<ul style="list-style-type: disc;">
-<li><a href="https://style.nikkei.com/article/DGXMZO44519170Y9A500C1000000?channel=DF131120184472" target="blank">NIKKEI STYLE U22 ロボットエリカと話したい 自然な会話へ試行錯誤 AIの未来を若手研究者が語る</a></li>
-<li><a href="https://www.yomiuri.co.jp/local/kyoto/feature/CO021791/20221126-OYTAT50044/?fbclid=IwAR0fFg4sygdrriFksBJEq5Ztw_WkkZsL8yGDeAghkQAgE1LSmS4l-K3VCF4" target="_blank">読売新聞 きょう・人・十色 ＡＩエリカを笑わせる</a></li>
-</ul>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/7e31wBC6qMM?si=YW_M2AU1G3ITRgrH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-<hr />
-<img src="https://inokoj.github.io/sds_cover.jpg" width="200mm" border=1>
-<p>音声対話システム-基礎から実装まで- (井上昂治・河原達也 共著, 2022年10月15日 発売, オーム社刊)</p>
-<ul style="list-style-type: disc;">
-<li><a href="https://www.ohmsha.co.jp/book/9784274229541/" target="blank">出版社 書籍紹介ページ</a></li>
-<li><a href="https://github.com/inokoj/sds_textbook_sample" target="blank">サポートページ（環境構築・サンプルソースコードなど）</a></li>
-</ul>
-
-<!-- <hr /> -->
-<!-- <p><span style="font-size: 10pt;"><strong>Activity & news</strong></span></p>
-<ul style="list-style-type: disc;">
-<li>同調笑いに関するERICAのシステムがNETEXPLOによる2022年の世界のイノベーションTop 10に選ばれました [18th April 2023]</li>
-<li>Shared laughter（同調笑い）の生成に関する論文が Frontiers in Robotics and AI の 2022 outstanding article に選ばれました [13th March 2023]</li>
-<li>音声対話システムに関する国際ワークショップIWSDSでBest Paper Awardを受賞しました [28th Feb. 2023]</li>
-<li>音声対話システムに関する国際ワークショップIWSDSで3本の論文を発表しました [24th Feb. 2023]</li>
-<li>Computer Speech and Language誌にて論文が公開されました (Character expression for spoken dialogue systems with semi-supervised learning using Variational Auto-Encoder) [19th Dec. 2022]</li>
-<li>ヒューマンエージェントインタラクションに関する国際会議HAIにて傍参与者としての聞き手応答生成に関する論文を発表しました (Backchannel Generation Model for a Third Party Listening Agent) [19th Dec. 2022]</li>
-<li>書籍「音声対話システム-基礎から実装まで-」を発売しました [29th Sep. 2022]</li>
-<li>人と一緒に笑う会話ロボットについて報道発表しました [15th Oct. 2022]</li>
-<li>Frontiers in Robotics and AI（国際論文誌）に共有笑い生成に関する論文がアクセプトされました (Can a robot laugh with you?: Shared laughter generation for empathetic spoken dialogue) [4th Aug. 2022]</li>
-<li>対話システムに関する国際会議SIGDIALに同時並列就職面接対話システムに関する論文がアクセプトされました (Simultaneous Job Interview System Using Multiple Semi-autonomous Agents) [4th July 2022]</li>
-<li>音声に関する国際会議INTERSPEECHに説得対話コーパスに関する論文がアクセプトされました (Multimodal Persuasive Dialogue Corpus using Teleoperated Android) [15th June 2022]</li>
-<li>第4回 日本オープンイノベーション大賞 文部科学大臣賞を受賞しました [22nd Feb. 2022]</li>
-<li>人工知能学会 言語・音声理解と対話処理研究会 (SIG-SLUD) 第12回対話システムシンポジウムにて主著論文1本と共著論文1本を発表しました [31st Nov. 2021]</li>
-<li>マルチモーダルインタラクションに関する国際会議ICMIにてOutstanding Reviewer Awardを受賞しました [27th Oct. 2021]</li>
-<li>ムーンショット型研究開発事業の「新たな目標検討に向けた目標検討チーム」として提案した「人類の分断を克服し調和を実現するための科学技術に関する調査研究」の調査研究報告書が公開されました <a href="https://www.jst.go.jp/moonshot/program/millennia/pdf/report_11_sakuma.pdf" target="_blank">報告書はこちら</a> [1st Oct. 2021]</li>
-<li>JST ACT-X 数理と情報のフロンティアに研究課題が採択されました (マルチモーダルなふるまいに基づく音声対話の人間目標型評価) [1st Oct. 2021]</li>
-<li>大阪産業局のイベントに登壇しました (京阪神スタートアップアカデミア・コアリション キックオフカンファレンス) [29th Sep. 2021]</li>
-<li>アンドロイドERICAの傾聴対話システムに関する論文が人工知能学会論文誌に採録・公開されました (アンドロイドERICAの傾聴対話システム–人間による傾聴との比較評価–) [1st Sep. 2021]</li>
-<li>対話システムに関する国際会議 SIGDIAL (SIGdial Meeting on Discourse and Dialogue) に主著論文（Demo paper）を発表しました (A multi-party attentive listening robot which stimulates involvement from side participants) [30th July 2021]</li>
-<li>音学シンポジウムで招待講演をしました (アンドロイドERICAの音声対話システム～マルチモーダルチューリングテストへの挑戦～) [18th June 2021]</li>
-<li>人工知能学会誌に編集委員としての抱負を寄稿しました <a href="https://www.jstage.jst.go.jp/article/jjsai/36/3/36_330/_article/-char/ja" target="_blank">内容はこちら</a> [10th June 2021]</li>
-<li>対話システムに関する国際会議 SIGDIAL (SIGdial Meeting on Discourse and Dialogue) に主著論文（Demo paper）がアクセプトされました (A multi-party attentive listening robot which stimulates involvement from side participants) [27th May 2021]</li>
-<li>Advanced Robotics誌でアバターを用いた同時並列対話の論文が公開されました (Semi-autonomous avatar enabling unconstrained parallel conversations --seamless hybrid of WOZ and autonomous dialogue systems--) [19th May 2021]</li>
-<li>アンドロイドERICAに関する一連の研究の紹介論文 (英語版) を公開しました <a href="https://arxiv.org/abs/2105.00403" target="_blank">arXiv</a> [4th May 2021]</li>
-<li>電子情報通信学会 VNV研究会 第15回年次大会においてショートトークを行いました（コロナ禍における多人数音声対話システムの被験者実験） [23th March 2021]</li>
-<li>日本音響学会春季研究発表会にて主著論文2本を発表しました (ヒューマンロボットインタラクションにおける音響特徴に基づく共有笑いの予測, ヒューマンロボットインタラクションのための相槌・笑いのリアルタイム検出) [10th March. 2021]</li>
-<li>全国高等専門学校連合会ホームページの「高専卒業生からのメッセージ」に寄稿しました <a href="https://www.kosen-all.or.jp/messages/cat/2010.html" target="_blank">掲載ページ</a> [March 4th 2021]</li>
-<li>ムーンショット型研究開発事業の「新たな目標検討に向けた目標検討チーム」として提案した「人類の分断を克服し調和を実現するための科学技術に関する調査研究」が採択されました <a href="https://www.jst.go.jp/pr/info/info1481/index.html" target="_blank">JSTプレスリリース</a> <a href="https://www.kyoto-u.ac.jp/ja/news/2021-02-04" target="_blank">京都大学HP</a> [19th Jan. 2021]</li>
-<li>ヒューマンロボットインタラクションに関する国際ワークショップで1件の論文を発表しました (Findings from human-android dialogue research with ERICA) [8th Jan. 2021]</li>
-<li>人工知能学会 言語・音声理解と対話処理研究会 (SIG-SLUD) 第11回対話システムシンポジウムにて共著論文の発表が若手優秀賞を受賞しました [1st Dec. 2020]</li>
-<li>人工知能学会 言語・音声理解と対話処理研究会 (SIG-SLUD) 第11回対話システムシンポジウムにて主著論文1本と共著論文2本を発表しました [1st Dec. 2020]</li>
-<li>マルチモーダルインタラクションに関する国際会議で2件の論文を発表しました (Job interviewer android with elaborate follow-up question generation, Prediction of shared laughter for human-robot dialogue) [29th Oct. 2020]</li>
-<li>音声に関する国際会議 INTERSPEECH に論文を発表しました (Semi-supervised learning for character expression of spoken dialogue systems) [29th Oct. 2020]</li>
-<li>マルチモーダルインタラクションに関する国際会議ICMIにLate-Breaking Results論文がアクセプトされました (Prediction of shared laughter for human-robot dialogue) [11th Sep. 2020]</li>
-<li>日本音響学会秋季研究発表会にて論文を発表しました (WOZとの比較による自律型アンドロイドERICAの傾聴対話システムの評価) [11th Sep. 2020]</li>
-<li>人工知能学会論文誌に論文が掲載されました (掘り下げ質問を行う就職面接対話システムの自律型アンドロイドでの実装と評価) [1st Sep. 2020]</li>
-<li>マルチモーダルインタラクションに関する国際会議ICMIに論文がアクセプトされました (Job interviewer android with elaborate follow-up question generation) [8th Aug. 2020]</li>
-<li>第4回 JST ERATO石黒共生HRIプロジェクトシンポジウムにて傾聴対話システムの発表を行いました (アンドロイドERICAによる傾聴対話システム) [6th Aug. 2020]</li>
-<li>音声に関する国際会議 INTERSPEECH に共著論文がアクセプトされました (Semi-supervised learning for character expression of spoken dialogue systems) [27th July 2020]</li>
-<li>人工知能学会 2019年度 研究会優秀賞(SIG-SLUD)を受賞しました [22nd June 2020]</li>
-<li>対話システムに関する国際会議 SIGDIAL (SIGdial Meeting on Discourse and Dialogue) に主著論文（Long paper）がアクセプトされました (An attentive listening system with android ERICA: Comparison of autonomous and WOZ interactions) [15th May 2020]</li>
-<li>科研費 若手研究（研究代表者）ならびに基盤研究（A)（分担者）に採択されました [1st April 2020]</li>
-<li>日本音響学会誌に解説記事が掲載されました (アンドロイドを用いた音声対話研究 <a href="http://sap.ist.i.kyoto-u.ac.jp/members/kawahara/paper/INO-ASJ20-4.pdf" target="blank">プレプリント版PDF</a>) [8th April 2020]</li>
-<li>日本音響学会春季研究発表会にて主著論文を発表しました (自律型アンドロイドERICAによる就職面接対話) [18th March 2020]</li>
-<li>日本音響学会から粟屋潔学術奨励賞を受賞しました [17th March 2020]</li>
-<li>音声対話システムに関する国際ワークショップ IWSDS (International Workshop on Spoken Dialogue Systems Technology) に共著論文2本がアクセプトされました (A character expression model affecting spoken dialogue behaviors, Response generation to out-of-database questions for example-based dialogue systems) [25th Feb. 2020]</li>
-<li>京都大学第14回ICTイノベーションにて傾聴対話システムの発表および対話デモを行い，優秀研究賞を受賞しました [19th Feb. 2020]</li>
-<li>人工知能学会 言語・音声理解と対話処理研究会 (SIG-SLUD) にて主著論文1本と共著論文2本を発表しました [9th Dec. 2019]</li>
-<li>IPSJ-ONE 2019 での講演内容が記事になりました  <a href="https://www.milive-plus.net/gakumon191005/" target="blank">河合塾 みらいぶプラス - 会話相手の興味や意欲を自動推定！空気が読める会話ロボットエリカ誕生!!</a> [22nd Oct. 2019]</li>
-<li>マルチモーダルインタラクションに関する国際会議ICMIにて共著論文を発表しました (Smooth turn-taking by a robot using an online continuous model to generate turn-taking cues) [22nd Oct. 2019]</li>
-<li>音声に関する国際会議 INTERSPEECH にて共著論文を発表しました (Turn-taking Prediction Based on Detection of Transition Relevance Place) [4th Oct. 2019]</li>
-<li>マルチモーダルインタラクションに関する国際会議ICMIに共著論文がアクセプトされました (Smooth turn-taking by a robot using an online continuous model to generate turn-taking cues) [19th July 2019]</li>
-<li>音声に関する国際会議 INTERSPEECH に共著論文がアクセプトされました (Turn-taking Prediction Based on Detection of Transition Relevance Place) [19th June 2019]</li>
-<li>音声対話システムに関する国際ワークショップ IWSDS (International Workshop on Spoken Dialogue Systems Technology) にて主著論文2本（うち１本はデモ論文）と共著論文１本を発表しました [9th May 2019]</li>
-<li>京都大学 大学院情報学研究科 助教に着任しました [1st April 2019]</li>
-</ul> -->
-<hr />
-
-<p><span style="font-size: 15pt;"><strong>Research Talk</strong></span></p>
-
-<span style="font-size: 11pt;"><strong>
-Yeah, Well, Haha: Generating Non-linguistic Behaviors For Human-like Conversational Robots
-</strong></span><br>
-Keynote, SIGDIAL 2024 (September 18th, 2024)
-<br><br>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/2WYko6ZKWZg?si=GFZkOYKH9BecCO3F" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-<br><br>
-
-<span style="font-size: 11pt;"><strong>
-空気が読める会話ロボット
-</strong></span><br>
-IPSJ-ONE 2019 (第81回情報処理学会全国大会) (March 16th, 2019)
-<br><br>
-<video src="https://ipsj-one.org/2019/videos/13_inoue_fs.mp4" width="700" controls></video>
-<p>特集記事 <a href="https://www.milive-plus.net/gakumon191005/" target="blank">河合塾 みらいぶプラス - 会話相手の興味や意欲を自動推定！空気が読める会話ロボットエリカ誕生!!</a></p>
-
-<br>
-
-<hr />
-<br>
-
-<p><span style="font-size: 15pt;"><strong>Research Demonstration</strong></span></p>
-
-<ul style="list-style-type: disc;">
-	<li><b><h3>Real-time and Continous Turn-Taking (<a href="https://github.com/inokoj/VAP-Realtime" target="_blank">GitHub repository</a>)</h3></b></li>
-	</ul>
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/-uwB6yl2WtI?si=cz9EEydhhOx2O-qv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-	<br>
-	Publications
-	<ul style="list-style-type: circle;">
-	<li>Real-time and Continuous Turn-taking Prediction Using Voice Activity Projection (IWSDS 2024)</li>
-	<li>Multilingual Turn-taking Prediction Using Voice Activity Projection (LREC-COLING 2024)</li>
-	</ul>
-	<br>
-
-<ul style="list-style-type: disc;">
-<li><b><h3>Laughing Robots (<a href="http://sap.ist.i.kyoto-u.ac.jp/members/inoue/slg/" target="_blank">project page</a>)</h3></b></li>
-</ul>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/6tMiWog4l00" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<br>
-
-報道情報 (Selected)
-<ul style="list-style-type: circle;">
-<li><a href="https://www.kyoto-u.ac.jp/ja/research-news/2022-09-29-3" target="_blank">京都大学プレスリリース</a></li>
-<li>新聞 (<a href="https://www.sankei.com/article/20221006-AHGKCIJQQRLNXIFNRSCJHMFQUQ/" target="_blank">産経新聞</a>, <a href="https://www.nikkei.com/article/DGXZQOUC281T30Y2A920C2000000/" target="_blank">日本経済新聞</a>, <a href="https://newswitch.jp/p/34016" target="_blank">日刊工業新聞</a>, <a href="https://www.yomiuri.co.jp/local/kyoto/feature/CO021791/20221126-OYTAT50044/?fbclid=IwAR0fFg4sygdrriFksBJEq5Ztw_WkkZsL8yGDeAghkQAgE1LSmS4l-K3VCF4" target="_blank">読売新聞</a>, <a href="https://www.asahi.com/articles/ASQDW6FJ3QDDPLBJ00D.html" target="_blank">朝日新聞</a>)</li>
-<li>テレビ (<a href="https://news.tv-asahi.co.jp/news_society/articles/000270017.html" target="_blank">テレビ朝日 ニュース</a>, <a href="https://www.fnn.jp/articles/-/426536" target="_blank">関西テレビ 報道ランナー</a>, <a href="https://www.ntv.co.jp/megaten/oa/20221225.html" target="_blank">日本テレビ 所さんの目がテン</a>)</li>
-<li>海外メディア (<a href="https://www.theguardian.com/technology/2022/sep/15/scientists-teach-robot-laugh-right-time-research" target="_blank">Gurdian</a>, <a href="https://www.telegraph.co.uk/science/2022/09/15/no-laughing-matter-japanese-scientists-claim-have-given-robots/" target="_blank">Telegraph</a>, <a href="https://www.bloomberg.com/news/articles/2022-09-15/robot-taught-to-laugh-at-jokes?srnd=technology-vp&leadSource=uverify%20wall" target="_blank">Bloomberg</a>, <a href="https://www.independent.co.uk/news/science/robot-kyoto-university-japan-conversation-b2167585.html" target="_blank">Independent</a>, <a href="https://www.bbc.co.uk/newsround/62913120" target="_blank">BBC World Service Radio</a>, <a href="https://www.deeplearning.ai/the-batch/scientists-teach-a-speech-recognition-robot-to-laugh/" target="_blank">The BATCH</a>, <a href="https://www.snexplores.org/article/social-robot-friend-companion-artificial-intelligence" target="_blank">Science News Explores</a>, <a href="https://www.inverse.com/innovation/laughing-robots-ai" target="_blank">INVERSE</a>, <a href="https://www.berliner-zeitung.de/zukunft-technologie/technologie-gesellschaft-japan-kuenstliche-intelligenz-alle-lieben-erica-den-menschlichsten-roboter-der-welt-li.282844" target="_blank">Berliner Zeitung</a>, <a href="https://w.mgtv.com/b/407412/17870038.html?t=videoshare&tc=jXKKosRPSAN7&f=wxf&dc=675d1150-1703-42b6-8ba4-daedf0cc5ca5" target="_blank">MangoTV</a>, <a href="https://www.tagesschau.de/multimedia/video/video-1127335.html" target="_blank">tagesthemen</a>, <a href="https://www.rnd.de/wissen/androidin-erica-wie-ein-roboter-lachen-lernte-46R3H7EIIBBLJKY23DTMJN5SKY.html" target="_blank">RedaktionsNetzwerk Deutschland</a>)</li>
-<li>その他 (<a href="https://times.abema.tv/articles/-/10041939" target="_blank">Abema news</a>, <a href="https://newspicks.com/news/7672148/body?invoker=np_urlshare_uid6783113&utm_source=newspicks&utm_campaign=np_urlshare&utm_medium=urlshare" target="_blank">NewsPicks</a>)</li>
-</ul>
-<br>
-
-関連文献 (詳細は<a href="http://sap.ist.i.kyoto-u.ac.jp/members/inoue/publications.html">文献リスト</a>へ)
-<ul style="list-style-type: circle;">
-<li>Can a robot laugh with you?: Shared laughter generation for empathetic spoken dialogue (Frontiers in Robotics and AI)</li>
-<li>共感を表出する音声対話システムのための共有笑い生成 (人工知能学会SLUD研究会 2021)</li>
-<li>自律型アンドロイドによる対話における同調的笑いの生成 (情報処理学会SLP研究会 2017)</li>
-</ul>
-<br>
-
-<!-- <ul style="list-style-type: disc;">
-<li><b><h3>アンドロイドERICAによる研究室紹介</h3></b></li>
-</ul>
-相手が話を聞くときの態度（Engagement = エンゲージメント）を自動で推定し、ERICAからのフィードバック（"話を聞いてもらえているようでうれしいです"など）を生成したり、研究室紹介のコンテンツを切替えたりしています。相手に合わせて「空気を読みながら」説明をする説明上手なロボットを目指しています。<br>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/53I3lhJ6aUw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<br>
-関連文献 (詳細は<a href="http://sap.ist.i.kyoto-u.ac.jp/members/inoue/publications.html">文献リスト</a>へ)
-<ul style="list-style-type: circle;">
-<li>Engagement recognition by a latent character model based on multimodal listener behaviors in spoken dialogue (APSIPA Trans. Signal & Information Processing)</li>
-<li>潜在キャラクタモデルによる聞き手のふるまいに基づく対話エンゲージメントの推定 (人工知能学会論文誌)</li>
-<li>Engagement-based adaptive behaviors for laboratory guide in human-robot dialogue (IWSDS 2019)</li>
-<li>Engagement recognition in spoken dialogue via neural network by aggregating different annotators' models (INTERSPEECH 2018)</li>
-<li>Latent Character Model for Engagement Recognition Based on Multimodal Behaviors (IWSDS 2018)</li>
-</ul>
-<br>
-
-<ul style="list-style-type: disc;">
-<li><b><h3>アンドロイドERICAによる傾聴対話</h3></b></li>
-</ul>
-相手の話に合わせて、あいづち、くり返し（オウム返し）、評価（すごい、残念、など）、掘り下げ質問などの「聞き手応答」を生成しています。話し手に寄り添う「聞き上手」なロボットを目指しています。<br>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/qnYS8JcqANI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<br>
-関連文献 (詳細は<a href="http://sap.ist.i.kyoto-u.ac.jp/members/inoue/publications.html">文献リスト</a>へ)
-<ul style="list-style-type: circle;">
-<li>アンドロイドERICAの傾聴対話システム–人間による傾聴との比較評価– (人工知能学会論文誌 2021) </li>
-<li>WOZとの比較による自律型アンドロイドERICAの傾聴対話システムの評価 (日本音響学会秋季研究発表会 2020) </li>
-<li>An attentive listening system with android ERICA: Comparison of autonomous and WOZ interactions (SIGDIAL 2020)</li>
-<li>自律型アンドロイドERICAによる傾聴対話の評価 (日本音響学会秋季研究発表会 2019) <font color="#ff0000"><b>日本音響学会粟屋潔学術奨励賞受賞</b></font></li>
-<li>自律型アンドロイドERICAによる傾聴対話システムの評価 (人工知能学会SLUD研究会 2019)</li>
-<li>自律型アンドロイドERICAによる傾聴対話 (人工知能学会SLUD研究会 2018)</li>
-<li>Attentive listening system with backchanneling, response generation and flexible turn-taking (SIGDIAL 2017)</li>
-</ul>
-<br>
-
-<ul style="list-style-type: disc;">
-<li><b><h3>アンドロイドERICAによる就職面接対話</h3></b></li>
-</ul>
-発言の充足度やキーワードに応じて、掘り下げ質問を動的に生成します。人間の面接官と対話しているような、緊張感のあるリアルな面接対話を目指しています。<br>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/JFc90m9TJ6I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/JpTlSVp2zx8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<br>
-関連文献 (詳細は<a href="http://sap.ist.i.kyoto-u.ac.jp/members/inoue/publications.html">文献リスト</a>へ)
-<ul style="list-style-type: circle;">
-<li>Job interviewer android with elaborate follow-up question generation (ICMI 2020)</li>
-<li>掘り下げ質問を行う就職面接対話システムの自律型アンドロイドでの実装と評価 (人工知能学会論文誌 2020)</li>
-<li>自律型アンドロイドERICAによる就職面接対話 (日本音響学会春季研究発表会 2020)</li>
-<li>アンドロイドERICAによる面接対話における掘り下げ質問生成 (人工知能学会SLUD研究会 2019)</li>
-<li>A job interview dialogue system with autonomous android ERICA (IWSDS 2019)</li>
-<li>自律型アンドロイドERICAによる就職面接対話 (人工知能学会SLUD研究会 2018)</li>
-</ul>
-
-<hr /> -->
-					</div><!-- .entry-content -->
-		<footer class="entry-meta">
-					</footer><!-- .entry-meta -->
-	</article><!-- #post -->
-				
-<div id="comments" class="comments-area">
-
-
-	
-	
-			
-</div><!-- #comments .comments-area -->			
-		</div><!-- #content -->
-	</div><!-- #primary -->
-
-
-		</div><!-- #main .wrapper -->
-	<footer id="colophon" role="contentinfo">
-		<div class="site-info">
-						<a href="http://ja.wordpress.org/" title="セマンティックなパブリッシングツール">Proudly powered by WordPress</a>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
-
-<script type='text/javascript' src='https://inokoj.github.io/wp-content/themes/twentytwelve/js/navigation.js?ver=20140711'></script>
+        // Escapeキーでモーダルを閉じる
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && !emailModal.classList.contains('hidden')) {
+                closeModal();
+            }
+        });
+    </script>
 </body>
 </html>
