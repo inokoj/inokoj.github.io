@@ -55,6 +55,7 @@
 <div class="container">
     <h1>あなたのお題は</h1>
     <div id="result">ここに結果が表示されます</div>
+    <button id="copyButton">お題をコピー</button>
     <button id="pickButton">お題を再選択</button>
 </div>
 
@@ -67,6 +68,7 @@
     // --- 設定はここまで ---
 
     const pickButton = document.getElementById('pickButton');
+    const copyButton = document.getElementById('copyButton');
     const resultDiv = document.getElementById('result');
     let items = []; // データを保持する配列
 
@@ -109,8 +111,24 @@
         resultDiv.textContent = randomItem;
     }
 
+    // お題をコピーする関数
+    function copyToClipboard() {
+        const text = resultDiv.textContent;
+        if (text) {
+            navigator.clipboard.writeText(text).then(() => {
+                alert('お題をコピーしました: ' + text);
+            }).catch(err => {
+                console.error('コピーに失敗:', err);
+                alert('コピーに失敗しました。');
+            });
+        } else {
+            alert('コピーするお題がありません。');
+        }
+    }
+
     // ボタンがクリックされたらランダム選択を実行
     pickButton.addEventListener('click', pickRandomItem);
+    copyButton.addEventListener('click', copyToClipboard);
 
     // 最初にデータを読み込む
     loadItems();
