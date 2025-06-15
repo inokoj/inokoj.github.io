@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ランダム選択ツール (API不要版)</title>
+    <style>
+        /* 見た目のデザインは前回と同じです */
+        body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f2f5;
+        }
+        .container {
+            text-align: center;
+            padding: 40px;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        #result {
+            font-size: 2em;
+            font-weight: bold;
+            color: #28a745; /* 色を緑系に変更 */
+            min-height: 50px;
+            margin: 20px 0;
+            padding: 10px;
+            border: 2px dashed #ccc;
+            border-radius: 8px;
+        }
+        button {
+            padding: 12px 24px;
+            font-size: 1em;
+            cursor: pointer;
+            border: none;
+            background-color: #28a745; /* 色を緑系に変更 */
+            color: white;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>あなたのお題は</h1>
+    <div id="result">ここに結果が表示されます</div>
+    <button id="pickButton">お題を表示</button>
+</div>
+
+<script>
+    // --- ここから設定 ---
+
+    // 1. スプレッドシートを「Webに公開」して取得したCSVのURLを貼り付けてください
+    const CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vT-LyYOvQGJiBb-9d_ld7j-T1kfVgpGZz3VJi_s6qqnBhyWw32F_tQ83Nud271fGCgnEEvsyzt3ZWjC/pub?gid=0&single=true&output=csv";
+
+    // --- 設定はここまで ---
+
+    const pickButton = document.getElementById('pickButton');
+    const resultDiv = document.getElementById('result');
+    let items = []; // データを保持する配列
+
+    // CSVデータを読み込んで配列に格納する関数
+    async function loadItems() {
+        resultDiv.textContent = 'リストを読み込み中...';
+        try {
+            const response = await fetch(CSV_URL);
+            if (!response.ok) {
+                throw new Error('データの取得に失敗しました。URLを確認してください。');
+            }
+            const csvText = await response.text();
+            
+            // CSVテキストを改行で分割し、空の行を除外して配列にする
+            items = csvText.split('\n').filter(item => item.trim() !== '');
+
+            // 各行をコンマで区切り最初のものだけを保持
+            items = items.map(item => item.split(',')[0].trim());
+            items = items.filter(item => item !== ''); // 空の項目を除外
+
+            if (items.length > 0) {
+                pickRandomItem(); // 読み込み完了後に一度ランダム選択する
+            } else {
+                resultDiv.textContent = 'データがありません';
+            }
+        } catch (error) {
+            console.error('エラー:', error);
+            resultDiv.textContent = 'エラーが発生しました。';
+        }
+    }
+
+    // 配列からランダムに1つを選んで表示する関数
+    function pickRandomItem() {
+        if (items.length === 0) {
+            resultDiv.textContent = '選択できる項目がありません';
+            return;
+        }
+        const randomIndex = Math.floor(Math.random() * items.length);
+        const randomItem = items[randomIndex];
+        resultDiv.textContent = randomItem;
+    }
+
+    // ボタンがクリックされたらランダム選択を実行
+    pickButton.addEventListener('click', pickRandomItem);
+
+    // 最初にデータを読み込む
+    loadItems();
+
+</script>
+
+</body>
+</html>
