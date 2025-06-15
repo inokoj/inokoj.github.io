@@ -1,0 +1,252 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Demo page: Can a robot laugh with you?: Shared laughter generation for empathetic spoken dialogue</title>
+
+  <!-- styles and scripts for MDL -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue-pink.min.css" />
+
+  <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+
+  <!-- scripts for BibTeX-js -->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <style>
+    body {
+      font-family: 'Roboto', 'Helvetica', sans-serif;
+    }
+
+    p {
+      line-height: 21px;
+    }
+
+    audio {
+      width: calc(100%);
+    }
+
+    .mdl-layout__header {
+      background-color: #4d2e2e;
+    }
+
+    .mdl-card__supporting-text {
+      width: initial;
+    }
+
+    .mdl-layout__content .mdl-grid {
+      max-width: 1000px;
+    }
+
+    #abstract .mdl-card__title {
+      color: #fff;
+      background-color: #b36b6b;
+      min-height: 176px;
+    }
+    
+    #video .mdl-card__title {
+      background-color: #b36b6b;
+      color: #fff;
+    }
+    
+    #video .mdl-card__title-text {
+      color: #fff;
+    }
+
+    #results .mdl-card__title {
+      background-color: #b36b6b;
+      color: #fff;
+    }
+    
+    #results .mdl-card__title-text {
+      color: #fff;
+    }
+    
+    #other .mdl-card__title {
+      background-color: #b36b6b;
+      color: #fff;
+    }
+    
+    #other .mdl-card__title-text {
+      color: #fff;
+    }
+
+    #code .mdl-card__title {
+      background-color: #b36b6b;
+      color: #fff;
+    }
+
+    .results .thin-border,
+    .code .thin-border {
+      margin-bottom: 0.1em;
+    }
+
+    .results .border,
+    .code .border {
+      margin-bottom: 2em;
+    }
+
+    .results h7,
+    .code h7 {
+      display: block;
+    }
+
+    #reference .mdl-card__title {
+      color: #000;
+      background-color: #ffcc99;
+    }
+    
+    .youtube {
+      position: relative;
+      padding-bottom: 56.25%; /* 16/9 ratio */
+      padding-top: 30px; /* IE6 workaround*/
+      height: 0;
+      overflow: hidden;
+    }
+
+    .youtube iframe,
+    .youtube object,
+    .youtube embed {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+        <!-- Title -->
+        <span class="mdl-layout-title">Demo page: Can a robot laugh with you?: Shared laughter generation for empathetic spoken dialogue</span>
+        <!-- Add spacer, to align navigation to the right -->
+        <div class="mdl-layout-spacer"></div>
+        <!-- Navigation. We hide it in small screens. -->
+        <nav class="mdl-navigation mdl-layout--large-screen-only">
+          <a class="mdl-navigation__link" href="#abstract">Abstract</a>
+          <a class="mdl-navigation__link" href="#results">Dialogue samples</a>
+          <a class="mdl-navigation__link" href="#other">Other materials</a>
+        </nav>
+      </div>
+    </header>
+    <div class="mdl-layout__drawer">
+      <span class="mdl-layout-title">Can a robot laugh with you?</span>
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="#abstract">Abstract</a>
+        <a class="mdl-navigation__link" href="#results">Dialogue samples</a>
+        <a class="mdl-navigation__link" href="#other">Other materials</a>
+      </nav>
+    </div>
+
+    <main class="mdl-layout__content">
+      <div class="mdl-grid">
+        <!-- Abstract card -->
+        <div id="abstract" class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col">
+          <div class="mdl-card__title mdl-card--expand">
+            <h2 class="mdl-card__title-text">
+              Can a robot laugh with you?: Shared laughter generation for empathetic spoken dialogue
+            </h2>
+          </div>
+
+          <div class="mdl-card__supporting-text mdl-grid">
+            <h6 class="mdl-cell mdl-cell--12-col">Frontiers in Robitics and AI<br>Koji Inoue, Divesh Lala, and Tatsuya Kawahara</h6>
+            <div class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet">
+	    <p><a href="https://www.frontiersin.org/articles/10.3389/frobt.2022.933261/" target="_blank">https://www.frontiersin.org/articles/10.3389/frobt.2022.933261/</a></p>
+	    </div>
+            <div class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet">
+              <img src="introduction.png" width="60%" />
+              <p>
+                Figure 1: Example of shared laughter by spoken dialogue systems
+              </p>
+              <!--<img src="system.png" width="70%" />
+              <p>
+                Figure 1: Example of shared laughter by spoken dialogue systems
+              </p>-->
+            </div>
+            <p class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet">
+              <strong>Abstract:</strong>
+            Spoken dialogue systems must be able to express empathy to achieve natural interaction with human users.
+However, laughter generation requires a high level of dialogue understanding.
+Thus, implementing laughter in existing systems, such as in conversational robots, has been challenging.
+As a first step towards solving this problem, rather than generate laughter from user dialogue, we focus on ``shared laughter,'' where a user laughs using either solo or speech laughs (initial laugh), and the system laughs in turn (response laugh).
+The proposed system consists of three models: 1) initial laugh detection, 2) shared laughter prediction, and 3) laugh type selection.
+We implemented each model using a human-robot speed dating dialogue corpus.
+For the first model, a recurrent neural network was applied, and the detection performance achieved an F-1 score of 82.6%.
+The second model used the acoustic and prosodic features of the initial laugh and achieved a prediction accuracy above the random prediction.
+The third model selects the type of system's response laugh as social or mirthful laughs based on the same features of the initial laugh.
+We then implemented the full shared laughter generation system in an attentive listening dialogue system and conducted a dialogue listening experiment.
+The proposed system improved the impression of the dialogue system such as empathy perception compared to a naive baseline without laughter and a reactive system that always responded with only social laughs.
+We propose that our system can be used for situated robot interaction and also emphasize the need for integrating proper empathetic laughs into conversational robots and agents.
+	    </p>
+          </div>
+        </div>
+
+        <div id="video" class="results mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col">
+          <div class="mdl-card__title mdl-card--expand">
+            <h2 class="mdl-card__title-text">Demo video</h2>
+          </div>
+          <div class="mdl-card__supporting-text">
+			<iframe width="560" height="600" src="https://www.youtube.com/embed/6tMiWog4l00" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<br>
+	<a href="20220922-shared_laughter.mp4" download>Download this video</a>
+          </div>
+	</div>
+
+        <div id="results" class="results mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col">
+          <div class="mdl-card__title mdl-card--expand">
+            <h2 class="mdl-card__title-text">Dialogue sample</h2>
+          </div>
+          <div class="mdl-card__supporting-text mdl-grid">
+<div class="thin-border mdl-cell mdl-cell--12-col"></div>
+<div class="spec mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet"><h7>Scenario-1 Proposed</h7><audio controls="control" src="samples/sample02-s1-p.wav"></audio></div>
+<div class="spec mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet"><h7>Scenario-1 Nolaugh (baseline1)</h7><audio controls="control" src="samples/sample03-s1-b1.wav"></audio></div>
+<div class="spec mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet"><h7>Scenario-1 Reative (baseline2)</h7><audio controls="control" src="samples/sample01-s1-b3.wav"></audio></div>
+
+<div class="thin-border mdl-cell mdl-cell--12-col"></div>
+<div class="spec mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet"><h7>Scenario-2 Proposed</h7><audio controls="control" src="samples/sample04-s4-p.wav"></audio></div>
+<div class="spec mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet"><h7>Scenario-2 Nolaugh (baseline1)</h7><audio controls="control" src="samples/sample05-s4-b1.wav"></audio></div>
+<div class="spec mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet"><h7>Scenario-2 Reative (baseline2)</h7><audio controls="control" src="samples/sample06-s4-b3.wav"></audio></div>
+
+<div class="thin-border mdl-cell mdl-cell--12-col"></div>
+<div class="spec mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet"><h7>Scenario-3 Proposed</h7><audio controls="control" src="samples/sample08-s2-p.wav"></audio></div>
+<div class="spec mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet"><h7>Scenario-3 Nolaugh (baseline1)</h7><audio controls="control" src="samples/sample07-s2-b1.wav"></audio></div>
+<div class="spec mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet"><h7>Scenario-3 Reative (baseline2)</h7><audio controls="control" src="samples/sample09-s2-b3.wav"></audio></div>
+
+<div class="thin-border mdl-cell mdl-cell--12-col"></div>
+<div class="spec mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet"><h7>Scenario-4 Proposed</h7><audio controls="control" src="samples/sample12-s3-p.wav"></audio></div>
+<div class="spec mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet"><h7>Scenario-4 Nolaugh (baseline1)</h7><audio controls="control" src="samples/sample10-s3-b1.wav"></audio></div>
+<div class="spec mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet"><h7>Scenario-4 Reative (baseline2)</h7><audio controls="control" src="samples/sample11-s3-b3.wav"></audio></div>
+          </div>
+	</div>
+        
+        <div id="other" class="results mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col">
+          <div class="mdl-card__title mdl-card--expand">
+            <h2 class="mdl-card__title-text">Other materials</h2>
+          </div>
+            <div class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet">
+              <img src="system.png" width="90%" />
+              <p>
+                Figure 4: Architecture of the proposed system
+              </p>
+            </div>
+            <div class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet">
+              <img src="erica.jpg" width="60%" />
+              <p>
+                Figure: Dialogue with the android ERICA
+              </p>
+            </div>
+	</div>
+    </main>
+  </div>
+</body>
+
+</html>
