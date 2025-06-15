@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About me | Koji Inoue</title>
-    <!-- Tailwind CSS aCDN を読み込み -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts (Inter) を読み込み -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
@@ -69,20 +67,26 @@
 
         <nav class="flex justify-center items-center gap-4 md:gap-8 mb-16 bg-white/70 backdrop-blur-lg p-4 rounded-full shadow-md sticky top-4 z-50">
             <a href="https://inokoj.github.io/" class="bg-blue-600 text-white px-5 py-2 rounded-full font-bold hover:bg-blue-700 transition-all duration-300 shadow-sm">Top</a>
-            <a href="https://inokoj.github.io/profile.html" class="bg-purple-600 text-white px-5 py-2 rounded-full font-bold hover:bg-purple-700 transition-all duration-300 shadow-sm">About me</a>
+            <a href="https://inokoj.github.io/profile.html" class="bg-purple-600 text-white px-5 py-2 rounded-full font-bold hover:bg-purple-700 transition-all duration-300 shadow-sm">Bio</a>
             <a href="https://inokoj.github.io/publications.html" class="bg-blue-600 text-white px-5 py-2 rounded-full font-bold hover:bg-blue-700 transition-all duration-300 shadow-sm">Publications</a>
         </nav>
 
         <main>
             <section id="profile-details" class="section-card">
-                <h1 class="section-title">About Me</h1>
+                <h1 class="section-title">Biography</h1>
 
                 <div class="flex flex-wrap gap-x-4 gap-y-2 mb-8 text-blue-600">
                     <a href="#education" class="hover:underline">Educations</a> /
                     <a href="#researcharea" class="hover:underline">Research areas</a> /
+                    <a href="#webnews" class="hover:underline">Media Article</a> /
                     <a href="#award" class="hover:underline">Awards</a> /
-                    <a href="#society" class="hover:underline">Societies</a> /
-                    <a href="#internship" class="hover:underline">Internship experiences</a>
+                    <a href="#jobexp" class="hover:underline">Job Experiences</a> /
+                    <a href="#teachingexp" class="hover:underline">Teaching Experiences</a> /
+                    <a href="#society" class="hover:underline">Society activities</a> /
+                    <a href="#grants" class="hover:underline">Research Grants</a> /
+                    <a href="#reviewer" class="hover:underline">Reviewer Experiences</a> /
+                    <a href="#guestlecture" class="hover:underline">Guest Lecture, Event</a> /
+                    <a href="#internship" class="hover:underline">Internship Experiences</a>
                 </div>
                 <p class="mb-6 text-blue-600"><a href="https://kdb.iimc.kyoto-u.ac.jp/profile_private/en.825b87e0533c1014.html" target="_blank" class="text-blue-600 hover:underline">Activity Datasets on Education and Research, Kyoto University</a></p>
 
@@ -173,7 +177,7 @@
                 </div>
                 
                 <div>
-                    <h2 class="subsection-title">職歴 (Job Experiences)</h2>
+                    <h2 id="jobexp" class="subsection-title">職歴 (Job Experiences)</h2>
                      <ul class="space-y-2 list-disc list-outside pl-6 text-slate-800">
                         <li>京都大学 大学院情報学研究科 助教 (工学部情報学科 兼担, April. 2019 - 現在)</li>
                         <li>大阪大学 大学院基礎工学研究科 特任助教 (April. 2025 - 現在)</li>
@@ -188,7 +192,7 @@
                 </div>
 
                 <div>
-                    <h2 class="subsection-title">教育歴 (Teaching Experiences)</h2>
+                    <h2 id="teachingexp" class="subsection-title">教育歴 (Teaching Experiences)</h2>
                     <ul class="space-y-2 list-disc list-outside pl-6 text-slate-800">
                         <li>京都大学 工学部情報学科 計算機科学実験及演習４ (2023年度後期)</li>
                         <li>京都大学 工学部情報学科 計算機科学実験及演習２ (2023年度後期)</li>
@@ -243,7 +247,7 @@
                 </div>
                 
                  <div>
-                    <h2 class="subsection-title">競争的資金 (Research Grants)</h2>
+                    <h2 id="grants" class="subsection-title">競争的資金 (Research Grants)</h2>
                     <p class="font-bold text-lg mt-4 mb-2">研究代表者</p>
                      <ul class="space-y-2 list-disc list-outside pl-6 text-slate-800">
                         <li>沈黙を理解・生成する会話AIによる対話感の解明 (科学技術振興機構 BOOST 次世代AI人材育成プログラム, 2025年度-2029年度)</li>
@@ -267,7 +271,7 @@
                 </div>
                 
                 <div>
-                     <h2 class="subsection-title">Reviewer Experiences</h2>
+                     <h2 id="reviewer" class="subsection-title">Reviewer Experiences</h2>
                      <p class="font-bold text-lg mt-4 mb-2">学会誌 (Academic journals)</p>
                      <ul class="space-y-2 list-disc list-outside pl-6 text-slate-800">
                         <li>人工知能学会論文誌 (2019, 2020, 2021, 2022, 2023)</li>
@@ -317,7 +321,7 @@
                 </div>
                 
                 <div>
-                     <h2 class="subsection-title">ゲスト講義・イベント登壇 (Guest Lecture, Event)</h2>
+                     <h2 id="guestlecture" class="subsection-title">ゲスト講義・イベント登壇 (Guest Lecture, Event)</h2>
                      <ul class="space-y-2 list-disc list-outside pl-6 text-slate-800">
                      	<li>大阪・関西万博 大阪ヘルスケアパビリオン 「ユーダイモニア」公開記念イベント -最先端のテクノロジーが切り開く未来社会- (17th April 2025)
                         <li>久留米工業高等専門学校 専攻科設立30周年記念講演会 (3rd Nov. 2023)</li>
