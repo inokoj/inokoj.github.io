@@ -53,10 +53,10 @@
 <body>
 
 <div class="container">
-    <h1>あなたのお題は</h1>
+    <h1>あなたのトピックは</h1>
     <div id="result">ここに結果が表示されます</div>
-    <button id="copyButton">お題をコピー</button><br/><br/>
-    <button id="pickButton">お題を変える</button>
+    <button id="copyButton">トピックをコピー</button><br/><br/>
+    <button id="pickButton">トピックを変える</button>
 </div>
 
 <script>
@@ -111,18 +111,18 @@
         resultDiv.textContent = randomItem;
     }
 
-    // お題をコピーする関数
+    // トピックをコピーする関数
     function copyToClipboard() {
         const text = resultDiv.textContent;
         if (text) {
             navigator.clipboard.writeText(text).then(() => {
-                alert('お題をコピーしました: ' + text);
+                alert('トピックをコピーしました: ' + text);
             }).catch(err => {
                 console.error('コピーに失敗:', err);
                 alert('コピーに失敗しました。');
             });
         } else {
-            alert('コピーするお題がありません。');
+            alert('コピーするトピックがありません。');
         }
     }
 
