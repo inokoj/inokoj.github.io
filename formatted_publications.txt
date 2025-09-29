@@ -1,0 +1,262 @@
+### Specify referee-reviewed articles in international journals
+1. Keiko Ochi, Divesh Lala, Koji Inoue, Tatsuya Kawahara, Hirokazu Kumazaki. Robot-Mediated Multi-Party Conversation Aimed at Affect Improvement for Psychiatric Patients. IEEE Transactions on Affective Computing, Vol. XX, No. XX, pp. XXXX-XXXX, 2025.
+2. Kenta Yamamoto, Koji Inoue, Tatsuya Kawahara. Character expression of a conversational robot for adapting to user personality. Advanced Robotics, Vol. 38, No. 24, pp. 256-266, 2023.
+3. Yahui Fu, Koji Inoue, Divesh Lala, Kenta Yamamoto, Chenhui Chu, Tatsuya Kawahara. Dual variational generative model and auxiliary retrieval for empathetic response generation by conversational robot. Advanced Robotics, Vol. 37, No. 21, pp. 1406-1418, 2023.
+4. Keiko Ochi, Koji Inoue, Divesh Lala, Tatsuya Kawahara, Hirokazu Kumazaki. Effect of attentive listening robot on pleasure and arousal change in psychiatric daycare. Advanced Robotics, Vol. 37, No. 21, pp. 1382-1391, 2023.
+5. Kenta Yamamoto, Koji Inoue, Tatsuya Kawahara. Character expression for spoken dialogue systems with semi-supervised learning using Variational Auto-Encoder. Computer Speech & Language, Vol. 79, 101469, 2022.
+6. Koji Inoue, Divesh Lala, Tatsuya Kawahara. Can a robot laugh with you?: Shared laughter generation for empathetic spoken dialogue. Frontiers in Robotics and AI, 2022.
+7. Koji Inoue, Divesh Lala, Kenta Yamamoto, Shizuka Nakamura, Katsuya Takanashi, Tatsuya Kawahara. An Attentive Listening System for Autonomous Android ERICA: Comparative Evaluation with Human Attentive Listeners. (アンドロイドERICAの傾聴対話システム--人間による傾聴との比較評価--) Transactions of the Japanese Society for Artificial Intelligence, Vol. 36, No. 5, pp. H-L51_1-12, 2021.
+8. Tatsuya Kawahara, Naoyuki Muramatsu, Kenta Yamamoto, Divesh Lala, Koji Inoue. Semi-autonomous avatar enabling unconstrained parallel conversations --seamless hybrid of WOZ and autonomous dialogue systems--. Advanced Robotics, Vol. 35, No. 11, pp. 657-663, 2021.
+9. Koji Inoue, Kohei Hara, Divesh Lala, Kenta Yamamoto, Shizuka Nakamura, Katsuya Takanashi, Tatsuya Kawahara. A Job Interview Dialogue System That Asks Follow-up Questions: Implementation and Evaluation with an Autonomous Android. (掘り下げ質問を行う就職面接対話システムの自律型アンドロイドでの実装と評価) Transactions of the Japanese Society for Artificial Intelligence, Vol. 35, No. 5, pp. D-K43_1-10, 2020.
+10. Yuanchao Li, Carlos T. Ishi, Koji Inoue, Shizuka Nakamura, Tatsuya Kawahara. Expressing reactive emotion based on multimodal emotion recognition for natural conversation in human-robot interaction. Advanced Robotics, Vol. 33, No 20, pp. 1030-1041, 2019.
+11. Koji Inoue, Divesh Lala, Katsuya Takanashi, Tatsuya Kawahara. Engagement recognition by a latent character model based on multimodal listener behaviors in spoken dialogue. APSIPA Transaction on Signal and Information Processing, Vol. 7, No. e9, pp. 1-16, 2018.
+12. Kenta Yamamoto, Koji Inoue, Shizuka Nakamura, Katsuya Takanashi, Tatsuya Kawahara. A Dialogue Behavior Control Model for Expressing a Characters of Humanoid Robots. (人間型ロボットのキャラクタ表現のための対話の振る舞い制御モデル) Transactions of the Japanese Society for Artificial Intelligence, Vol. 33, No. 5, pp. C-l37_1-9, 2018.
+13. Koji Inoue, Divesh Lala, Kazuyoshi Yoshii, Katsuya Takanashi, Tatsuya Kawahara. Engagement Recognition from Listener’s Behaviors in Spoken Dialogue Using a Latent Character Model. (潜在キャラクタモデルによる聞き手のふるまいに基づく対話エンゲージメントの推定) Transactions of the Japanese Society for Artificial Intelligence, Vol. 33, No. 1, pp. DSH-F_1-12, 2018.
+14. Takashi Yamaguchi, Koji Inoue, Koichi Yoshino, Katsuya Takanashi, Nigel G. Ward, Tatsuya Kawahara. Generating a Variety of Backchannel Forms Based on Linguistic and Prosodic Features for Attentive Listening Agents. (傾聴対話システムのための言語情報と韻律情報に基づく多様な形態の相槌の生成) Transactions of the Japanese Society for Artificial Intelligence, Vol. 31, No. 4, pp. C-G31_1-10, 2016.
+15. Tatsuya Kawahara, Takuma Iwatate, Koji Inoue, Soichiro Hayashi, Hiromasa Yoshimoto, Katsuya Takanashi. Multi-modal sensing and analysis of poster conversations with smart posterboard. APSIPA Transaction on Signal and Information Processing, Vol. 5, No. e2, pp. 1-12, 2016.
+16. Koji Inoue, Yukoh Wakabayashi, Hiromasa Yoshimoto, Tatsuya Kawahara. Speaker Diarization by Combining Acoustic and Eye-Gaze Information in Multi-Party Conversations. (多人数会話における音響・視線情報を統合した話者区間検出) IEICE Trans. on Information and Systems, Vol. J99-D, No. 3, pp. 348-357, 2016.
+17. Yukoh Wakabayashi, Koji Inoue, Masato Nakayama, Takanobu Nishiura, Yoichi Yamashita, Hiromasa Yoshimoto, Tatsuya Kawahara. Speaker Diarization and Source Number Estimation Based on Audio-Visual Integration. (視聴覚情報の統合に基づく音源数推定と話者ダイアライゼーション) IEICE Trans. on Information and Systems, Vol. J99-D, No. 3, pp. 326-336, 2016.
+18. Koji Inoue, Kohei Isechi, Hironobu Saito, Yoshimitsu Kuroki. An Inter-Prediction Method using Sparse Representation for High Efficiency Video Coding. IEICE Trans. on Fundamentals of Electronics, Communications and Computer Sciences, Vol. E96-A, No. 11, pp. 2191-2193, 2013.
+19. Kenjiro Sugimoto, Koji Inoue, Yoshimitsu Kuroki, Sei-ichiro Kamata. A linear manifold color descriptor for medicine package recognition. IEICE Trans. on Information and Systems, Vol. E95-D, No. 5, pp. 1264-1271, 2012.
+
+### Specify other publications including books and patents
+1. Kazushi Kato, Koji Inoue, Divesh Lala, Keiko Ochi, Tatsuya Kawahara. Real-time Generation of Various Types of Nodding for Avatar Attentive Listening System. International Conference on Multimodal Interaction (ICMI), pp. XXX–XXX, 2025. Accepted.
+2. Kei Shimonishi, Koji Inoue, Yasuyuki Usuda, Rui Sakaida. Toward Emotional Description via Meta-Dialogue: A Preliminary Framework for Data Collection. Workshop on the Semantics and Pragmatics of Dialogue (SemDial 2025, BIALOGUE), pp. XXX–XXX, 2025. Accepted
+3. Taro Tsuda, Sanae Yamashita, Koji Inoue, Tatsuya Kawahara, Ryuichiro Higashinaka. Constructing a Multi-Party Conversational Corpus Focusing on Interlocutor Relationships. Workshop on the Semantics and Pragmatics of Dialogue (SemDial 2025, BIALOGUE), pp. XXX–XXX, 2025. Accepted
+4. Koji Inoue, Mikey Elmers, Yahui Fu, Zi Haur Pang, Divesh Lala, Keiko Ochi, Tatsuya Kawahara. Prompt-Guided Turn-Taking Prediction. SIGdial Meeting on Discourse and Dialogue (SIGDIAL), pp. XXX–XXX, 2025. Accepted.
+5. Koji Inoue, Yuki Okafuji, Jun Baba, Yoshiki Ohira, Katsuya Hyodo, Tatsuya Kawahara. A Noise-Robust Turn-Taking System for Real-World Dialogue Robots: A Field Experiment. International Conference on Intelligent Robots and Systems (IROS), pp. xxxx-xxxx, 2025. Accepted.
+6. Mikey Elmers, Koji Inoue, Divesh Lala, Tatsuya Kawahara. Triadic Multi-party Voice Activity Projection for Turn-taking in Spoken Dialogue Systems. INTERSPEECH, pp. xxxx-xxxx, 2025. Accepted.
+7. Noriki Nishida, Koji Inoue, Hideki Nakayama, Mayumi Bono, Katsuya Takanashi. Do Multimodal Large Language Models Truly See What We Point At? Investigating Indexical, Iconic, and Symbolic Gesture Comprehension. Annual Meeting of the Association for Computational Linguistics (ACL), pp. 514-524, 2025.
+8. Mayumi Bono, Noriki Nishida, Koji Inoue, Tomohiro Okada, Naoya Fujikawa, Yutaka Osugi, Hideki Nakayama, Katsuya Takanashi, Shin'Ichi Satoh. Relevant Annotation for Multimodal Interaction Analysis: AI Bridging Gestures and Signs. 10th Conference of the International Society for Gesture Studies (ISGS), 2025.
+9. Koji Inoue, Mikey Elmers, Divesh Lala, Tatsuya Kawahara. Why Do We Laugh? Annotation and Taxonomy Generation for Laughable Contexts in Spontaneous Text Conversation. International Workshop on Spoken Dialogue Systems Technology (IWSDS), pp. 318-323, 2025.
+10. Koji Inoue, Divesh Lala, Mikey Elmers, Keiko Ochi, Tatsuya Kawahara. An LLM Benchmark for Addressee Recognition in Multi-modal Multi-party Dialogue. International Workshop on Spoken Dialogue Systems Technology (IWSDS), pp. 330-334, 2025.
+11. Divesh Lala, Mikey Elmers, Koji Inoue, Zi Haur Pang, Keiko Ochi, Tatsuya Kawahara. ScriptBoard: Designing modern spoken dialogue systems through visual programming. International Workshop on Spoken Dialogue Systems Technology (IWSDS), 176-182, 2025.
+12. Koji Inoue, Divesh Lala, Gabriel Skantze, Tatsuya Kawahara. Yeah, Un, Oh: Continuous and Real-time Backchannel Prediction with Fine-tuning of Voice Activity Projection. Annual Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics (NAACL), pp. 7171–7181, 2025.
+13. Zi Haur Pang, Yahui Fu, Divesh Lala, Mikey Elmers, Koji Inoue, Tatsuya Kawahara. Does the Appearance of Autonomous Conversational Robots Affect User Spoken Behaviors in Real-World Conference Interactions?. Late-Breaking Work at CHI Conference on Human Factors in Computing Systems (CHI EA), 2025.
+14. Zi Haur Pang, Yahui Fu, Divesh Lala, Mikey Elmers, Koji Inoue, Tatsuya Kawahara. Human-Like Embodied AI Interviewer: Employing Android ERICA in Real International Conference. International Conference on Computational Linguistics (COLING), 2025.
+15. Divesh Lala, Koji Inoue, Tatsuya Kawahara. Prediction of Negative User Reactions Towards System Responses During Attentive Listening. APSIPA ASC, 2024.
+16. Divesh Lala, Koji Inoue, Haruki Kawai, Zi Haur Pang, Mikey Elmers, Tatsuya Kawahara. Development and Evaluation of a Semi-Autonomous Parallel Attentive Listening System. APSIPA ASC, 2024.
+17. Mikey Elmers, Koji Inoue, Divesh Lala, Keiko Ochi, Tatsuya Kawahara. Analysis and Detection of Differences in Spoken User Behaviors between Autonomous and Wizard-of-Oz Systems. Oriental COCOSDA (OCOCOSDA), 2024.
+18. Keiko Ochi, Koji Inoue, Divesh Lala, Tatsuya Kawahara. Entrainment Analysis and Prosody Prediction of Subsequent Interlocutor’s Backchannels in Dialogue. INTERSPEECH, pp. 462-466, 2024.
+19. Koji Inoue, Bing'er Jiang, Erik Ekstedt, Tatsuya Kawahara, Gabriel Skantze. Multilingual Turn-taking Prediction Using Voice Activity Projection. Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING), pp. 11873-11883, 2024.
+20. Koji Inoue, Bing'er Jiang, Erik Ekstedt, Tatsuya Kawahara, Gabriel Skantze. Real-time and Continuous Turn-taking Prediction Using Voice Activity Projection. International Workshop on Spoken Dialogue Systems Technology (IWSDS), 2024.
+21. Koji Inoue, Divesh Lala, Keiko Ochi, Tatsuya Kawahara, Gabriel Skantze. An Analysis of User Behaviors for Objectively Evaluating Spoken Dialogue Systems. International Workshop on Spoken Dialogue Systems Technology (IWSDS), 2024.
+22. Zi Haur Pang, Yahui Fu, Divesh Lala, Keiko Ochi, Koji Inoue, Tatsuya Kawahara. Acknowledgment of Emotional States: Generating Validating Responses for Empathetic Dialogue. International Workshop on Spoken Dialogue Systems Technology (IWSDS), 2024.
+23. Haruki Kawai, Divesh Lala, Koji Inoue, Keiko Ochi, Tatsuya Kawahara. Evaluation of a semi-autonomous attentive listening system with takeover prompting. International Workshop on Spoken Dialogue Systems Technology (IWSDS), 2024.
+24. Sanae Yamashita, Koji Inoue, Ao Guo, Shota Mochizuki, Tatsuya Kawahara, Ryuichiro Higashinaka. RealPersonaChat: A Realistic Persona Chat Corpus with Interlocutors’ Own Personalities. Pacific Asia Conference on Language, Information and Computation (PACLIC), pp. 852–861, 2023.
+25. Koji Inoue, Divesh Lala, Keiko Ochi, Tatsuya Kawahara, Gabriel Skantze. Towards Objective Evaluation of Socially-Situated Conversational Robots: Assessing Human-Likeness through Multimodal User Behaviors. International Conference on Multimodal Interaction (ICMI), Late-Breaking Results, Companion Proceedings, pp. 86–90, 2023.
+26. Koji Inoue. Challenges and Approaches in Designing Social SDS in the LLM Era. Young Researchers Roundtable on Spoken Dialogue Systems (YRRSDS), 2023.
+27. Yahui Fu, Koji Inoue, Chenhui Chu, Tatsuya Kawahara. Reasoning before Responding: Integrating Commonsense-based Causality Explanation for Empathetic Response Generation. SIGdial Meeting on Discourse and Dialogue (SIGDIAL), pp. 645–656, 2023.
+28. Sota Kobuki, Katie Seaborn, Seiki Tokunaga, Kosuke Fukumori, Shun Hidaka, Kazuhiro Tamura, Koji Inoue, Tatsuya Kawahara, Mihoko Otake-Matsuura. Robotic Backchanneling in Online Conversation Facilitation: A Cross-Generational Study. International Conference on Robot and Human Interactive Communication (RO-MAN), 2023.
+29. Yuanchao Li, Koji Inoue, Leimin Tian, Changzeng Fu, Carlos Toshinori Ishi, Hiroshi Ishiguro, Tatsuya Kawahara, Catherine Lai. I Know Your Feelings Before You Do: Predicting Future Affective Reactions in Human-Computer Dialogue. CHI Conference on Human Factors in Computing Systems, Late-Breaking Work, 2023.
+30. Kenta Yamamoto, Koji Inoue, Tatsuya Kawahara. Character adaptation of spoken dialogue systems based on user personality. International Workshop on Spoken Dialogue Systems Technology (IWSDS), 2023.
+31. Yahui Fu, Koji Inoue, Divesh Lala, Kenta Yamamoto, Chenhui Chu, Tatsuya Kawahara. Improving Empathetic Response Generation with Retrieval based on Emotion Recognition. International Workshop on Spoken Dialogue Systems Technology (IWSDS), 2023.
+32. Yusuke Muraki, Divesh Lala, Haruki Kawai, Kenta Yamamoto, Koji Inoue, Tatsuya Kawahara. Semi-autonomous Guide Agents with Simultaneous Handling of Multiple Users. International Workshop on Spoken Dialogue Systems Technology (IWSDS), 2023.
+33. Divesh Lala, Koji Inoue, Kei Sawada, Tatsuya Kawahara. Backchannel Generation Model for a Third Party Listening Agent. International Conference on Human-Agent Interaction (HAI), pp. 114-122, 2022.
+34. Seiki Tokunaga, Kohsuke Fukumori, Kazuhiro Tamura, Koji Inoue, Tatsuya Kawahara Mihoko Ohtake-Matsuura. Development of RobotHub: Integration of External System to Group Conversation System for Older Adults. World Conference of Gerontechnology (ISG), 2022.
+35. Haruki Kawai, Yusuke Muraki, Kenta Yamamoto, Divesh Lala, Koji Inoue, Tatsuya Kawahara. Simultaneous Job Interview System Using Multiple Semi-autonomous Agents. SIGdial Meeting on Discourse and Dialogue (SIGDIAL), pp. 107-110, 2022.
+36. Seiya Kawano, Muteki Arioka, Akishige Yuguchi, Kenta Yamamoto, Koji Inoue, Tatsuya Kawahara, Satoshi Nakamura, Koichiro Yoshino. Multimodal Persuasive Dialogue Corpus using Teleoperated Android. INTERSPEECH, pp. 2918-2922, 2022.
+37. Yuanchao Li, Catherine Lai, Divesh Lala, Koji Inoue, Tatsuya Kawahara. Alzheimer’s Dementia Detection through Spontaneous Dialogue with Proactive Robotic Listeners. ACM/IEEE International Conference on Human-Robot Interaction (HRI), pp. 875-879, 2022.
+38. Koji Inoue, Hiromi Sakamoto, Kenta Yamamoto, Divesh Lala, Tatsuya Kawahara. A multi-party attentive listening robot which stimulates involvement from side participants. SIGdial Meeting on Discourse and Dialogue (SIGDIAL), pp. 261-264, 2021.
+39. Divesh Lala, Koji Inoue, Kenta Yamamoto, Tatsuya Kawahara. Findings from human-android dialogue research with ERICA. RobotDial Workshop on Dialogue Models for Human-Robot Interaction (ROBOTDIAL), IJCAI-PRICAI workshop, 2021.
+40. Divesh Lala, Koji Inoue, Tatsuya Kawahara. Prediction of shared laughter for human-robot dialogue. International Conference on Multimodal Interaction (ICMI), Companion Publication, pp. 62-66, 2020.
+41. Koji Inoue, Kohei Hara, Divesh Lala, Kenta Yamamoto, Shizuka Nakamura, Katsuya Takanashi, Tatsuya Kawahara. Job interviewer android with elaborate follow-up question generation. International Conference on Multimodal Interaction (ICMI), pp. 324-332, 2020.
+42. Kenta Yamamoto, Koji Inoue, Tatsuya Kawahara. Semi-supervised learning for character expression of spoken dialogue systems. INTERSPEECH, pp. 4188-4192, 2020.
+43. Koji Inoue, Divesh Lala, Kenta Yamamoto, Shizuka Nakamura, Katsuya Takanashi, Tatsuya Kawahara. An attentive listening system with android ERICA: Comparison of autonomous and WOZ interactions. SIGdial Meeting on Discourse and Dialogue (SIGDIAL), pp. 118-127, 2020.
+44. Sota Isonishi, Koji Inoue, Divesh Lala, Katsuya Takanashi, Tatsuya Kawahara. Response generation to out-of-database questions for example-based dialogue systems. International Workshop on Spoken Dialogue Systems Technology (IWSDS), 2020.
+45. Kenta Yamamoto, Koji Inoue, Shizuka Nakamura, Katsuya Takanashi, Tatsuya Kawahara. A character expression model affecting spoken dialogue behaviors. International Workshop on Spoken Dialogue Systems Technology (IWSDS), 2020.
+46. Divesh Lala, Koji Inoue, Tatsuya Kawahara. Smooth turn-taking by a robot using an online continuous model to generate turn-taking cues. International Conference on Multimodal Interaction (ICMI), pp. 226-234, 2019.
+47. Kohei Hara, Koji Inoue, Katsuya Takanashi, Tatsuya Kawahara. Turn-taking Prediction Based on Detection of Transition Relevance Place. INTERSPEECH, pp. 4170-4179, 2019.
+48. Koji Inoue, Divesh Lala, Kenta Yamamoto, Katsuya Takanashi, Tatsuya Kawahara. Engagement-based adaptive behaviors for laboratory guide in human-robot dialogue. International Workshop on Spoken Dialogue Systems Technology (IWSDS), 2019.
+49. Koji Inoue, Kohei Hara, Divesh Lala, Shizuka Nakamura, Katsuya Takanashi, Tatsuya Kawahara. A job interview dialogue system with autonomous android ERICA. International Workshop on Spoken Dialogue Systems Technology (IWSDS), 2019.
+50. Koki Tanaka, Koji Inoue, Shizuka Nakamura, Katsuya Takanashi, Tatsuya Kawahara. End-to-end modeling for selection of utterance constructional units via system internal states. International Workshop on Spoken Dialogue Systems Technology (IWSDS), 2019.
+51. Kenta Yamamoto, Koji Inoue, Shizuka Nakamura, Katsuya Takanashi, Tatsuya Kawahara. Dialogue Behavior Control Model for Expressing a Character of Humanoid Robots. APSIPA ASC, pp. 1732-1737, 2018.
+52. Divesh Lala, Koji Inoue, Tatsuya Kawahara. Evaluation of Real-time Deep Learning Turn-taking Models for Multiple Dialogue Scenarios. International Conference on Multimodal Interaction (ICMI), pp. 78-86, 2018.
+53. Koji Inoue, Divesh Lala, Katsuya Takanashi, Tatsuya Kawahara. Engagement recognition in spoken dialogue via neural network by aggregating different annotators' models. INTERSPEECH, pp. 616-620, 2018.
+54. Kohei Hara, Koji Inoue, Katsuya Takanashi, Tatsuya Kawahara. Prediction of turn-taking using multitask learning with prediction of backchannels and fillers. INTERSPEECH, pp. 991-995, 2018.
+55. Koji Inoue, Divesh Lala, Katsuya Takanashi, Tatsuya Kawahara. Latent Character Model for Engagement Recognition Based on Multimodal Behaviors. International Workshop on Spoken Dialogue Systems (IWSDS), 2018.
+56. Ryosuke Nakanishi, Koji Inoue, Shizuka Nakamura, Katsuya Takanashi, Tatsuya Kawahara. Generating Fillers based on Dialog Act Pairs for Smooth Turn-Taking by Humanoid Robot. International Workshop on Spoken Dialogue Systems (IWSDS), May 2018.
+57. Tatsuya Kawahara, Koji Inoue, Divesh Lala, Katsuya Takanashi. Audio-visual conversation analysis by smart posterboard and humanoid robot. IEEE-ICASSP, pp. 6573-6577, April 2018.
+58. Hirofumi Inaguma, Masato Mimura, Koji Inoue, Kazuyoshi Yoshii, Tatsuya Kawahara. An end-to-end approach to joint social signal detection and automatic speech recognition. IEEE-ICASSP, pp. 6214-6218, April 2018.
+59. Yuanchao Li, Carlos Toshinori Ishi, Nigel Ward, Koji Inoue, Shizuka Nakamura, Katsuya Takanashi, Tatsuya Kawahara. Emotion recognition by combining prosody and sentiment analysis for expressing reactive emotion by humanoid robot. APSIPA ASC, Dec. 2017.
+60. Divesh Lala, Koji Inoue, Pierrick Milhorat, Tatsuya Kawahara. Detection of social signals for recognizing engagement in human-robot interaction. AAAI Fall Symposium Natural Communication for Human-Robot Collaboration (NCHRC), Nov. 2017.
+61. Hirofumi Inaguma, Koji Inoue, Masato Mimura, Tatsuya Kawahara. Social Signal Detection in Spontaneous Dialogue Using Bidirectional LSTM-CTC. INTERSPEECH, pp. 1691-1695, Aug. 2017.
+62. Divesh Lala, Milhorat Pierrick, Koji Inoue, Masanari Ishida, Tianyu Zhao, Tatsuya Kawahara. Attentive listening system with backchanneling, response generation and flexible turn-taking. SIGdial Meeting on Discourse and Dialogue (SIGDIAL), pp. 127-136, Aug. 2017.
+63. Pierrick Milhorat, Divesh Lala, Koji Inoue, Tianyu Zhao, Masanari Ishida, Katsuya Takanashi, Shizuka Nakamura, Tatsuya Kawahara. A conversational dialogue manager for the humanoid robot ERICA. International Workshop on Spoken Dialogue Systems (IWSDS), June 2017.
+64. Koji Inoue, Divesh Lala, Katsuya Takanashi, Tatsuya Kawahara. Annotation and analysis of listener's engagement based on multi-modal behaviors. ICMI workshop on Multimodal Analyses enabling Artificial Agents in Human-Machine Interaction (MA3HMI), Nov. 2016.
+65. Hirofumi Inaguma, Koji Inoue, Shizuka Nakamura, Katsuya Takanashi, Tatsuya Kawahara. Prediction of ice-breaking between participants using prosodic features in the first meeting dialogue. ICMI workshop on Advancements in Social Signal Processing for Multimodal Interaction (ASSP4MI), Nov. 2016.
+66. Divesh Lala, Pierrick Milhorat, Koji Inoue, Tianyu Zhao, Tatsuya Kawahara. Multimodal interaction with the autonomous android ERICA. ICMI, pp.417-418, 2016.
+67. Koji Inoue, Pierrick Milhorat, Divesh Lala, Tianyu Zhao, Tatsuya Kawahara. Talking with ERICA, an autonomous android. SIGdial Meeting on Discourse and Dialogue (SIGDIAL), pp.212-215, 2016.
+68. Tatsuya Kawahara, Takashi Yamaguchi, Koji Inoue, Katsuya Takanashi, Nigel G. Ward. Prediction and generation of backchannel form for attentive listening systems. INTERSPEECH, pp.2980-2894, 2016.
+69. Takashi Yamaguchi, Koji Inoue, Koichiro YoshiNo. Katsuya Takanashi, Nigel G. Ward, Tatsuya Kawahara. Analysis and prediction of morphological patterns of backchannels for attentive listening agents. International Workshop on Spoken Dialog Systems (IWSDS), 2016.
+70. Koji Inoue, Yukoh Wakabayashi, Hiromasa Yoshimoto, Katsuya Takanashi, and Tatsuya Kawahara. Enhanced speaker diarization with detection of backchannels using eye-gaze information in poster conversations. INTERSPEECH, pp.3086-3090, 2015.
+71. Yukoh Wakabayashi, Koji Inoue, Hiromasa Yoshimoto, and Tatsuya Kawahara. Speaker Diarization based on Audio-Visual Integration for Smart Posterboard. APSIPA ASC, FP2-1-1116, 2014.
+72. Koji Inoue, Yukoh Wakabayashi, Hiromasa Yoshimoto, and Tatsuya Kawahara. Speaker Diarization using Eye-gaze Information in Multi-party Conversations. INTERSPEECH, pp.562-566, 2014.
+73. Randy Gomez, Koji Inoue, Keisuke Nakamura, Takeshi Mizumoto, and Kazuhiro Nakadai. Speech-based Human-Robot Interaction Robust to Acoustic Reflections in Real Environment. International Conference on Intelligent Robots and Systems (IROS), pp. 1367-1373, 2014.
+74. Koji Inoue, Hironobu Saito, and Yoshimitsu Kuroki. Local intensity compensation using sparse representation. International Conference on Pattern Recognition (ICPR), No. TuAT2.4, pp. 951-954, 2012.
+75. Koji Inoue and Yoshimitsu Kuroki. On a constraint condition of sparse representation for illumination-robust face recognition. International Workshop on Image & Signal Processing and Retrieval (IWISPR 2012), 2012.
+76. Kohei Isechi, Koji Inoue, and Yoshimitsu Kuroki. Video compression using sparse representation. International Workshop on Image & Signal Processing and Retrieval (IWISPR), 2012.
+77. Koji Inoue, Hironobu Saito, and Yoshimitsu Kuroki. Motion compensation using sparse representation. 2012 International Workshop on Smart Info-Media Systems in Asia (SISA 2012), RS3-10, 2012.
+78. Koji Inoue and Yoshimitsu Kuroki. On sparse representation for face recognition under illumination change. International Workshop on Advanced Image Technology (IWAIT), pp. 662-667, 2012.
+79. Shoma Eguchi, Koji Inoue, Yoshimitsu Kuroki, Masayuki Kurosaki, Yuhei Nagao, and Hiroshi Ochi. On Parallel 2D-DWT of JPEG 2000 conformed to Digital Cinema Initiatives using GPGPU. International Workshop on Advanced Image Technology (IWAIT), pp. 668-671, 2012.
+80. Koji Inoue and Yoshimitsu Kuroki. Illumination-Robust Face Recognition via Sparse Representation. Visual Communication and Image Processing (VCIP), O-10.2, 2011.
+81. Koji Inoue and Yoshimitsu Kuroki. Face Recognition under Illumination Change using Sparse Representation. International Workshop on Target Recognition and Tracking (IWTRT), 2011.
+82. Shoma Eguchi, Koji Inoue, and Yoshimitsu Kuroki. Real Time 2D-DWT of JPEG 2000 for Digital Cinema using Multiple GPUs. International Workshop on Target Recognition and Tracking (IWTRT), 2011.
+83. Koji Inoue, Yoshimitsu Kuroki, Masayuki Kurosaki, Yuhei Nagao, Baiko Sai, and Hiroshi Ochi. A parallel Computing using CUDA for the 2D-DWT of JPEG 2000. International Symposium on Multimedia and Communication Technology (ISMAC), TS1-5, 2011.
+84. Kenjiro Sugimoto, Koji Inoue, Yoshimitsu Kuroki, and Sei-ichiro Kamata. A color distribution descriptor for medicine package recognition. China-Japan-Korea Joint Workshop on Pattern Recognition (CJKPR), pp. 64-69, 2010.
+85. 井上昂治 進化するヒトと機械の音声コミュニケーション Vol.2 第2編 音声認識・合成・コミュニケーションの応用技術 第3章 音声によるコミュニケーション技術 共感的な傾聴対話ロボットの開発 株式会社エヌ・ティー・エス, 2025.
+86. 井上昂治, 河原達也. 音声対話システム：基礎から実装まで オーム社, 2022.
+87. Koji Inoue. Beyond Words: Non-Linguistic Behavior Generation for Human-like Conversational AI. International Workshop on Smart Info-Media Systems in Asia (SISA), 2024.
+88. Koji Inoue. Yeah, Well, Haha: Generating Non-linguistic Behaviors For Human-like Conversational Robots. SIGdial Meeting on Discourse and Dialogue (SIGDIAL), 2024.
+89. 井上昂治. 音声対話の魅力：相槌・笑い・ターンテイキング. 日本音響学会 音声研究会, 電子情報通信学会 VNV研究会, 2024.
+90. Koji Inoue. Closing the Gap: Exploring Human-Level Interaction in Android Robot Dialogue Systems. IEEE RO-MAN Workshop, Multidisciplinary Perspectives on COntext-aware embodied Spoken Interactions (MP-COSIN), 2023.
+91. 井上昂治. アンドロイドERICAの音声対話システム～マルチモーダルチューリングテストへの挑戦～. 音学シンポジウム, 2021.
+92. 井上昂治. 空気が読める会話ロボット. 情報処理学会全国大会 IPSJ-ONE 2019, March. 2019.
+93. 佐久間洋司, 井上昂治. 「ほな行こか！大阪・関西万博！」「未来をつくる挑戦と若者の役割」—佐久間洋司氏インタビュー 人工知能学会誌, Vol.40, No.4, pp.590-592, 2025.
+94. 狩野芳伸, 佐久間洋司, 品川政太朗, 井上昂治. 「ほな行こか！大阪・関西万博！」 〜万博連携セッション開催! 全国大会直前特集〜万博連携セッションと子ども教育企画のご紹介 人工知能学会誌, Vol.40, No.3, pp.402-403, 2025.
+95. 品川政太朗, 井上昂治, 佐久間洋司. 「ほな行こか！大阪・関西万博！」 〜いよいよ迫る！万博直前特集〜 2025 年大阪・関西万博に役立つ基礎知識 人工知能学会誌, Vol.40, No.2, pp.112-115, 2025.
+96. 佐久間洋司, 品川政太朗, 井上昂治, 清田陽司, 本村陽一, 栗原聡. 「ほな行こか！大阪・関西万博！」 〜いよいよ迫る！万博直前特集〜 未来世代学会タスクフォース —「大阪・関西万博」を未来の学会を考える機会に— 人工知能学会誌, Vol.40, No.2, pp.108-111, 2025.
+97. 山本祐輔, 山野泰子, 井上昂治, 榊剛史, 岩澤駿. 表紙企画 人工知能をめぐる旅: JSAI 研究会の窓 ④—先進的学習科学と工学研究会（ALST）— 人工知能学会誌, Vol.39, No.4, pp.577-579, 2024.
+98. 山野泰子, 井上昂治, 榊剛史, 山本祐輔, 岩澤駿. 表紙企画 人工知能をめぐる旅: JSAI 研究会の窓 ③— 知識ベースシステム研究会（KBS）— 人工知能学会誌, Vol.39, No.3, pp.435-437, 2024.
+99. 榊剛史, 山野泰子, 井上昂治, 山本祐輔, 岩澤駿. 表紙企画 人工知能をめぐる旅: JSAI 研究会の窓 ②—人工知能基本問題研究会 (FPAI)— 人工知能学会誌, Vol.39, No.2, pp.271-273, 2024.
+100. 井上昂治, 山野泰子, 榊剛史, 山本祐輔, 岩澤駿. 表紙企画 人工知能をめぐる旅: JSAI 研究会の窓 ①—言語・音声理解と対話処理研究会 (SLUD)— 人工知能学会誌, Vol.39, No.1, pp.86-89, 2024.
+101. 井上昂治. 特集：編集委員 今年の抱負2024「学会誌に表紙は必要か？」 人工知能学会誌, Vol.39, No.1, pp.11, 2024.
+102. 榊剛史, 井上昂治, 山野泰子, 鳥海不二夫, 岩澤駿, 松原仁, 杉本舞, 谷口忠大. 表紙企画 座談会：人工知能歴史絵巻の完成に際して 人工知能学会誌, Vol.38, No.6, pp.980-989, 2023.
+103. 山野泰子, 榊剛史, 井上昂治, 山本祐輔, 岩澤駿, 松原仁, 杉本舞, 谷口忠大. アーティクル：表紙企画 人工知能歴史絵巻：これまでのAI これからのAI ⑥ — 研究者が考える未来のAI：道は行くことでつくられる— 人工知能学会誌, Vol.38, No.6, pp.975-979, 2023.
+104. 井上昂治, 榊剛史, 山野泰子, 山本祐輔, 岩澤駿, 松原仁, 杉本舞, 谷口忠大. アーティクル：表紙企画 人工知能歴史絵巻：これまでのAI これからのAI ⑤ — そして生成AI ブームへAll You Need Is — 人工知能学会誌, Vol.38, No.5, pp.771-774, 2023.
+105. 井上昂治. どうする対話研究 日本バーチャルリアリティ学会誌, Vol.28, No.2, pp.33-34, 2023.
+106. 井上昂治. 書評：セルジュ・ティスロン 著, 阿部又一郎 訳：ロボットに愛される日―AI 時代のメンタルヘルス 人工知能学会誌, Vol.38, No.4, pp.593, 2023.
+107. 榊剛史, 井上昂治, 山野泰子, 岩澤駿, 松原仁, 杉本舞, 谷口忠大. アーティクル：表紙企画 人工知能歴史絵巻：これまでのAI これからのAI ④ ― ブームがやって来るヤァ！ヤァ！ヤァ！― 人工知能学会誌, Vol.38, No.4, pp.595-598, 2023.
+108. 山野泰子, 井上昂治, 榊剛史, 岩澤駿, 松原仁, 杉本舞, 谷口忠大. アーティクル：表紙企画 人工知能歴史絵巻：これまでのAI これからのAI ③ —二度目の冬の蠢き— 人工知能学会誌, Vol.38, No.3, pp.440-443, 2023.
+109. 井上昂治, 山野泰子, 榊剛史, 岩澤駿, 松原仁, 杉本舞, 谷口忠大. アーティクル：表紙企画 人工知能歴史絵巻：これまでのAI これからのAI ② —冬の時代から第二次ブームへ— 人工知能学会誌, Vol.38, No.2, pp.298-301, 2023.
+110. 榊剛史,井上昂治, 山野泰子, 岩澤駿, 杉本舞, 松原仁, 谷口忠大. アーティクル：表紙企画 人工知能歴史絵巻：これまでのAI これからのAI —第三次AIブームを振り返って— 人工知能学会誌, Vol.38, No.1, pp.92-95, 2023.
+111. 河原達也, 井上昂治. アンドロイドERICAによる人間レベルの音声対話への挑戦 日本音響学会誌, Vol.78, No.5, pp.249-256, 2022.
+112. 佐久間洋司, 井上昂治. 人類の分断を克服し調和を実現するための科学技術に関する調査研究 人工知能学会誌, Vol.36, No.6, pp.702-709, 2021.
+113. 井上昂治, 岡田将吾. 特集：「若手研究者による2050 年の未来予測～ムーンショット型研究開発 ミレニア・プログラムより～」にあたって 人工知能学会誌, Vol.36, No.6, pp.672-673, 2021.
+114. 井上昂治. 50年経っても読まれる論文を. 人工知能学会誌, Vol.36, No.3, pp.330, 2021.
+115. 井上昂治, 河原達也. アンドロイドを用いた音声対話研究 日本音響学会誌, Vol.76, No.4, pp.236-243, 2020.
+116. 坂井田瑠衣, 井上昂治, 坂尾結衣, 中林由希子, 横森大輔, 高梨克也. マルチモーダルコーパスの移動場面に対する動作連鎖アノテーションの試み：未来館SCコーパスを対象に. 人工知能学会研究会資料, SLUD-103-35, 2025.
+117. 井上昂治, Divesh Lala, Mikey Elmers, 越智景子, 河原達也 多人数対話における受話者推定のLLMによる試み. 人工知能学会研究会資料, SLUD-103-34, 2025.
+118. 福重茜, 井上昂治, 河原達也, 山下紗苗, 東中竜一郎. 多人数チャットコーパスにおける参加者間の関係性の推定. 人工知能学会研究会資料, SLUD-103-33, 2025.
+119. 竹内一央, 井上昂治, 河原 達也. LLMによる対話における驚き反応の生成. 人工知能学会研究会資料, SLUD-103-32, 2025.
+120. 加藤利梓, 井上昂治, 河原 達也. アバター傾聴対話システムにおける多様な頷きのリアルタイム予測. 人工知能学会研究会資料, SLUD-103-31, 2025.
+121. 津田太郎, 山下紗苗, 井上昂治, 河原達也, 東中竜一郎. Multi-Relational Multi-Party Chat Corpus: 話者間の関係性に着目したマルチパーティ雑談対話コーパス. 言語処理学会第31回年次大会, D10-6, 2025.
+122. 井上昂治, Mikey Elmers, Divesh Lala, 河原達也. 人はなぜ笑うのか？対話における笑いの根拠ラベルの半自動構築. 言語処理学会第31回年次大会, D9-6, 2025.
+123. 西田典起, 井上昂治,中山英樹, 坊農真弓, 高梨克也. マルチモーダル大規模言語モデルはジェスチャーをどこまで理解しているのか：指標性・図像性・象徴性を問う. 言語処理学会第31回年次大会, C3-5, 2025.
+124. 井上昂治, Lala Divesh, Skantze Gabriel, 河原 達也. Voice Activity Projectionモデルを用いたリアルタイム相槌予測. 人工知能学会研究会資料, SLUD-102-229, 2024.
+125. 住田 龍宇一, 井上昂治, 河原達也. RAGチャットボットは重要でない会話を忘れるべきか？ 心理学における発見を用いた重要度と忘却の探究. 人工知能学会研究会資料, SLUD-102-28, 2024.
+126. 彭 子豪, 傅 雅慧, ラーラー ディベッシュ, エルマーズ マイキー, 井上 昂治, 河原 達也 アンドロイドERICAによる国際会議におけるインタビュー対話システム. 人工知能学会研究会資料, SLUD-102-01, 2024.
+127. 彭子豪, 傅雅慧, Divesh Lala, 越智景子, 井上昂治, 河原達也. 感情語りコーパスを用いたバリデーション応答の生成. 人工知能学会研究会資料, SLUD-099-23, 2023.
+128. 越智景子, 井上昂治, Divesh Lala, 河原達也, 熊崎博一. 精神科デイケアのための傾聴対話システム：きくロボ. 人工知能学会研究会資料, SLUD-099-16, 2023.
+129. 川井悠生, 山本賢太, 越智景子, Lala Divesh, 井上昂治, 河原達也. 半自律対話による同時並列傾聴システム. 人工知能学会研究会資料, SLUD-099-14, 2023.
+130. 井上昂治, Divesh Lala, 越智景子, 河原達也, Gabriel Skantze. 音声対話システムの客観評価のためのユーザのマルチモーダルなふるまいの分析. 人工知能学会研究会資料, SLUD-099-01, 2023.
+131. Prediction of Validating Response from Emotional Storytelling Corpus. Zi Haur Pang, Yahui Fu, Divesh Lala, Keiko Ochi, Koji Inoue, Tatsuya Kawahara. 第37回 人工知能学会全国大会, 2023.
+132. 越智景子, 井上昂治, 河原達也, 大西祐美, 熊﨑博一. 傾聴ロボットを用いた精神科デイケアでの会話の基礎検討. 第41回 日本社会精神医学会, 2023.
+133. 三村正人, 井上昂治, 河原達也, 中村友彦, 猿渡洋. 実環境下日本語話し言葉音声コーパスの構築と音声認識ベンチマーク. 情報処理学会研究報告, SLP-146-12, 2023.
+134. 山本賢太, 井上昂治, 河原達也. 音声対話システムによる雑談対話におけるキャラクタ表現に基づくユーザ適応の検討. 人工知能学会研究会資料, SLUD-096-29, 2022.
+135. 越智景子, 井上昂治, Lala Divesh, 河原達也. 傾聴対話におけるユーザ発話に同調する相槌の韻律制御. 日本音響学会2022秋季研究発表会, 3-8-9, 2022.
+136. 有岡無敵, 山本賢太, 井上昂治, 河原達也, 中村哲, 吉野幸一郎. 遠隔操作アンドロイドを用いたマルチモーダル説得対話コーパスの収集と分析. 言語処理学会第28回年次大会, B2-2, 2022.
+137. 川井悠生, 山本賢太, Lala Divesh, 井上昂治, 河原達也. 回答評価とキーワード抽出を用いた同時並列就職面接対話システム. 情報処理学会 第84回全国大会, 2R-05, 2022.
+138. 長連成, 井上昂治, 越智景子, 河原達也. 大規模テキストデータを用いた事前学習による音声対話の相槌予測. 情報処理学会 第84回全国大会, 2R-04, 2022.
+139. 村木優介, 山本賢太, Lala Divesh, 井上昂治, 河原達也. 半自律並列プレゼン対話システムのための質問分類による介入タイミング制御. 情報処理学会 第84回全国大会, 2R-03, 2022.
+140. 井上昂治, Lala Divesh, 河原達也. 共感を表出する音声対話システムのための共有笑い生成. 人工知能学会研究会資料, SLUD-093-27, 2021.
+141. 山本賢太, 井上昂治, 河原達也. 音声対話システムのユーザ適応に向けたパーソナリティの関係性の分析. 人工知能学会研究会資料, SLUD-093-02, 2021.
+142. 酒井和紀, 吉川雄一郎, 井上昂治, 河原達也, 石黒浩. 複数ロボットによる対話継続効果検証のための商業施設でのフィールド実験. 第39回日本ロボット学会学術講演会, 2B4-02, 2021．
+143. 井上昂治. アンドロイドERICAの音声対話システム～マルチモーダルチューリングテストへの挑戦～. 電子情報通信学会技術研究報告, SP2021-7, 2021.
+144. 坂本寛弥, 山本賢太, Lala Divesh, 井上昂治, 河原達也. 話し手以外のユーザへの参与促進発話を生成する多人数傾聴対話システム. 情報処理学会全国大会講演論文集, 6N-06, 2021.
+145. 井上昂治, Lala Divesh, 河原達也. ヒューマンロボットインタラクションのための相槌・笑いのリアルタイム検出. 日本音響学会2021春季研究発表会, 1-2-9, 2021.
+146. 井上昂治, Lala Divesh, 河原達也. ヒューマンロボットインタラクションにおける音響特徴に基づく共有笑いの予測. 日本音響学会2021春季研究発表会, 1-2-8, 2021.
+147. 山本賢太, 井上昂治, 河原達也. VAEを用いた半教師あり学習による音声対話システムのためのキャラクタ表現. 人工知能学会研究会資料, SLUD-C002-31, 2020.
+148. 田中滉己, 井上昂治, 中村静, 高梨克也, 河原達也. 多様なふるまいからの好感判定に基づき発話構成要素を選択するお見合い対話システム. 人工知能学会研究会資料, SLUD-C002-28, 2020.
+149. 井上昂治, Lala Divesh, 山本賢太, 中村静, 高梨克也, 河原達也. アンドロイドERICAの傾聴対話システムにおけるWOZとの比較評価. 人工知能学会研究会資料, SLUD-C002-21, 2020.
+150. 井上昂治, Lala Divesh, 山本賢太, 中村静, 高梨克也, 河原達也. WOZとの比較による自律型アンドロイドERICAの傾聴対話システムの評価. 日本音響学会2020秋季研究発表会, 3-2-7, 2020.
+151. 井上昂治, 原康平, Lala Divesh, 山本賢太, 中村静, 高梨克也, 河原達也. 自律型アンドロイドERICAによる就職面接対話. 日本音響学会2020春季研究発表会, 3-4-3, 2020.
+152. 磯西爽太, 井上昂治, 高梨克也, 河原達也. 質問タイプの分類に基づく登録外質問に対する応答生成. 人工知能学会研究会資料, SLUD-B902-06, 2019.
+153. 井上昂治, Divesh Lala, 山本賢太, 中村静, 高梨克也, 河原達也. 自律型アンドロイドERICAによる傾聴対話システムの評価. 人工知能学会研究会資料, SLUD-B902-04, 2019.
+154. 原康平, 井上昂治, Divesh Lala, 山本賢太, 中村静, 高梨克也, 河原達也. アンドロイドERICAによる面接対話における掘り下げ質問生成. 人工知能学会研究会資料, SLUD-B902-03, 2019.
+155. 春日悠生, 井上昂治, 山本賢太, 高梨克也, 河原達也. ヒューマンロボットインタラクションコーパスへの焦点アノテーションの基準と予備的分析. 人工知能学会研究会資料, SLUD-B901-03, 2019.
+156. 井上昂治, Lala Divesh, 山本賢太, 中村静, 高梨克也, 河原達也. 自律型アンドロイドERICAによる傾聴対話の評価. 日本音響学会2019秋季研究発表会, 1-3-2, 2019.
+157. 山本賢太, 井上昂治, 中村静, 高梨克也, 河原達也. 対話のふるまい制御によるキャラクタ表現モデルと対話コーパスによる検証. 情報処理学会全国大会講演論文集, 2T-07, 2019.
+158. 田中滉己, 井上昂治, 中村静, 高梨克也, 河原達也. 対話相手への好感に基づく発話構成要素の選択とお見合い対話システムへの実装. 情報処理学会全国大会講演論文集, 2T-06, 2019. ,
+159. 磯西爽太, 田中滉己, 井上昂治, 高梨克也, 河原達也. 質問タイプの分類に基づく用例なし質問に対する応答生成. 情報処理学会全国大会講演論文集, 2T-05, 2019.
+160. 原康平, 井上昂治, 高梨克也, 河原達也. 移行適格場の予測に基づくターンテイキング予測. 情報処理学会全国大会講演論文集, 2T-04, 2019.
+161. 原康平, 井上昂治, 高梨克也, 河原達也. 移行適格場の情報を考慮したターンテイキング予測. 人工知能学会研究会資料, SLUD-B803-10, 2019.
+162. 山本賢太, 井上昂治, 中村静, 高梨克也, 河原達也. 対話のふるまいに基づくキャラクタ表現の対話コーパスにおける分析. 人工知能学会研究会資料, SLUD-B803-08, 2019.
+163. 井上昂治, Divesh Lala, 原康平, 相原邦光, 中村静, 高梨克也, 河原達也. 自律型アンドロイドERICAによる就職面接対話. 人工知能学会研究会資料, SLUD-B802-14, 2018.
+164. 山本賢太, 井上昂治, Divesh Lala, 中村静, 高梨克也, 河原達也. 自律型アンドロイドERICAによる傾聴対話. 人工知能学会研究会資料, SLUD-B802-13, 2018.
+165. 田中滉己, 井上昂治, 中村静, 高梨克也, 河原達也. 初対面対話における好感のモデリングと発話構成要素の選択. 人工知能学会研究会資料, SLUD-B802-03, 2018.
+166. 原康平, 井上昂治, 高梨克也, 河原達也. 相槌・フィラー予測とのマルチタスク学習によるターンテイキング予測. 人工知能学会研究会資料, SLUD-B802-01, 2018.
+167. 原康平, 井上昂治, 高梨克也, 河原達也. 相槌・フィラー予測とのマルチタスク学習による円滑なターンテイキング. 第80回情報処理学会全国大会, 6Q-07, 2018.
+168. 山本賢太, 井上昂治, 中村静, 高梨克也, 河原達也. 自律型アンドロイドのキャラクタ表現のための対話の振る舞い制御モデルの構築と評価. 第80回情報処理学会全国大会, 6Q-06, 2018.
+169. 田中滉己, 井上昂治, 高梨克也, 河原達也. 初対面対話における好感の生成と発話構成要素の予測のモデル. 第80回情報処理学会全国大会, 6Q-05, 2018.
+170. 石田真也, 井上昂治, 中村静, 高梨克也, 河原達也. 共感・発話促進のための多様な聞き手応答を生成する傾聴対話システム. 第80回情報処理学会全国大会, 6Q-04, 2018.
+171. 井上昂治, Lala Divesh, 高梨克也, 河原達也. 自律型アンドロイドERICAにおけるエンゲージメント推定に基づく音声対話システム. 日本音響学会2018春季研究発表会, 2-8-9, 2018.
+172. 石田真也, 井上昂治, 中村静, 高梨克也, 河原達也. 共感表出と発話促進のための聞き手応答を生成する傾聴対話システム. 人工知能学会研究会資料, SLUD-B509-2, 2018.
+173. 井上昂治, Lala Divesh, Milhorat Pierrick, 高梨克也, 河原達也. 潜在キャラクタモデルによるリアルタイム対話エンゲージメント推定. 人工知能学会研究会資料, SLUD-B508-18, 2017. ,
+174. 井上昂治, Lala Divesh, Milhorat Pierrick, 石田真也, 趙天雨, 高梨克也, 河原達也. 自律型アンドロイドERICAにおける多様な聞き手応答を用いた傾聴対話. 人工知能学会研究会資料, SLUD-B508-11, 2017.
+175. 山本賢太, 井上昂治, 中村静, 高梨克也, 河原達也. 自律型アンドロイドの対話の振る舞い制御モデルによる キャラクタ表現法の検討. 人工知能学会研究会資料, SLUD-B508-05, 2017.
+176. 井上昂治, Lala Divesh, 吉井和佳, 高梨克也, 河原達也. 潜在キャラクタモデルによる聞き手のふるまいに基づく対話エンゲージメントの推定. 日本音響学会2017秋季研究発表会, 2-Q-12, 2017.
+177. 稲熊寛文, 井上昂治, 三村正人, 河原達也. End-to-endモデルによる音声対話中のsocial signalsの検出. 日本音響学会2017秋季研究発表会, 1-10-16, 2017.
+178. 稲熊寛文, 井上昂治, 三村正人, 河原達也. End-to-endモデルによるsocial signals検出および音声認識との統合. 情報処理学会研究報告, SLP-117-7, 2017.
+179. 勝見久央, 井上昂治, 中村静, 高梨克也, 河原達也. 自律型アンドロイドによる対話における同調的笑いの生成. 情報処理学会研究報告, SLP-116-4, 2017.
+180. 稲熊寛文, 井上昂治, 河原達也. ニューラルネットによる音声対話における非言語的振る舞いの検出. 第79回情報処理学会全国大会, 7M-04, 2017.
+181. 勝見久央, 井上昂治, 中村静, 高梨克也, 河原達也. 自律型アンドロイドによる対話における「同調的笑い」の生成. 第79回情報処理学会全国大会, 7M-03, 2017.
+182. 石田真也, 井上昂治, 中村静, 高梨克也, 河原達也. 傾聴対話システムにおける自分語りを含む多様な聞き手応答の生成. 第79回情報処理学会全国大会, 7M-02, 2017.
+183. 山本賢太, 井上昂治, 中村静, 高梨克也, 河原達也. 自律型アンドロイドのキャラクタ表現のための対話の振る舞い制御. 第79回情報処理学会全国大会, 7M-01, 2017.
+184. 井上昂治, Lala Divesh, 高梨克也, 河原達也. 聞き手の多様なふるまいに基づく対話エンゲージメントの推定. 日本音響学会2017春季研究発表会, 3-5-1, 2017.
+185. 井上昂治, 三村正人, 石井カルロス寿憲, 坂井信輔, 河原達也. DAEを用いたリアルタイム遠隔音声認識. 日本音響学会2017春季研究発表会, 1-Q-6, 2017.
+186. 李遠超, 井上昂治, 中村静, 高梨克也, 河原達也. ヒューマンロボットインタラクションにおける韻律とテキスト情報を組み合わせた感情認識と評価応答選択. 人工知能学会研究会資料, SLUD-B505-09, 2017.
+187. 中西亮輔, 井上昂治, 中村静, 高梨克也, 河原達也. 円滑な発話権制御のための談話行為の連鎖に基づく フィラーの生起と形態の予測. 人工知能学会研究会資料, SLUD-B506-04, 2017.
+188. 稲熊寛文, 井上昂治, 三村正人, 河原達也. LSTM-CTCによる音声対話におけるSocial Signalsの検出. 情報処理学会研究報告, SLP-115-9, 2017.
+189. 中西亮輔, 井上昂治, 中村静, 高梨克也, 河原達也. 発話行為の連鎖を考慮したフィラーの生起と形態の分析. 人工知能学会研究会資料, SLUD-B505-30, 2016.
+190. 稲熊寛文, 井上昂治, 中村静, 高梨克也, 河原達也. 初対面対話における韻律的特徴に基づくアイスブレーキングの分析と予測. 人工知能学会研究会資料, SLUD-B505-29, 2016.
+191. 井上昂治, Lala Divesh, 高梨克也, 河原達也. 階層ベイズモデルを用いた聞き手の多様なふるまいに基づく対話エンゲージメントの推定. 人工知能学会研究会資料, SLUD-B505-28, 2016.
+192. 井上昂治, Milohorat Pierrick, Lala Divesh, 趙天雨, 河原達也. 自律型アンドロイドERICAによる社会的役割に則したインタラクション. 人工知能学会研究会資料, SLUD-B505-7, 2016.
+193. 石田真也, 井上昂治, 中村静, 高梨克也, 河原達也. 傾聴対話システムのための発話を促す聞き手応答の生成. 人工知能学会研究会資料, SLUD-B504-01, 2016.
+194. 稲熊寛文, 井上昂治, 中村静, 高梨克也, 河原達也. 初対面対話における場の和みのマルチモーダルな分析と検出. 第78回情報処理学会全国大会, 6Q-02, 2016.
+195. 石田真也, 井上昂治, 中村静, 高梨克也, 河原達也. 傾聴対話システムのための多様な聞き手応答の生成. 第78回情報処理学会全国大会, 6Q-01, 2016.
+196. 井上昂治, 三村正人, 石井カルロス寿憲, 河原達也. 自律型アンドロイドERICAのための遠隔音声認識. 日本音響学会2016春季研究発表会, 1-1-1, 2016.
+197. 中西亮輔, 井上昂治, 中村静, 高梨克也, 河原達也. 自律型アンドロイドによる円滑な発話権制御のためのフィラーの生起位置と形態の分析. 人工知能学会研究会資料, SLUD-B503-11, 2016.
+198. 山口貴史, 井上昂治, 吉野幸一郎, 高梨克也, Ward G. Nigel, 河原達也. 傾聴対話システムのための言語情報と韻律情報に基づく多様な形態の相槌の生成. 人工知能学会研究会資料, SLUD-B503-9, 2016.
+199. 井上昂治, 河原達也. 自律型アンドロイドEricaのための音声対話システム. 人工知能学会研究会資料, SLUD-B502-5, 2015.
+200. 山口貴史, 井上昂治, 吉野幸一郎, 高梨克也, Ward G. Nigel, 河原達也. 多様な相槌をうつ傾聴対話システムのための相槌形態の予測. 人工知能学会研究会資料, SLUD-B502-1, 2015.
+201. 井上昂治, 若林佑幸, 吉本廣雅, 高梨克也, 河原達也. ポスター会話における音響・視線情報の確率的統合による 話者区間及び相槌の検出. 日本音響学会2015秋季研究発表会, 2-2-4, 2015.
+202. 井上昂治, 若林佑幸, 吉本廣雅, 高梨克也, 河原達也. スマートポスターボードにおける視線情報を用いた話者区間及び相槌の検出. 情報処理学会研究報告, MUS-107-68, 2015.
+203. 井上昂治, 若林佑幸, 吉本廣雅, 高梨克也, 河原達也. スマートポスターボードにおける視線情報を用いた話者区間検出及び相槌の同定. 第77回情報処理学会全国大会, 6P-09, 2015.
+204. 若林佑幸, 中山雅人, 西浦敬信, 山下洋一, 井上昂治, 吉本廣雅, 河原達也. 拡散性雑音環境下における多人数会話のマルチモーダル話者区間検出. 日本音響学会2015春季研究発表会, 1-Q-24, 2015.
+205. 山口貴史, 井上昂治, 吉野幸一郎, 高梨克也, 河原達也. 傾聴対話における相槌形態と先行発話の統語構造の関係の分析. 人工知能学会研究会資料, SLUD-B403-4, 2015.
+206. 井上昂治, 若林佑幸, 吉本廣雅, 高梨克也, 河原達也. ポスター会話における音響・視線情報を統合した話者区間及び相槌の検出. 情報処理学会研究報告, SLP-105-9, 2015.
+207. 井上昂治, 若林佑幸, 吉本廣雅, 河原達也. 多人数会話における音響情報と視線情報の確率的統合による話者区間検出. 日本音響学会2014秋季研究発表会, 2-8-4, 2014.
+208. 井上昂治, 若林佑幸, 吉本廣雅, 河原達也. 多人数会話における視線情報を用いた話者区間検出. 情報処理学会研究報告, SLP-102-1, 2014.
+209. 若林佑幸, 井上昂治, 河原達也, 中井駿介, 宮崎亮一, 猿渡洋. スマートポスターボードにおける音響情報と画像情報の統合による話者区間検出. 日本音響学会2014春季研究発表会, 2-Q4-7, 2014.
+210. 中井駿介，宮崎亮一，猿渡洋，中村哲，井上昂治，若林佑幸，河原達也. スマートポスターボードにおける実環境を想定した複数話者分離. 日本音響学会2014春季研究発表会, 2-Q4-8, 2014.
+211. 井上昂治, 松隈俊大, 黒木祥光. 相互錐制約部分空間法. 第15回画像の認識・理解シンポジウム (MIRU 2012), OS11-05, Aug. 2012. (オーラル)
+212. 黒崎正行, 伊東亮, 松尾宗明, 宮岡佑弥, 井上昂治, 江口翔馬, 尾知博, 黒木祥光, 宮崎明雄. 暗号領域での認証を用いたJPEG 2000 画像無線伝送システム. 電子情報通信学会 2012 年総合大会, March 2012.
+213. 井上昂治, 黒木祥光. スパース表現を用いた照明変化に頑健な顔認識に関する研究. 平成23年度(第64回)電気関係学会九州支部連合大会, Sep. 2011.
+214. 江口翔馬, 井上昂治, 黒木祥光. ディジタルシネマの実時間処理に向けたGPGPUによるJPEG2000の高速化. 平成23年度(第64回)電気関係学会九州支部連合大会, Sep. 2011.
+215. 井上昂治, 江口翔馬, 黒木祥光, 黒崎正行, 尾知博. 複数のGPUを用いたデジタルシネマ画像の実時間ウェーブレット変換. 電子情報通信学会技術研究報告, SIS-111-210, pp. 45-49, Sep. 2011.
+216. 松尾正輝, 井上昂治, 黒崎正行, 黒木祥光, 斉培恒, 尾知博. 4K デジタルシネマ無線伝送システムのための JPEG 2000 並列化. 画像電子学会 第255回研究会, March 2011.
+217. Mikey Elmers, Koji Inoue, Divesh Lala, Keiko Ochi, Tatsuya Kawahara. Analysis and Detection of Differences in Spoken User Behaviors between Autonomous and Wizard-of-Oz Systems. Workshop on Spoken Dialogue Systems for Cybernetic Avatars (SDS4CA), 2024.
+218. Zi Haur Pang, Yahui Fu, Divesh Lala, Mikey Elmers, Koji Inoue, Tatsuya Kawahara. Embodied Autonomous Interview System with Attentive Listening Behavior. Workshop on Spoken Dialogue Systems for Cybernetic Avatars (SDS4CA), 2024.
+219. Yahui Fu, 井上昂治, Chenhui Chu, 河原達也. Reasoning before Responding: Integrating Commonsense-based Causality Explanation for Empathetic Response Generation. 第18回京都大学ICTイノベーション, Feb. 2024.
+220. 井上昂治. 人を支える・人に共感する・人を超える対話システム. 日本音響学会 学生・若手フォーラム ビギナーズセミナー in KANSAI ～すべての道は音声対話に通ず～(第33回関西支部談話会), March 2023.
+221. Tatsuya Kawahara, Koji Inoue, Divesh Lala. Intelligent Conversational Android ERICA Applied to Attentive Listening and Job Interview arXiv:2105.00403, 2021.
+222. 井上昂治. コロナ禍における多人数音声対話システムの被験者実験. 電子情報通信学会 VNV研究会 第15回年次大会, March 2021.
+223. 井上昂治. アンドロイドと音声対話システムの融合 -深層ヒューマンロボットインタラクションの実現に向けて-. 日本ロボット学会ヒューロビント研究専門委員会 若手ロボティクス研究会, Jan. 2021.
+224. 有本庸浩, 佐藤志貴, 井上昂治, 山本賢太, 赤間怜奈. 国際会議報告（SIGDIAL, ACL, ICMI, Interspeech, EMNLP）. 人工知能学会 言語・音声理解と対話処理研究会 (SLUD) 第90回研究会 (第11回対話システムシンポジウム), Dec. 2020.
+225. 井上昂治. アンドロイドERICAによる傾聴対話システム. 第４回 JST ERATO石黒共生HRIプロジェクトシンポジウム, Aug. 2020.
+226. 山本賢太, 井上昂治, 河原達也. 多様な応答を生成する傾聴対話システム -ロボットがあなたの話を聴きます-. 第14回京都大学ICTイノベーション, Feb. 2020.
+227. 井上昂治. 博士の学位取得後の大学に就職するキャリア. IEEE 関西支部 Young Professionals 博士課程のキャリアについて語る会, Sep. 2019.
+228. 石井亮, 井上昂治, 千葉祐弥, 角森唯子, 成松宏美, 福田悠人, 増村亮. 国際会議報告（SIGDIAL, ACL, IJCAI-ECAI, COLING, Interspeech, ICMI, EMNLP, IVA, SEMDIAL）. 人工知能学会 言語・音声理解と対話処理研究会 (SLUD) 第84回研究会 (第9回対話システムシンポジウム), Nov. 2018.
+229. 井上昂治. 対話におけるエンゲージメント推定. 第２回 JST ERATO石黒共生HRIプロジェクトシンポジウム, Aug. 2018.
+230. 井上昂治, 河原達也. 会話エンゲージメントの自動認識 -相手が会話に興味があるかがわかります-. 第12回京都大学ICTイノベーション, March 2018.
+231. 井上昂治. 聞き手のふるまいに着目した対話エンゲージメントの分析と予測. 電子情報通信学会第52回VNV研究会 May. 2016.
+232. 井上昂治. 対話ロボットは空気を読めるか？. 日本音響学会北陸支部第7回音響セミナー ビギナー成果発表会, Dec. 2015.
+233. 山口貴史, 井上昂治, 吉野幸一郎, 高梨克也, Nigel G. Ward, 河原達也. 多様な形態の相槌をうつ傾聴対話システム. 第18回日本音響学会関西支部若手研究者交流研究発表会, 11, Dec. 2015.
+234. 井上昂治. ポスター会話における音響・視線情報を統合した話者区間及び相槌の検出. 第41回関西音声合同ゼミ, A-10, July 2015.
+235. Koji Inoue. Multi-modal conversational analysis in poster sessions. Multi-modal Interaction Workshop, April 2015.
+236. 井上昂治, 吉本廣雅, 河原達也. スマートポスターボード -聴衆の反応のセンシング-. 第9回京都大学ICTイノベーション, March 2015.
+237. 井上昂治, 若林佑幸, 吉本廣雅, 河原達也. 多人数会話における視線情報を用いた話者区間検出. 第17回日本音響学会関西支部若手研究者交流研究発表会, 10, Dec. 2014.
+238. 若林佑幸, 中山雅人, 西浦敬信, 井上昂治, 吉本廣雅, 河原達也. マルチモーダル話者ダイアライゼーション ～Who speaks when?～. 第17回日本音響学会関西支部若手研究者交流研究発表会, 12, Dec. 2014.
+239. 井上昂治. 多人数会話における視線情報を用いた話者区間検出. 第39回関西音声合同ゼミ, B.3, July 2014.
+240. 井上昂治, 河原達也. スマートポスターボード -聴衆の反応のセンシング-. 第8回京都大学ICTイノベーション, Dec. 2013.
