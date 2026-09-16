@@ -1,0 +1,6 @@
+﻿id,year,month,authors,title,title_ja,note,venue,links,award,hidden,rm_id,rm_target,rm_type,rm_skip,journal,volume,number,pages,doi,referee,lang
+p0247,2025,,井上昂治,進化するヒトと機械の音声コミュニケーション Vol.2,,"第2編 音声認識・合成・コミュニケーションの応用技術
+第3章 音声によるコミュニケーション技術
+共感的な傾聴対話ロボットの開発",株式会社エヌ・ティー・エス,出版社ページ | https://nts-book.stores.jp/items/67f608e3b776cf13c7c21b7a,,,,,,,,,,,,,
+p0248,2022,,"井上昂治, 河原達也",音声対話システム：基礎から実装まで,,,オーム社,"出版社ページ | https://www.ohmsha.co.jp/book/9784274229541/
+サポートページ | https://github.com/inokoj/sds_textbook_sample",,,,,,,,,,,,,

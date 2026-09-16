@@ -1,0 +1,6 @@
+{
+  "_comment": "カテゴリ別シート方式: URL の {sheet} がシート名（= category 名）に置き換えられる。1枚のシートで管理する場合は {sheet} を含まない URL（例: ...&sheet=publications）にする。",
+  "sheet_csv_url": "https://docs.google.com/spreadsheets/d/<SHEET_ID>/gviz/tq?tqx=out:csv&sheet={sheet}",
+  "sheet_names": ["journal", "invited", "conference_i", "conference_j", "book", "kaisetsu", "other"],
+  "researchmap_permalink": "kojiinoue"
+}

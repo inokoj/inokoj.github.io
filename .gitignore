@@ -1,0 +1,5 @@
+# 生成物（researchmap へ手動アップロードする一時ファイル）
+researchmap/
+# スプレッドシート URL などローカル設定
+scripts/config.json
+__pycache__/
