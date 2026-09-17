@@ -24,7 +24,7 @@ from collections import defaultdict
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
-from pubcommon import COLUMNS, CATEGORIES, RM_DEFAULTS, is_japanese  # noqa: E402
+from pubcommon import COLUMNS, CATEGORIES, RM_DEFAULTS, is_japanese, norm_title  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 CSV_PATH = ROOT / "data" / "publications.csv"
@@ -32,6 +32,7 @@ TEMPLATE = ROOT / "templates" / "publications.template.html"
 OUT_HTML = ROOT / "publications.html"
 RM_DIR = ROOT / "researchmap"
 CONFIG = ROOT / "scripts" / "config.json"
+IDS_PATH = ROOT / "data" / "researchmap_ids.csv"  # match_researchmap.py が作る対応表
 
 LINK_CLASS = 'target="_blank" class="text-blue-600 hover:underline"'
 AWARD_CLASS = 'class="text-red-500 font-bold"'
@@ -295,8 +296,30 @@ def rm_row(r: dict) -> tuple[str, dict]:
     return target, row
 
 
+def apply_id_table(rows: list[dict]) -> int:
+    """対応表 data/researchmap_ids.csv の rm_id / rm_target を、シートで空欄の行に補う。"""
+    if not IDS_PATH.exists():
+        return 0
+    table = {r["key"]: r for r in csv.DictReader(IDS_PATH.open(encoding="utf-8-sig"))}
+    n = 0
+    for r in rows:
+        if r["rm_id"]:
+            continue
+        hit = table.get(norm_title(r["title"]))
+        if not hit:
+            continue
+        if hit["rm_id"] == "skip":      # baseline で「対応済み扱い」にした行
+            r["rm_skip"] = "TRUE"
+        else:
+            r["rm_id"] = hit["rm_id"]
+            r["rm_target"] = r["rm_target"] or hit["rm_target"]
+        n += 1
+    return n
+
+
 def write_researchmap(rows: list[dict], include_updates: bool, since: int) -> dict[str, int]:
     RM_DIR.mkdir(exist_ok=True)
+    apply_id_table(rows)
     groups: dict[str, list[dict]] = defaultdict(list)
     for r in rows:
         if truthy(r["rm_skip"]) or truthy(r["hidden"]) or int(r["year"]) < since:

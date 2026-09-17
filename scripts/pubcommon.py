@@ -15,7 +15,7 @@ COLUMNS = [
     "award",       # 受賞（赤字表示）。複数は ; 区切り
     "hidden",      # TRUE ならサイトに表示しない
     # ---- researchmap 連携用（任意）----
-    "rm_id",       # researchmap の業績ID。空欄 = 未登録（insert 対象）
+    "rm_id",       # researchmap の業績ID（手動指定用。通常は data/researchmap_ids.csv で管理するので空欄）
     "rm_target",   # published_papers / presentations / books_etc / misc（空欄なら category から自動）
     "rm_type",     # 掲載種別/会議種別/著書種別（空欄なら category から自動）
     "rm_skip",     # TRUE なら researchmap 出力から除外
@@ -57,3 +57,11 @@ MONTHS.update({k[:3]: v for k, v in list(MONTHS.items())})
 
 def is_japanese(s: str) -> bool:
     return any("぀" <= ch <= "ヿ" or "一" <= ch <= "鿿" for ch in s)
+
+
+def norm_title(s: str) -> str:
+    """タイトル照合用の正規化（NFKC・小文字化・英数字と仮名漢字以外を除去）。"""
+    import re
+    import unicodedata
+    s = unicodedata.normalize("NFKC", s).lower()
+    return re.sub(r"[^0-9a-z぀-ヿ一-鿿]+", "", s)

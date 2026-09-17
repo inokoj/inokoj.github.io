@@ -8,6 +8,7 @@ data/publications.csv（リポジトリ内のスナップショット。フォ�
       │ build.py
       ├─► publications.html          ← templates/publications.template.html に流し込み
       └─► researchmap/rm_*.csv       ← researchmap「業績インポート」画面に手動アップロード
+                                        （data/researchmap_ids.csv に載っていない＝未登録の行だけ）
 ```
 
 ## 初期セットアップ（1回だけ）
@@ -42,14 +43,32 @@ data/publications.csv（リポジトリ内のスナップショット。フォ�
    - **自動**: GitHub Actions「Build publications」が毎日 03:00 JST に実行（Actions タブから「Run workflow」で即時実行も可）。
      変更があれば `publications.html` と `data/publications.csv` がコミットされ、GitHub Pages に反映される。
    - **手元で**: `python scripts/build.py --fetch` → 生成結果を確認して commit / push。
-3. researchmap へ反映したいとき:
+3. researchmap へ「新しく追加した分だけ」反映したいとき:
    ```
-   python scripts/build.py --fetch --rm-since 2026     # 今年の未登録分（rm_id が空の行）だけ CSV 化
+   python scripts/build.py --fetch            # researchmap/rm_*.csv に未登録分だけが入る
    ```
-   `researchmap/rm_published_papers.csv` などができるので、researchmap にログイン →
-   「研究者・業績インポート」→ ファイルを選んでアップロード（整合性チェック後に更新）。
-   登録できたら researchmap 側の業績 ID をシートの `rm_id` 列に入れておく
-   （`python scripts/match_researchmap.py --apply` でタイトル照合による自動付与もできる）。
+   researchmap にログイン → 「研究者・業績インポート」→ できたファイルをアップロード（整合性チェック後に更新）。
+   登録が終わったら
+   ```
+   python scripts/match_researchmap.py --apply   # researchmap から登録済み一覧を取得し、対応表を更新
+   git commit -am "Update researchmap ids"
+   ```
+   これで登録済みの業績が `data/researchmap_ids.csv`（タイトル → researchmap 業績 ID の対応表）に記録され、
+   次回の `build.py` では出力されなくなる。シートに何かを書き戻す必要はない。
+
+   **「未登録」の判定**: 次のいずれにも該当しない行が出力される
+   - シートの `rm_id` 列に値がある（手動で入れた場合）
+   - `data/researchmap_ids.csv` にタイトルが載っている（`match_researchmap.py --apply` が追記）
+   - シートの `rm_skip` が `TRUE`、または `hidden` が `TRUE`
+   - `--rm-since YEAR` を付けた場合はその年より前
+
+   **初回だけ**: 既存の業績は researchmap 側にも大半が登録済みなので、最初に一度
+   ```
+   python scripts/match_researchmap.py --apply --baseline
+   ```
+   を実行して現時点の全行を「対応済み」にしておく（タイトル一致した行は ID 付きで、一致しなかった行は
+   `skip` として対応表に入る）。以後はシートに追加した行だけが出力対象になる。
+   `skip` にした行を後で researchmap に登録したくなったら、対応表からその行を削除すれば次回出力される。
 
 ## シートの列
 
@@ -66,7 +85,7 @@ data/publications.csv（リポジトリ内のスナップショット。フォ�
 | `links` | `ラベル | URL` を 1 行に 1 つ（セル内改行）。例: `Link | https://...` |
 | `award` | 受賞（赤字で表示）。複数は `;` 区切り |
 | `hidden` | `TRUE` でサイトに表示しない |
-| `rm_id` | researchmap の業績 ID。空欄 = 未登録（インポート CSV の対象） |
+| `rm_id` | researchmap の業績 ID を手動で指定したいとき。通常は空欄でよい（対応表 `data/researchmap_ids.csv` で管理） |
 | `rm_target` / `rm_type` | researchmap の業績種別・掲載種別を上書きしたいとき（空欄なら category から自動） |
 | `rm_skip` | `TRUE` で researchmap 出力から除外 |
 | `journal`, `volume`, `number`, `pages`, `doi`, `referee`, `lang` | researchmap 用の構造化情報（任意。空欄なら venue 等から補完） |
@@ -80,7 +99,7 @@ category → researchmap の既定マッピングは `scripts/pubcommon.py` の 
 | `scripts/build.py` | マスタ → HTML / researchmap CSV。`--fetch` `--check` `--rm-since YEAR` `--rm-all` |
 | `scripts/import_html.py` | 旧 `publications.html` → CSV（初回移行用。通常は使わない） |
 | `scripts/split_csv.py` | `data/publications.csv` → `data/sheets/<category>.csv`（カテゴリ別シートへの初期インポート用） |
-| `scripts/match_researchmap.py` | researchmap 公開 API と照合して `rm_id` を埋める（`--apply` で書き込み） |
+| `scripts/match_researchmap.py` | researchmap 公開 API と照合して対応表 `data/researchmap_ids.csv` を更新（`--apply` で書き込み、`--baseline` で未一致分も対応済み扱い） |
 | `scripts/pubcommon.py` | 列定義・カテゴリ・マッピング |
 | `templates/publications.template.html` | ページの枠。デザイン変更はこちらを編集（`{{PUBLICATIONS}}` が差し替え位置） |
 
