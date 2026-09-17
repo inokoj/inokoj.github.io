@@ -37,8 +37,6 @@ IDS_PATH = ROOT / "data" / "researchmap_ids.csv"  # match_researchmap.py が作�
 LINK_CLASS = 'target="_blank" class="text-blue-600 hover:underline"'
 AWARD_CLASS = 'class="text-red-500 font-bold"'
 NO_PERIOD = {"book", "kaisetsu"}  # タイトル・著者末尾にピリオドを付けないカテゴリ
-MONTH_NAMES = [None, "January", "February", "March", "April", "May", "June", "July",
-               "August", "September", "October", "November", "December"]
 
 # 表示順（カテゴリ順はこの通り、カテゴリ内は year/month 降順・同値ならシートの行順）
 CATEGORY_ORDER = list(CATEGORIES)
@@ -145,8 +143,8 @@ def render_entry(r: dict) -> str:
     if r["title_ja"]:
         lines.append(f"({esc(r['title_ja'])})")
     lines += [esc(x) for x in r["note"].splitlines() if x.strip()]
-    date = f"{MONTH_NAMES[int(r['month'])]} {r['year']}" if r["month"] else r["year"]
-    lines.append(f"{esc(r['venue'])}, {date}." if r["venue"] else f"{date}.")
+    # month は並び順と researchmap 出力にのみ使い、サイトには年だけを表示する
+    lines.append(f"{esc(r['venue'])}, {r['year']}." if r["venue"] else f"{r['year']}.")
     links = []
     for ln in split_lines(r["links"]):
         label, _, url = ln.partition("|")
