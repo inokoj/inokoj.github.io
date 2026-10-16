@@ -15,7 +15,7 @@ COLUMNS = [
     "award",       # 受賞（赤字表示）。複数は ; 区切り
     "hidden",      # TRUE ならサイトに表示しない
     # ---- researchmap 連携用（任意）----
-    "rm_id",       # researchmap の業績ID（手動指定用。通常は data/researchmap_ids.csv で管理するので空欄）
+    "rm_id",       # researchmap の業績ID（自動照合できないときだけ手で入れる。通常は空欄）
     "rm_target",   # published_papers / presentations / books_etc / misc（空欄なら category から自動）
     "rm_type",     # 掲載種別/会議種別/著書種別（空欄なら category から自動）
     "rm_skip",     # TRUE なら researchmap 出力から除外

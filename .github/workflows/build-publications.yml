@@ -30,7 +30,7 @@ jobs:
           if [ -z "$SHEET_CSV_URL" ]; then
             echo "SHEET_CSV_URL secret is not set"; exit 1
           fi
-          python scripts/build.py --fetch
+          python scripts/build.py --fetch --no-rm
 
       - name: Commit and push if changed
         run: |

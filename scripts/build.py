@@ -3,10 +3,17 @@
   - researchmap/ 配下の業績インポート用 CSV
 を生成する。
 
-使い方:
-  python scripts/build.py                 # data/publications.csv から生成
-  python scripts/build.py --fetch         # スプレッドシートを取得して data/publications.csv を更新してから生成
-  python scripts/build.py --rm-all        # researchmap 用 CSV に rm_id 付きの行（update）も含める
+使い方（普段はこれだけ）:
+  python scripts/build.py --fetch
+    1. スプレッドシートを取得して data/publications.csv を更新
+    2. publications.html を生成
+    3. researchmap の登録済み業績と照合し、まだ登録されていない行だけを researchmap/rm_*.csv に出力
+
+その他のオプション:
+  python scripts/build.py                 # 取得せず data/publications.csv から生成
+  python scripts/build.py --no-rm         # researchmap との照合・出力をしない（GitHub Actions 用）
+  python scripts/build.py --rm-since 2024 # researchmap 出力の対象年を変える（既定: config の researchmap_since）
+  python scripts/build.py --rm-all        # researchmap 用 CSV に登録済みの行（update）も含める
   python scripts/build.py --check         # 生成せず整合性チェックのみ
 
 スプレッドシートの URL は環境変数 SHEET_CSV_URL か scripts/config.json の "sheet_csv_url" で指定。
@@ -25,6 +32,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
 from pubcommon import COLUMNS, CATEGORIES, RM_DEFAULTS, is_japanese, norm_title  # noqa: E402
+import rmsync  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 CSV_PATH = ROOT / "data" / "publications.csv"
@@ -32,7 +40,8 @@ TEMPLATE = ROOT / "templates" / "publications.template.html"
 OUT_HTML = ROOT / "publications.html"
 RM_DIR = ROOT / "researchmap"
 CONFIG = ROOT / "scripts" / "config.json"
-IDS_PATH = ROOT / "data" / "researchmap_ids.csv"  # match_researchmap.py が作る対応表
+RM_SINCE_DEFAULT = 2025  # これより前の年の業績は researchmap 出力の対象外（config の researchmap_since で変更可）
+RM_PERMALINK_DEFAULT = "kojiinoue"
 
 LINK_CLASS = 'target="_blank" class="text-blue-600 hover:underline"'
 AWARD_CLASS = 'class="text-red-500 font-bold"'
@@ -48,14 +57,23 @@ def load_config() -> dict:
 
 
 def fetch_sheet(url: str) -> str:
+    # gviz はヘッダ行数を自動推定し、先頭の数行をヘッダに混ぜてしまうことがある（行が丸ごと消える）。
+    # headers=1 で「1 行目だけがヘッダ」と明示する。
+    if "/gviz/" in url and "headers=" not in url:
+        url += "&headers=1"
     req = urllib.request.Request(url, headers={"User-Agent": "publications-build/1.0"})
     with urllib.request.urlopen(req, timeout=60) as r:
         return r.read().decode("utf-8-sig")
 
 
 def read_rows(text: str, sheet: str = "", default_category: str = "") -> list[dict]:
+    reader = csv.DictReader(io.StringIO(text))
+    header = [h.strip() for h in reader.fieldnames or []]
+    if not {"year", "title"} <= set(header):
+        sys.exit(f"シート '{sheet or 'publications'}' のヘッダ行が読めません（year / title 列が見つからない）。"
+                 f"1 行目が列名になっているか確認してください: {header[:5]}")
     rows = []
-    for i, r in enumerate(csv.DictReader(io.StringIO(text)), start=2):
+    for i, r in enumerate(reader, start=2):
         r = {k.strip(): (v or "").strip() for k, v in r.items() if k}
         if not any(r.get(c) for c in ("authors", "title", "venue")):
             continue  # 空行
@@ -114,8 +132,8 @@ def validate(rows: list[dict]) -> list[str]:
         if not r["title"]:
             errors.append(f"{where}: title is empty")
         if r["id"]:
-            if r["id"] in seen:
-                errors.append(f"{where}: duplicate id")
+            if r["id"] in seen:  # id は表示用ラベルなので重複してもビルドは止めない
+                print(f"WARNING: {where}: id '{r['id']}' が重複しています", file=sys.stderr)
             seen.add(r["id"])
         for ln in split_lines(r["links"]):
             if "|" not in ln:
@@ -294,43 +312,40 @@ def rm_row(r: dict) -> tuple[str, dict]:
     return target, row
 
 
-def apply_id_table(rows: list[dict]) -> int:
-    """対応表 data/researchmap_ids.csv の rm_id / rm_target を、シートで空欄の行に補う。"""
-    if not IDS_PATH.exists():
-        return 0
-    table = {r["key"]: r for r in csv.DictReader(IDS_PATH.open(encoding="utf-8-sig"))}
-    n = 0
+def sync_researchmap(rows: list[dict], cfg: dict) -> None:
+    """researchmap の登録済み業績と照合して対応表を更新し、登録済みの行に rm_id / rm_target を補う。
+    researchmap に接続できないときは前回の対応表だけを使う。"""
+    table = rmsync.load_ids()
+    permalink = cfg.get("researchmap_permalink") or RM_PERMALINK_DEFAULT
+    try:
+        index = rmsync.fetch_registered(permalink)
+    except (OSError, ValueError) as e:
+        print(f"WARNING: researchmap に接続できませんでした（{e}）。前回の対応表だけで判定します", file=sys.stderr)
+    else:
+        matched = rmsync.match(rows, table, index)
+        rmsync.save_ids(table)
+        for r in matched:
+            print(f"  researchmap に登録済み（対応表に追加）: {r['title'][:70]}")
     for r in rows:
-        if r["rm_id"]:
-            continue
-        hit = table.get(norm_title(r["title"]))
-        if not hit:
-            continue
-        if hit["rm_id"] == "skip":      # baseline で「対応済み扱い」にした行
-            r["rm_skip"] = "TRUE"
-        else:
+        hit = None if r["rm_id"] else table.get(norm_title(r["title"]))
+        if hit:
             r["rm_id"] = hit["rm_id"]
             r["rm_target"] = r["rm_target"] or hit["rm_target"]
-        n += 1
-    return n
 
 
-def write_researchmap(rows: list[dict], include_updates: bool, since: int) -> dict[str, int]:
+def write_researchmap(rows: list[dict], include_updates: bool, since: int) -> list[dict]:
+    """researchmap 業績インポート用 CSV を書き出し、出力した行を返す。"""
     RM_DIR.mkdir(exist_ok=True)
-    apply_id_table(rows)
+    out = [r for r in rows
+           if not (truthy(r["rm_skip"]) or truthy(r["hidden"]) or int(r["year"]) < since)
+           and (include_updates or not r["rm_id"])]
     groups: dict[str, list[dict]] = defaultdict(list)
-    for r in rows:
-        if truthy(r["rm_skip"]) or truthy(r["hidden"]) or int(r["year"]) < since:
-            continue
-        if r["rm_id"] and not include_updates:
-            continue
+    for r in out:
         target, row = rm_row(r)
         groups[target].append(row)
-    counts = {}
     for target, hdr in RM_HEADERS.items():
         path = RM_DIR / f"rm_{target}.csv"
         items = groups.get(target, [])
-        counts[target] = len(items)
         if not items:
             if path.exists():
                 path.unlink()
@@ -341,23 +356,45 @@ def write_researchmap(rows: list[dict], include_updates: bool, since: int) -> di
             w.writeheader()
             for row in items:
                 w.writerow({h: row.get(h, "null") for h in hdr})
-    return counts
+    return out
+
+
+def check_fetched(rows: list[dict]) -> None:
+    """取得結果がおかしいとき（シートが丸ごと読めていない等）に data/publications.csv を上書きしない。"""
+    if len(rows) < 10:
+        sys.exit(f"取得した行数が少なすぎます ({len(rows)} 行)。URL が CSV を返しているか確認してください")
+    if not CSV_PATH.exists():
+        return
+    before = defaultdict(int)
+    for r in read_rows(CSV_PATH.read_text(encoding="utf-8-sig")):
+        before[r["category"]] += 1
+    after = defaultdict(int)
+    for r in rows:
+        after[r["category"]] += 1
+    lost = [f"{c} ({n} → 0 行)" for c, n in before.items() if n and not after[c]]
+    if lost:
+        sys.exit("次のカテゴリの行が取得できませんでした: " + ", ".join(lost)
+                 + "\nシート名やヘッダ行を確認してください（data/publications.csv は更新していません）")
 
 
 # ---------------------------------------------------------------- main
 def main():
+    # Windows のコンソール（cp932）で表示できない文字があっても止まらないようにする
+    sys.stdout.reconfigure(errors="replace")
+    sys.stderr.reconfigure(errors="replace")
     ap = argparse.ArgumentParser()
     ap.add_argument("--fetch", action="store_true", help="スプレッドシートを取得して data/publications.csv を更新")
-    ap.add_argument("--rm-all", action="store_true", help="researchmap CSV に rm_id 付きの行（update）も含める")
-    ap.add_argument("--rm-since", type=int, default=0, metavar="YEAR",
-                    help="researchmap CSV に含める最小の year（例: --rm-since 2026）")
+    ap.add_argument("--no-rm", action="store_true", help="researchmap との照合・CSV 出力をしない")
+    ap.add_argument("--rm-all", action="store_true", help="researchmap CSV に登録済みの行（update）も含める")
+    ap.add_argument("--rm-since", type=int, default=None, metavar="YEAR",
+                    help=f"researchmap CSV に含める最小の year（既定: config の researchmap_since か {RM_SINCE_DEFAULT}）")
     ap.add_argument("--check", action="store_true", help="検証のみ")
     args = ap.parse_args()
+    cfg = load_config()
 
     if args.fetch:
         rows = fetch_all_sheets()
-        if len(rows) < 10:
-            sys.exit(f"取得した行数が少なすぎます ({len(rows)} 行)。URL が CSV を返しているか確認してください")
+        check_fetched(rows)
         with CSV_PATH.open("w", encoding="utf-8-sig", newline="") as f:
             w = csv.DictWriter(f, fieldnames=COLUMNS, lineterminator="\n", extrasaction="ignore")
             w.writeheader()
@@ -379,10 +416,20 @@ def main():
     OUT_HTML.write_text(render_html(rows), encoding="utf-8")
     shown = sum(1 for r in rows if not truthy(r["hidden"]))
     print(f"{shown} entries -> {OUT_HTML.name}")
-    counts = write_researchmap(rows, include_updates=args.rm_all, since=args.rm_since)
-    print("researchmap import CSV:", ", ".join(f"{k}={v}" for k, v in counts.items()),
-          "(update 含む)" if args.rm_all else "(rm_id 未設定の行のみ)",
-          f"(year >= {args.rm_since})" if args.rm_since else "")
+    if args.no_rm:
+        return
+
+    sync_researchmap(rows, cfg)
+    since = args.rm_since if args.rm_since is not None else int(cfg.get("researchmap_since", RM_SINCE_DEFAULT))
+    out = write_researchmap(rows, include_updates=args.rm_all, since=since)
+    if not out:
+        print(f"\nresearchmap: 未登録の業績はありません（{since} 年以降）")
+        return
+    print(f"\nresearchmap 登録候補 {len(out)} 件（{since} 年以降・rm_skip でないもの）-> {RM_DIR.name}/rm_*.csv")
+    for r in sorted(out, key=lambda r: (CATEGORY_ORDER.index(r["category"]), sort_key(r))):
+        print(f"  [{r['category']} {r['year']}] {r['title'][:80]}")
+    print("researchmap の「業績インポート」で上記の CSV をアップロードし、登録後にもう一度このコマンドを実行してください。"
+          "\n登録しない業績はシートの rm_skip 列を TRUE にすると候補から外れます。")
 
 
 if __name__ == "__main__":
